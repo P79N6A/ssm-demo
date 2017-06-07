@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: hessian:hessian:3.0.13.bugfix-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/hessian/hessian/3.0.13.bugfix-SNAPSHOT/hessian-3.0.13.bugfix-20120711.024044-23.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/hessian/hessian/3.0.13.bugfix-SNAPSHOT/hessian-3.0.13.bugfix-20120711.024044-23-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/hessian/hessian/3.0.13.bugfix-SNAPSHOT/hessian-3.0.13.bugfix-20120711.024044-23-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0055)http://localhost:63343/Demo01/showcase/Demo/lottey.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>无标题文档</title>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+
+
+</head>
+<body>
+
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <li><a href="http://localhost:63343/Demo01/showcase/Demo/lottey.html#">首页</a></li>
+        <li><a href="http://localhost:63343/Demo01/showcase/Demo/lottey.html#">表单</a></li>
+    </ul>
+</div>
+<div class="mybody">
+
+    <label>上传文件:</label>
+    <input id="file" runat="server" name="file" type="file" size="50" class="file"/>
+    <input type="button" name="submit" id="buttonUpload" class="btn" value="上传"/>
+</div>
+<script type="text/javascript">
+
+    $(function(){
+        $('#buttonUpload').click(function(){
+            var formData = new FormData();
+            formData.append("app",'tougaoForm');
+            formData.append("file",$("#file")[0].files[0]);
+
+            $.ajax({
+                url: 'http://my.daily.taobao.net/nrs/upload.json',
+                type: 'GET',
+                dataType: 'jsonp',
+                data: formData,
+                async: false,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (returndata) {
+                    alert(returndata);
+                },
+                error: function (returndata) {
+                    alert(returndata);
+                }
+            });
+        })
+    });
+
+
+</script>
+</body>
+</html>

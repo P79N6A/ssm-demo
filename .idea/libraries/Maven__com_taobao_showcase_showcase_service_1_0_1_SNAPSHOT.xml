@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.taobao.showcase:showcase-service:1.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/taobao/showcase/showcase-service/1.0.1-SNAPSHOT/showcase-service-1.0.1-20160706.091759-5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/taobao/showcase/showcase-service/1.0.1-SNAPSHOT/showcase-service-1.0.1-20160706.091759-5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/taobao/showcase/showcase-service/1.0.1-SNAPSHOT/showcase-service-1.0.1-20160706.091759-5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
