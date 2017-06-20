@@ -8,11 +8,8 @@
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
-            /WEB-INF/spring-mybatis.xml,
-            /WEB-INF/spring-aop.xml,
-            /WEB-INF/spring-hsf-cosumer.xml,
-            /WEB-INF/spring-bz.xml
-            <!--classpath:dubbo-consumer.xml-->
+           classpath:spring-application.xml,
+           WEB-INF/spring-mybatis.xml
         </param-value>
     </context-param>
     <!-- 初始化log4j -->
@@ -37,7 +34,7 @@
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>/WEB-INF/spring-mvc.xml</param-value>
+            <param-value>classpath:spring-mvc.xml</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>

@@ -10,6 +10,7 @@ import java.util.Map;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
+import com.demo.thread.ThreadPoolDemo.MyTask;
 import com.fc.bean.User;
 import com.fc.common.AjaxResult;
 import com.fc.common.Asserts;
@@ -18,6 +19,7 @@ import com.fc.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
@@ -36,6 +38,8 @@ public class TestController {
 
     @Resource
     private UserService userService;
+    @Resource
+    private ThreadPoolTaskExecutor taskExecutor;
 
     /**
      * 参数绑定的定制，Spring4.2提供了新的实现(一般用于日期格式的定制)
@@ -164,11 +168,27 @@ public class TestController {
         return AjaxResult.getSuccessResult(map);
     }
 
+    /**
+     * restful风格
+     * @param word
+     * @return
+     */
     @RequestMapping(value = "/{word}/say.json", method = RequestMethod.GET)
     @ResponseBody
     public AjaxResult testPathVariable(@PathVariable("word") String word) {
         Map<String, Object> map = new HashMap<>(16);
         map.put("word", word);
         return AjaxResult.getSuccessResult(map);
+    }
+
+    @RequestMapping(value = "/thread/get.json", method = RequestMethod.GET)
+    @ResponseBody
+    public AjaxResult getThreadName() {
+        MyTask myTask = new MyTask();
+        for (int i = 0; i < 5; i++) {
+            taskExecutor.execute(myTask);
+        }
+        taskExecutor.shutdown();
+        return AjaxResult.getSuccessResult();
     }
 }

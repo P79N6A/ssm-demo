@@ -296,6 +296,7 @@
         <module>module</module>
         <module>tools</module>
         <module>test</module>
+        <module>integation</module>
     </modules>
 
     <packaging>pom</packaging>

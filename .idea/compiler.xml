@@ -66,10 +66,17 @@
         <processorPath useClasspath="true" />
         <module name="webapp" />
       </profile>
+      <profile default="false" name="Annotation profile for integation" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="bean" target="1.7" />
       <module name="dao" target="1.7" />
+      <module name="integation" target="1.7" />
       <module name="maven_demo" target="1.7" />
       <module name="module" target="1.7" />
       <module name="service" target="1.7" />

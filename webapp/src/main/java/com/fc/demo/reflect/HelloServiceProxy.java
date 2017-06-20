@@ -6,6 +6,7 @@ import java.lang.reflect.Proxy;
 
 /**
  * Created by fangcong on 2017/4/19.
+ * JDK反射机制提供的代理
  */
 public class HelloServiceProxy implements InvocationHandler {
 
