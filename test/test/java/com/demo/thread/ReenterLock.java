@@ -9,9 +9,10 @@ import java.util.concurrent.locks.ReentrantLock;
 public class ReenterLock implements Runnable{
 
     private static ReentrantLock lock = new ReentrantLock();
+    private static ReenterLock instance = new ReenterLock();
     private static int i = 0;
 
-    @Override
+    /*@Override
     public void run() {
         for (int j = 0; j < 100000; j++) {
             lock.lock();
@@ -21,12 +22,31 @@ public class ReenterLock implements Runnable{
                 lock.unlock();
             }
         }
+    }*/
+
+    public static synchronized void increase() {
+        i++;
+    }
+
+    /*@Override
+    public void run() {
+        for (int j = 0; j < 100000; j++) {
+            synchronized (instance) {
+                i++;
+            }
+        }
+    }*/
+
+    @Override
+    public void run() {
+        for (int j = 0; j < 100000; j++) {
+            increase();
+        }
     }
 
     public static void main(String[] args) throws InterruptedException{
-        ReenterLock t = new ReenterLock();
-        Thread t1 = new Thread(t);
-        Thread t2 = new Thread(t);
+        Thread t1 = new Thread(instance);
+        Thread t2 = new Thread(instance);
         t1.start();
         t2.start();
         t1.join();

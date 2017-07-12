@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SmartFoxWorkToolsProjectState">
+    <option name="branch" value="master" />
+    <option name="gitUrl" value="https://github.com/tiaowangyuanfang/ssm-demo.git" />
     <option name="localBranch" value="master" />
-    <option name="revision" value="c44d20a5c66b349d99c3f044c0cdd95dd32a5a2a" />
+    <option name="revision" value="75d8fb9f78d7afddc3768ba7149964664296cf36" />
   </component>
 </project>

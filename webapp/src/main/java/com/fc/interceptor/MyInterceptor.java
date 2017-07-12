@@ -1,17 +1,18 @@
 package com.fc.interceptor;
 
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.NamedThreadLocal;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 /**
- * Created by fangcong on 2016/12/1.
+ * @author fangcong
+ * @date 2017/06/26
  */
 public class MyInterceptor implements HandlerInterceptor {
 
