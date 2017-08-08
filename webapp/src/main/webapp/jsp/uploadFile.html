@@ -23,20 +23,22 @@
 <div class="mybody">
 
     <label>上传文件:</label>
-    <input id="file" runat="server" name="file" type="file" size="50" class="file"/>
-    <input type="button" name="submit" id="buttonUpload" class="btn" value="上传"/>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input id="file" name="file" type="file" size="50"/>
+        <input type="button" id="buttonUpload" value="上传"/>
+    </form>
+
 </div>
 <script type="text/javascript">
 
     $(function(){
         $('#buttonUpload').click(function(){
-            var formData = new FormData();
+            var formData = new FormData($("#uploadForm")[0]);
             formData.append("app",'tougaoForm');
-            formData.append("file",$("#file")[0].files[0]);
 
             $.ajax({
                 url: 'http://my.daily.taobao.net/nrs/upload.json',
-                type: 'GET',
+                type: 'POST',
                 dataType: 'jsonp',
                 data: formData,
                 async: false,

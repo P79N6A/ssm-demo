@@ -83,4 +83,17 @@ public class User implements Serializable {
     public void setLoginPassword(String loginPassword) {
         this.loginPassword = loginPassword;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+            "id=" + id +
+            ", realName='" + realName + '\'' +
+            ", sex=" + sex +
+            ", age=" + age +
+            ", loginName='" + loginName + '\'' +
+            ", loginPassword='" + loginPassword + '\'' +
+            ", joinDate=" + joinDate +
+            '}';
+    }
 }
