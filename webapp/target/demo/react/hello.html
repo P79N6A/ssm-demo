@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>react start demo</title>
+    <script src="../js/react.min.js"></script>
+    <script src="../js/react-dom.min.js"></script>
+    <script src="../js/babel.min.js"></script>
+</head>
+<body>
+    <div id="example"></div>
+    <script type="text/babel">
+        var myStyle = {
+            fontSize : 10,
+            color : '#FF0000'
+        };
+
+        var arr = [
+            <h1>菜鸟教程</h1>,
+            <h2>render中插入数组</h2>
+        ];
+
+        ReactDOM.render(
+            <div id='arrDiv'>
+                <span>不用一个标签包裹会报错</span>
+                {arr}
+                <h1 style={myStyle}>hello react</h1>
+            </div>,
+            document.getElementById('example')
+        );
+    </script>
+</body>
+</html>

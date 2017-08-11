@@ -1,5 +1,8 @@
 package com.fc.java.improve;
 
+import java.io.File;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -21,7 +24,7 @@ public class TestReflect {
     }
 
     public static void main(String[] args) throws Exception {
-        /*Class<?> clazz = Class.forName("com.fc.java.improve.TestReflect");
+        Class<?> clazz = Class.forName("com.fc.java.improve.TestReflect");
         //调用reflect1方法
         Method method1 = clazz.getMethod("reflect1");
         method1.invoke(clazz.newInstance());
@@ -33,7 +36,7 @@ public class TestReflect {
         Object obj = clazz.newInstance();
         field1.setAccessible(true);
         field1.set(obj, "test");
-        System.out.println(field1.get(obj));*/
+        System.out.println(field1.get(obj));
 
         /*String curDate = DateUtils.getFormatDate_CN(new Date());
         String curMonthDay = DateUtils.getFormatMonthDay_CN(new Date());
@@ -51,6 +54,8 @@ public class TestReflect {
         String date = DateUtils.getFormatDate(DateUtils.getFormatDate("20170803", "yyyyMMdd"), "yyyy年MM月dd日");
         System.out.println("date = " +date);*/
 
+        System.out.println(System.getProperty("user.dir"));
+        System.out.println(File.separator);
         String newStr = convertDateStr("20170802", "yyyyMMdd", "yyyy年MM月dd日");
         System.out.println(newStr);
     }
