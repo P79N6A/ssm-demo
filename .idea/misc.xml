@@ -7,6 +7,9 @@
     <file type="web" url="file://$PROJECT_DIR$/webapp" />
   </component>
   <component name="IdProvider" IDEtalkID="CF6ED93556A84EBDCDCADC63FCBFAA3C" />
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="JSX" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
