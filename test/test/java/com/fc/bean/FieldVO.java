@@ -1,10 +1,12 @@
 package com.fc.bean;
 
+import java.io.Serializable;
+
 /**
  * @author fangcong on 2017/8/11.
  * public/private/protected/default
  */
-public class FieldVO {
+public class FieldVO implements Serializable{
 
     public String field1;
     public Integer field2;
@@ -88,5 +90,19 @@ public class FieldVO {
 
     public void setField8(Integer field8) {
         this.field8 = field8;
+    }
+
+    @Override
+    public String toString() {
+        return "FieldVO{" +
+            "field1='" + field1 + '\'' +
+            ", field2=" + field2 +
+            ", field3='" + field3 + '\'' +
+            ", field4=" + field4 +
+            ", field5='" + field5 + '\'' +
+            ", field6=" + field6 +
+            ", field7='" + field7 + '\'' +
+            ", field8=" + field8 +
+            '}';
     }
 }

@@ -217,6 +217,12 @@
             <groupId>com.taobao.security</groupId>
             <artifactId>security</artifactId>
             <version>3.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>fastjson</artifactId>
+                    <groupId>com.alibaba</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <!-- redis缓存 -->
         <!-- zip文件需要的jar包 -->
@@ -236,12 +242,28 @@
             <groupId>com.taobao.hsf</groupId>
             <artifactId>hsf.app.spring</artifactId>
             <version>2.1.1.4</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>fastjson</artifactId>
+                    <groupId>com.alibaba</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>gson</artifactId>
+                    <groupId>com.google.code.gson</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
             <groupId>com.taobao.common.tfs</groupId>
             <artifactId>tfs-client-restful</artifactId>
             <version>1.2.9</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>eagleeye-core</artifactId>
+                    <groupId>com.taobao.eagleeye</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
@@ -279,12 +301,24 @@
             <groupId>com.github.sgroschupf</groupId>
             <artifactId>zkclient</artifactId>
             <version>0.1</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>zookeeper</artifactId>
+                    <groupId>org.apache.zookeeper</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
             <groupId>com.dubbo.provide</groupId>
             <artifactId>dubbo-api</artifactId>
             <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>hessian</groupId>
+            <artifactId>hessian</artifactId>
+            <version>3.1.2</version>
         </dependency>
 
     </dependencies>
