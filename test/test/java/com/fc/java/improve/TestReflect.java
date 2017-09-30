@@ -25,6 +25,7 @@ public class TestReflect {
 
     public static void main(String[] args) throws Exception {
         Class<?> clazz = Class.forName("com.fc.java.improve.TestReflect");
+        Method[] methods = clazz.getDeclaredMethods();
         //调用reflect1方法
         Method method1 = clazz.getMethod("reflect1");
         method1.invoke(clazz.newInstance());

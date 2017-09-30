@@ -1,39 +1,29 @@
 package test.test;
 
-public class test {
-	
-	public static void main(String[] args) {
-		/*int i;
-		String str = Long.toString(54,2);
-		System.out.println(str);
-		if (str.indexOf("0") != -1){
-			i = str.indexOf("0");
-		}else{
-			i = str.lastIndexOf("1") + 1;
-		}
-		System.out.println(i);*/
+import java.util.Arrays;
 
-		String charset = System.getProperty("file.encoding");
-		System.out.println(System.getProperty("java.net.dirs"));
-		System.out.println(System.getProperty("java.class.path"));
-		test t = new test();
-		System.out.println(t.getClass().getClassLoader().getClass());
-		System.out.println(charset);
-        /*int num = 0;  
-        for(int i = 0; i < 100; i++){  
-            num = num++;  
-        }  
-        Integer i = 1 + 1;
-        System.out.println("num="+i);*/  
-		/*SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-		try {
-			Date date1 = format.parse("2016-09-12 00:00");
-			Date date2 = format.parse("2016-09-18 00:00");
-			System.out.println(new Date().getTime());
-			System.out.println(date1.getTime());
-			System.out.println(date2.getTime());
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}*/
+/**
+ * 删除数组元素
+ */
+public class test {
+
+	public static void main(String[] args) {
+
+		String[] arr = {"aa", "bb", "cc", "dd"};
+
+		int length = arr.length;
+		for (int i = 0; i < length; i++) {
+			if ("bb".equals(arr[i])) {
+				System.arraycopy(arr, i + 1, arr, i, length - i - 1);
+				arr[--length] = null;
+				arr = Arrays.copyOf(arr, length);
+			}
+		}
+
+		System.out.println(arr.length);
+		for (int k = 0; k < arr.length; k++) {
+			System.out.println(arr[k] + "\t");
+		}
 	}
+
 }

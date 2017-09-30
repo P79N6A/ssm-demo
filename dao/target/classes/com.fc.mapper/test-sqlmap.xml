@@ -10,7 +10,7 @@
     </insert>
 
     <!-- trim去掉多余的符号 -->
-    <select id="queryUser" parameterType="java.util.Map" resultType="USER">
+    <select id="queryUser" resultType="USER">
         SELECT
           id,
           real_name,

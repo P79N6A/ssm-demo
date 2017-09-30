@@ -15,6 +15,7 @@ import com.fc.bean.User;
 import com.fc.common.AjaxResult;
 import com.fc.common.Asserts;
 import com.fc.resolver.JsonParam;
+import com.fc.service.TestSetBean;
 import com.fc.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -40,6 +41,12 @@ public class TestController {
     private UserService userService;
     @Resource
     private ThreadPoolTaskExecutor taskExecutor;
+
+    private TestSetBean testSetBean;
+
+    public void setTestSetBean(TestSetBean testSetBean) {
+        this.testSetBean = testSetBean;
+    }
 
     /**
      * 参数绑定的定制，Spring4.2提供了新的实现(一般用于日期格式的定制)
@@ -189,6 +196,13 @@ public class TestController {
             taskExecutor.execute(myTask);
         }
         taskExecutor.shutdown();
+        return AjaxResult.getSuccessResult();
+    }
+
+    @RequestMapping(value = "/bean/get.json", method = RequestMethod.GET)
+    @ResponseBody
+    public AjaxResult testBean() {
+        testSetBean.getback();
         return AjaxResult.getSuccessResult();
     }
 }

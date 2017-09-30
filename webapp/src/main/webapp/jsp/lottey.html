@@ -29,8 +29,8 @@
 
 
     </script>
-    <!--<a href="javascript:lottey()">点我抽奖呀</a>-->
-    <a href="javascript:test()">生成分数</a>
+    <a href="javascript:lottey()">抽奖</a>
+    <!--<a href="javascript:test()">生成分数</a>
     <a href="javascript:lottey1()">POP2抽奖</a>
     <span class="score"></span>
     <br>
@@ -39,7 +39,7 @@
         <textarea class="liuyan" name="content" placeholder="在此输入内容（优质问题将有机会获得名师回答"
                   content="data_pages" required></textarea>
     </div>
-    <p class="super_banner">提交</p>
+    <p class="super_banner">提交</p>-->
 </div>
 
 
@@ -65,21 +65,21 @@
         });
     }
 
-    /*function lottey() {
-        var url = "//showcase.display.taobao.com/mentholatum/lottery.json";
+    function lottey() {
+        var url = "//showcase.simba.taobao.com/double11/randompz.json";
         $.ajax({
             url: url,
             type: "get",
             dataType: "jsonp",
             data: {
-                app: 'menthLottey',
-                score: $(".score").text(),
+                app: 'phaseOne',
+                target: 'box',
                 asac: '1A17425RPJ3NSJRPPU3RZO',
                 ua: c.getUA()
             },
             success: function (data) {
                 if (data.info.code == "S001") {
-
+                    alert("success");
                 }
                 if (data.info.code == "E001") {
                     alert(data.info.message + ":" + data.data.errorCode);
@@ -90,7 +90,7 @@
                 $(".errorMsg").text("失败");
             }
         })
-    }*/
+    }
 
     function lottey1() {
         var url = "//showcase.simba.taobao.com/meifubao/lottery.json";
