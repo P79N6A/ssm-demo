@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.annotation.Resource;
 
 /**
- * Created by fangcong on 2017/4/11.
+ * @author fangcong on 2017/4/11.
  */
 @Service
 public class FileUploadManagerImp implements FileUploadManager {

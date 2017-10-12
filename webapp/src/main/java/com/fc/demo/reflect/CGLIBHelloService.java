@@ -10,7 +10,7 @@ import org.springframework.cglib.proxy.MethodProxy;
  * Created by fangcong on 2017/4/18.
  * @author fangcong
  */
-public class CGLIBHelloService implements MethodInterceptor {
+public class CglibHelloService implements MethodInterceptor {
 
     private Object target;
 

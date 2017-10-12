@@ -1,7 +1,7 @@
 package com.fc.bean;
 
 /**
- * Created by fangcong on 2017/3/22.
+ * @author fangcong on 2017/3/22.
  */
 public class CouponVO {
 

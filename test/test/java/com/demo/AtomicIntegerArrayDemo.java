@@ -3,7 +3,7 @@ package com.demo;
 import java.util.concurrent.atomic.AtomicIntegerArray;
 
 /**
- * Created by fangcong on 2016/9/21.
+ * @author fangcong on 2016/9/21.
  */
 public class AtomicIntegerArrayDemo {
 

@@ -24,7 +24,7 @@ public class HelloServiceMain {
         HelloService jdkProxy = (HelloService) helloServiceProxy.bind(new HelloServiceImpl());
         jdkProxy.sayHello("hello world!");
         //4.CGLIB代理
-        CGLIBHelloService cglibHelloService = new CGLIBHelloService();
+        CglibHelloService cglibHelloService = new CglibHelloService();
         HelloService proxy = (HelloService) cglibHelloService.getInstance(new HelloServiceImpl());
         proxy.sayHello("hello world!");
     }

@@ -1,8 +1,8 @@
 package com.fc.thread.productconsumer;
 
 /**
- * Created by fangcong on 2017/4/17.
- * 消费者线程
+ * @author fangcong on 2017/4/17.
+ *         消费者线程
  */
 public class Consumer extends Thread {
 

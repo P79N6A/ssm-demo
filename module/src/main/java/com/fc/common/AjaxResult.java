@@ -3,7 +3,7 @@ package com.fc.common;
 import java.io.Serializable;
 
 /**
- * Created by fangcong on 2016/12/2.
+ * @author fangcong on 2016/12/2.
  */
 public class AjaxResult<T> implements Serializable{
 

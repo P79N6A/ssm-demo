@@ -37,17 +37,29 @@ public class MappedByteBufferDemo {
     private FileChannel fileChannel;
 
     private boolean bundSuccess=false;
-    //文件大小
+    /**
+     * 文件大小
+     */
     private final static long MAX_FILE_SIZE = 1024*1024*50;
-    //文件写入位置
+    /**
+     * 文件写入位置
+     */
     private long writePosition = 0;
-    //最后一次刷数据的时间
+    /**
+     * 最后一次刷数据的时间
+     */
     private long lastFlushTime;
-    //上一次刷的文件位置
+    /**
+     * 上一次刷的文件位置
+     */
     private long lastFlushFilePosition=0;
-    //最大的脏数据量，系统必须触发一次强制刷
+    /**
+     * 最大的脏数据量，系统必须触发一次强制刷
+     */
     private long maxFlushDataSize = 1024*512;
-    //最大的时间间隔，系统必须触发一次强制刷
+    /**
+     * 最大的时间间隔，系统必须触发一次强制刷
+     */
     private long maxFlushTimeGap = 1000;
 
     public MappedByteBufferDemo(String fileName, String filePath) {

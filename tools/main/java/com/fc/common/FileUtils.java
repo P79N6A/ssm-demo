@@ -11,6 +11,9 @@ import java.util.Map;
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * @author fangcong
+ */
 public class FileUtils {
     public static Map<String, String> mFileTypes = new HashMap<String, String>();
 

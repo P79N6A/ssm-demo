@@ -1,7 +1,7 @@
 package com.fc.enums;
 
 /**
- * Created by fangcong on 2016/12/12.
+ * @author fangcong on 2016/12/12.
  */
 public enum ErrorCodeEnum {
     /**

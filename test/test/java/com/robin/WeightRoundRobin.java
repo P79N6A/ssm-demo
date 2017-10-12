@@ -30,7 +30,7 @@ public class WeightRoundRobin {
     private int serverCount;
     private List<Server> servers = new ArrayList<>();
 
-    /*
+    /**
      * 得到两值的最大公约数
      */
     public int greaterCommonDivisor(int a, int b) {
@@ -41,7 +41,7 @@ public class WeightRoundRobin {
         }
     }
 
-    /*
+    /**
      * 得到list中所有权重的最大公约数，实际上是两两取最大公约数d，然后得到的d
      * 与下一个权重取最大公约数，直至遍历完
      */
@@ -58,7 +58,7 @@ public class WeightRoundRobin {
         return divisor;
     }
 
-    /*
+    /**
      * 得到list中的最大的权重
      */
     public int greatestWeight(List<Server> servers) {

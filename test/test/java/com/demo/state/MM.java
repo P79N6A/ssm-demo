@@ -1,10 +1,13 @@
 package com.demo.state;
 
-public class MM {
+/**
+ * @author fangcong
+ */
+public class Mm {
 
 	private String name;
 	
-	private AbstractMMState state = new MMHappyState();
+	private AbstractMmState state = new MmHappyState();
 
 	public String getName() {
 		return name;

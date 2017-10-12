@@ -1,8 +1,11 @@
 package test.test;
 
 import java.util.Calendar;  
-import java.util.GregorianCalendar;  
-  
+import java.util.GregorianCalendar;
+
+/**
+ * @author fangcong
+ */
 public class CalendarDemo {  
   
     /** 

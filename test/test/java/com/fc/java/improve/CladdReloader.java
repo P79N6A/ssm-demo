@@ -3,7 +3,7 @@ package com.fc.java.improve;
 import java.io.*;
 
 /**
- * Created by fangcong on 2017/4/13.
+ * @author fangcong on 2017/4/13.
  */
 public class CladdReloader extends ClassLoader {
 
@@ -16,6 +16,7 @@ public class CladdReloader extends ClassLoader {
 
     /**
      * 构建数据
+     *
      * @param className
      * @return
      */
@@ -41,11 +42,12 @@ public class CladdReloader extends ClassLoader {
 
     /**
      * 创建类对象
+     *
      * @param name
      * @return
      */
     @Override
-    protected Class<?> findClass(String name) throws ClassNotFoundException{
+    protected Class<?> findClass(String name) throws ClassNotFoundException {
         byte[] classData = getData(name);
         if (classData == null) {
             throw new ClassNotFoundException();
@@ -57,12 +59,12 @@ public class CladdReloader extends ClassLoader {
     public static void main(String[] args) {
         String path = CladdReloader.class.getClass().getResource("/").getPath();
         path = path.substring(1) + "com/fc/java/improve/";
-        try{
+        try {
 
             CladdReloader c = new CladdReloader(path);
             Class r = c.findClass("OgnlDemo.class");
             System.out.println(r.newInstance());
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

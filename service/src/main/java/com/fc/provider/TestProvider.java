@@ -11,7 +11,7 @@ import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 
 import com.ali.com.google.common.util.concurrent.ThreadFactoryBuilder;
-import com.fc.rmi.UserServiceRMI;
+import com.fc.rmi.UserServiceRmi;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -31,7 +31,7 @@ public class TestProvider {
         );
 
     @Resource
-    private UserServiceRMI userServiceRMI;
+    private UserServiceRmi userServiceRMI;
 
     /**
      * 初始化方法，服务启动是执行

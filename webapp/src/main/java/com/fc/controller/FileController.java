@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
- * Created by fangcong on 2017/4/11.
+ * @author fangcong on 2017/4/11.
  */
 @Controller
 public class FileController {

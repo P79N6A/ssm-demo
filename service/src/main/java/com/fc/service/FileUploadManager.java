@@ -3,7 +3,7 @@ package com.fc.service;
 import com.fc.bean.FileDO;
 
 /**
- * Created by fangcong on 2017/4/11.
+ * @author fangcong on 2017/4/11.
  */
 public interface FileUploadManager {
 

@@ -2,11 +2,11 @@ package com.fc.bean;
 
 import java.io.Serializable;
 
+/**
+ * @author fangcong
+ */
 public class FormInfo implements Serializable {
 
-    /**
-     *
-     */
     private static final long serialVersionUID = 4332272293993546339L;
     private long id;
     private long infoId;

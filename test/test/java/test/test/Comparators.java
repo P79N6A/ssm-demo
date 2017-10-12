@@ -4,6 +4,11 @@ import java.util.Comparator;
 
 import com.fc.bean.Person;
 
+/**
+ * 定义比较器
+ *
+ * @author fangcong
+ */
 public class Comparators {
 
 	@SuppressWarnings("rawtypes")

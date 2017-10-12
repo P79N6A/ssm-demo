@@ -14,13 +14,16 @@ public class Producer extends Thread {
         this.storage = storage;
     }
 
-    // 线程run函数
     @Override
     public void run() {
         produce(num);
     }
 
-    // 调用仓库Storage的生产函数
+    /**
+     * 调用仓库Storage的生产函数
+     *
+     * @param num
+     */
     public void produce(int num) {
         storage.produce(num);
     }

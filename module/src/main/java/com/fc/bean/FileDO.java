@@ -2,6 +2,9 @@ package com.fc.bean;
 
 import java.io.Serializable;
 
+/**
+ * @author fangcong
+ */
 public class FileDO implements Serializable {
     private static final long serialVersionUID = 3828952714036125659L;
 

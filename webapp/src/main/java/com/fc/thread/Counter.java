@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Created by fangcong on 2017/4/6.
- * 利用循环CAS实现原子操作
- * CAS:Compare And Set 比较并交换
+ * @author fangcong on 2017/4/6.
+ *         利用循环CAS实现原子操作
+ *         CAS:Compare And Set 比较并交换
  */
 public class Counter {
 
@@ -21,7 +21,7 @@ public class Counter {
      * 使用CAS实现线程安全计数器
      */
     private void safeCount() {
-        for (;;) {
+        for (; ; ) {
             int j = atomicI.get();
             boolean suc = atomicI.compareAndSet(j, ++j);
             if (suc) {
@@ -42,12 +42,12 @@ public class Counter {
         List<Thread> list = new ArrayList<>(500);
         long start = System.currentTimeMillis();
         int count = 100;
-        for (int j = 0;j < count;j++) {
+        for (int j = 0; j < count; j++) {
             Thread t = new Thread(new Runnable() {
                 @Override
                 public void run() {
                     int loop = 10000;
-                    for (int k = 0;k < loop;k++) {
+                    for (int k = 0; k < loop; k++) {
                         counter.count();
                         counter.safeCount();
                     }

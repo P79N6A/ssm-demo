@@ -3,8 +3,8 @@ package com.fc.thread;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Created by fangcong on 2017/4/1.
- * 单个干活类Count
+ * @author fangcong on 2017/4/1.
+ *         单个干活类Count
  */
 public class Count {
 

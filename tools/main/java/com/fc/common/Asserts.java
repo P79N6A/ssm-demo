@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * 校验参数
- * Created by fangcong on 2016/12/9.
+ * @author fangcong on 2016/12/9.
  */
 public class Asserts {
 

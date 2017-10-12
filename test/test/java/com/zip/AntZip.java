@@ -14,6 +14,9 @@ import java.util.zip.ZipOutputStream;
 import com.github.junrar.Archive;
 import com.github.junrar.rarfile.FileHeader;
 
+/**
+ * @author fangcong
+ */
 public class AntZip {
 
 	/**

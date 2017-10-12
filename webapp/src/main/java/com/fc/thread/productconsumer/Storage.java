@@ -69,7 +69,6 @@ public class Storage {
         }
     }
 
-    // get/set方法
     public LinkedList<Object> getList() {
         return list;
     }

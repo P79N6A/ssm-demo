@@ -8,7 +8,7 @@ import com.fc.bean.User;
 /**
  * @author fangcong on 2017/8/8.
  */
-public interface UserServiceRMI extends Remote {
+public interface UserServiceRmi extends Remote {
 
     /**
      * 根据用户名查询用户

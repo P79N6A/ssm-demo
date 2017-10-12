@@ -1,5 +1,8 @@
 package com.demo.state;
 
+/**
+ * @author fangcong
+ */
 public class Boy {
 
 	private String name;

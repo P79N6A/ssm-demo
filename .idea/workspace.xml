@@ -5,597 +5,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ca481ac-8c64-43a1-9f1e-66bcfad2f013" name="Default" comment="重入锁">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_platform_shared_fasttext_css_1_3_134.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_platform_shared_fasttext_psoriasis_1_3_134.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_platform_shared_fasttext_sec_1_3_134.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_platform_shared_fasttext_segment_1_3_134.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_platform_shared_fasttext_utils_1_3_134.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dao/target/classes/com.fc.mapper/test-sqlmap.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dao/target/classes/com/fc/dao/UserDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dao/target/classes/sqlmap-alias.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/integation/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/module/target/classes/com/fc/bean/FileDO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/module/target/classes/com/fc/bean/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/module/target/classes/com/fc/common/AjaxResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/module/target/classes/com/fc/enums/Gender.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/provider/TestProvider$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/provider/TestProvider.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/provider/ThreadFactoryConsumer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/rmi/UserServiceRMI.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/rmi/client/UserServiceClient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/rmi/imp/UserServiceRMIImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/service/FileUploadManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/service/RegistryServiceConsumer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/service/TestSetBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/service/UserService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/service/imp/FileUploadManagerImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/service/imp/RegistryServiceConsumerImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/service/imp/TestSetBeanImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/service/imp/UserServiceImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/dubbo-consumer.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/spring-bz.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/spring-hsf-cosumer.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/ArrayConvertsToArrayList.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/AtomicIntegerArrayDemo$AddThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/AtomicIntegerArrayDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/MappedByteBufferDemo$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/MappedByteBufferDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/PerformanceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/SortConsoleNums$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/SortConsoleNums.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/ThreadJoin$Domino.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/ThreadJoin.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/state/Boy.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/state/MM.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/state/MMHappyState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/state/MMState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/state/MMUnhappyState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/AccountingAyscDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/ArrayListMultiThread$AddThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/ArrayListMultiThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/CountDownLatchDemo$Worker.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/CountDownLatchDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/CountImprov2$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/CountImprov2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/Counter$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/Counter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/CounterImprov1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/CounterImprov1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/DateThreadLocalUtil$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/DateThreadLocalUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/MultiThreadLong$ChangeT.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/MultiThreadLong$ReadT.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/MultiThreadLong.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/ReadWriteLockDemo$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/ReadWriteLockDemo$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/ReadWriteLockDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/ReenTrantLockCondition.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/ReenterLock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/ReenterLockIntterupt.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/ThreadAddAndSubVar$AddThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/ThreadAddAndSubVar.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/ThreadPoolDemo$MyTask.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/demo/thread/ThreadPoolDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/bean/CouponVO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/bean/FieldVO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/bean/FormInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/bean/FormResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/bean/JsonStr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/bean/Person.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/bean/TestBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/convert/StrToBinary.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/designs/decorator/AbstractBeverage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/designs/decorator/AbstractCondimentDecorator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/designs/decorator/DecoratorMain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/designs/decorator/Espresso.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/designs/decorator/HouseBlend.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/designs/decorator/Mocca.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/designs/observer/CurrentConditionDisplay.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/designs/observer/DisplayElement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/designs/observer/Observer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/designs/observer/Subject.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/designs/observer/WeatherData.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/designs/observer/WeatherStationMain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/designs/singleton/Singleton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/designs/singleton/Singleton2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/designs/singleton/Singleton3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/designs/singleton/Singleton4$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/designs/singleton/Singleton4$SingletonHolder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/designs/singleton/Singleton4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/designs/singleton/Singleton5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/designs/singleton/TestVolatile$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/designs/singleton/TestVolatile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/enums/SmallGameEnum.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/games/CaiQuanGame.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/games/ShutDownDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/games/ShutDownDemo2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/java/improve/CladdReloader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/java/improve/CloneObject.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/java/improve/OgnlDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/java/improve/TestFieldsAccess.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/java/improve/TestReflect.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/work/HelloWord.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/work/ParseJsonStr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/work/imp/HelloWordImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/work/imp/ParseJsonResut$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/work/imp/ParseJsonResut.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/work/imp/ResultBean$DataEntity$ResultEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/work/imp/ResultBean$DataEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/work/imp/ResultBean$InfoEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/fc/work/imp/ResultBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/file/DownImage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/file/FileEncoder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/file/ImageAndBase64Transfer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/file/MulFileUpload.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/file/PropertiesUtil$EnumerationAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/file/PropertiesUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/jdbc/JdbcExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/jvm/classloader/ClassLoaderTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/jvm/classloader/ClassLoaderTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/jvm/dispatcher/DynamicDispatcher$Human.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/jvm/dispatcher/DynamicDispatcher$Man.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/jvm/dispatcher/DynamicDispatcher$Woman.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/jvm/dispatcher/DynamicDispatcher.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/jvm/dispatcher/OverLoad.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/jvm/dispatcher/StaticDispatcher$Human.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/jvm/dispatcher/StaticDispatcher$Man.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/jvm/dispatcher/StaticDispatcher$Women.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/jvm/dispatcher/StaticDispatcher.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/jvm/gc/ReferenceCountTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/loadbalance/AddressHash.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/loadbalance/IpMap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/loadbalance/RandomDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/loadbalance/RoundRobin.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/loadbalance/WeightRandom.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/loadbalance/WeightRoundRobin.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/robin/Server.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/robin/WeightRoundRobin.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/serialize/SerializeDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/com/zip/AntZip.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/image.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/junittest/BaseTestManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/test.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/test/test/Arith.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/test/test/CalendarDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/test/test/CollectionsDemo$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/test/test/CollectionsDemo$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/test/test/CollectionsDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/test/test/Comparators$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/test/test/Comparators.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/test/test/DateUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/test/test/DeleteArrayList.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/test/test/ForeachMapDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/test/test/MultiForImprove.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/test/test/NumTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/test/test/ScheduleTimerDemo$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/test/test/ScheduleTimerDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/test/test/StrArrDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/test/test/TimerTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/test/test/TimerTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/test/test/bean/BonusModule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/test/test/test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/test-classes/spring-test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test/java/test/test/TimerTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/common/Asserts.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/common/DateUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/common/EncryptUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/common/FileUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/common/JsonUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/common/RegexUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/ehcache/MyCacheManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/enums/ErrorCodeEnum.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/enums/MySchedule$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/enums/MySchedule$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/enums/MySchedule$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/enums/MySchedule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/exception/IllegalArgumentException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/resolver/DeepJacksonArgumentResolver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/resolver/ErrorHandlerExceptionResolver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/resolver/JsonParam.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/learning/git使用.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/A.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/AImp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/controller/DubboConsumerController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/controller/FileController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/controller/TestController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/OXMExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/Person.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/SimpleSerial.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/TestExtends$A.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/TestExtends$B.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/TestExtends$C.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/TestExtends.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/A.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/AImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/CGLIBHelloService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/HelloService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/HelloServiceImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/HelloServiceMain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/HelloServiceProxy.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/HiddenA.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/ReflectDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/demo1/Cat.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/demo1/Dog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/demo1/ExtendsCat.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/demo1/ExtendsDog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/demo1/Individual.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/demo1/IteratorPetCreator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/demo1/Pet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/demo1/PetCreator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/demo1/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/demo1/TypeCounter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/ehcache/MethodCacheInterceptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/interceptor/MyInterceptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/rand/RandomDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/rand/RandomValueValidate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/Count.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/CountThreadMain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/Counter$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/Counter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/MultiThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/TestNotifyAndWait$NotifyThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/TestNotifyAndWait$WaitThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/TestNotifyAndWait.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/ThreadA.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/ThreadImpCallable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/ThreadImpCallableMain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/productAndConsumer/Consumer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/productAndConsumer/Producer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/productAndConsumer/Storage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/productAndConsumer/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/ehcache.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/jdbc.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/spring-aop.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/spring-application.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/spring-ehcache.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/spring-mvc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/test.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/controller/DubboConsumerController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/controller/FileController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/controller/TestController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/OXMExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/Person.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/SimpleSerial.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/TestExtends$A.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/TestExtends$B.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/TestExtends$C.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/TestExtends.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/A.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/AImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/CGLIBHelloService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/HelloService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/HelloServiceImp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/HelloServiceMain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/HelloServiceProxy.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/HiddenA.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/ReflectDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/demo1/Cat.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/demo1/Dog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/demo1/ExtendsCat.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/demo1/ExtendsDog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/demo1/Individual.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/demo1/IteratorPetCreator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/demo1/Pet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/demo1/PetCreator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/demo1/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/demo1/TypeCounter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/ehcache/MethodCacheInterceptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/interceptor/MyInterceptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/rand/RandomDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/rand/RandomValueValidate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/Count.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/CountThreadMain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/Counter$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/Counter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/MultiThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/TestNotifyAndWait$NotifyThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/TestNotifyAndWait$WaitThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/TestNotifyAndWait.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/ThreadA.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/ThreadImpCallable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/ThreadImpCallableMain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/productAndConsumer/Consumer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/productAndConsumer/Producer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/productAndConsumer/Storage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/productAndConsumer/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/ehcache.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/jdbc.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/spring-aop.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/spring-application.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/spring-ehcache.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/spring-mvc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/test.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/antlr-2.7.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/batik-css-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/batik-ext-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/batik-util-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-beanutils-1.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-beanutils-bean-collections-1.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-beanutils-core-1.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-chain-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-cli-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-codec-1.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-collections-3.2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-configuration-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-dbcp-1.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-digester-1.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-discovery-20030211.213356.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-io-2.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-jelly-1.0-RC1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-lang-2.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-logging-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-logging-api-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-pool-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-validator-1.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-vfs2-2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/core-2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/dom4j-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/dubbo-2.5.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/dubbo-api-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/eagleeye-core-1.4.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/ecs-1.4.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/ehcache-core-2.6.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/fastjson-1.2.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/fasttext-css-1.3.134.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/fasttext-psoriasis-1.3.134.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/fasttext-sec-1.3.134.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/fasttext-segment-1.3.134.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/fasttext-utils-1.3.134.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/fasttext.all-1.3-20170814.101415-137.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/forehead-1.0-beta-5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/groovy-all-1.1-rc-1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/gson-2.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/guava.hsf-18.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hamcrest-core-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hessian-3.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hessian-4.0.7.bugfix10.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hessian-lite-3.2.1-fixed-2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.app.api-2.1.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.app.dubbo-2.1.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.app.ndi-2.1.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.app.spring-2.1.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.common-2.1.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.remoting-2.1.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.remoting.dubbo-2.1.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.remoting.netty-2.1.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.service.address-2.1.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.service.address.unit-2.1.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.service.config-2.1.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.service.dubbo-2.1.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.service.monitor-2.1.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.service.process-2.1.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.service.remoting-2.1.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.services-2.1.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/htmlparser-1.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/httpclient-4.3.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/httpcore-4.3.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/isorelax-20020414.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jackson-core-asl-1.9.13.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jakarta.commons.lang-2.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jakarta.commons.logging-0.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jakarta.oro-0.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jaket-0.2.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/javase-2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/javassist-3.11.0.GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/javassist-3.15.0-GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jaxen-1.0-FCS.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jedis-2.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jline-0.9.94.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jna-3.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/json-2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jstl-1.0.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/junit-4.11.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/junrar-0.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/kryo-2.23.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/lang-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/logger.api-0.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/maven-scm-api-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/maven-scm-provider-svn-commons-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/maven-scm-provider-svnexe-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/media-core-1.0.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/mina-core-1.1.5.bugfix-20121029.093148-11.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/minlog-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/module-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/msv-20020414.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/mybatis-3.2.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/mybatis-spring-1.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/mysql-connector-java-5.1.35.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/nekohtml-1.9.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/netty-3.2.5.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/netty-3.7.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/netty-all-4.0.23.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/network.core-1.3.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/objenesis-2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/ognl-3.0.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/oro-2.0.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/oshi-core-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/platform-3.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/plexus-utils-1.5.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/regexp-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/relaxngDatatype-20020414.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/sac-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/saxpath-1.0-FCS.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/security-3.0-20151026.074741-45.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/service-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/servlet-api-2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/showcase-service-1.0.1-20170710.030251-6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/slf4j-api-1.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/slf4j-log4j12-1.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spas-sdk-autokey-0.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spas-sdk-client-1.1.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spas-sdk-common-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spas-sdk-service-1.2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spas-sdk-svcbase-1.2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-aop-3.2.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-beans-3.2.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-context-3.2.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-context-support-3.2.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-core-3.2.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-expression-3.2.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-jdbc-3.2.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-orm-3.2.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-test-3.2.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-tx-3.2.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-web-3.2.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-webmvc-3.2.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/sslext-1.2-0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/struts-core-1.3.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/struts-taglib-1.3.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/struts-tiles-1.3.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/test-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/tfs-client-restful-1.2.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-common-configuration-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-common-expression-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-common-lang-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-common-logging-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-service-form-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-service-framework-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-service-pipeline-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-service-pull-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-service-rundata-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-service-threadcontext-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-webx-framework-2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-webx-request-2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-webx-turbine-2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/tools-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/unitrouter-1.0.11.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/velocity-1.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/velocity-tools-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/xercesImpl-2.8.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/xml-apis-1.0.b2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/xml-apis-ext-1.3.04.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/xml-resolver-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/xml.nekohtml-1.9.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/xml.xerces-2.8.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/xml.xmlgraphics-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/zkclient-0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/zookeeper-3.4.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/spring-mybatis.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/css/fileinput.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/html/listDemo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/html/openLayersDemo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/html/tianDituDemo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/images/404-error-page.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/babel.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/fileinput.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/fileinput_locale_zh.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/jquery.easyui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/jquery.uploadify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/jquery.uploadify.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/pnotify.custom.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/react-dom.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/react.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/self/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/uploadify.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/jsp/404.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/jsp/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/jsp/lottey.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/jsp/lottey1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/jsp/main.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/jsp/testInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/jsp/uploadFile.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/react/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/react/hello.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/react/reactAPI.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/template/blank-excel.xlsx" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/webapp_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/webapp_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_platform_shared_fasttext_all_1_3_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_platform_shared_fasttext_all_1_3_SNAPSHOT.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test/java/test/test/bean/BonusModule.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/OXMExample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/TestExtends.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/HiddenA.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/ReflectDemo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/AbstractPetCreator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/Cat.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/Dog.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/ExtendsCat.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/ExtendsDog.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/Individual.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/IteratorPetCreator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/Pet.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/Test.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/TypeCounter.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/smartfox/common_info.xml" afterPath="$PROJECT_DIR$/.idea/smartfox/common_info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/dao.iml" afterPath="$PROJECT_DIR$/dao/dao.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maven_demo.iml" afterPath="$PROJECT_DIR$/maven_demo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/module.iml" afterPath="$PROJECT_DIR$/module/module.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/src/main/java/com/fc/bean/FileDO.java" afterPath="$PROJECT_DIR$/module/src/main/java/com/fc/bean/FileDO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/src/main/java/com/fc/common/AjaxResult.java" afterPath="$PROJECT_DIR$/module/src/main/java/com/fc/common/AjaxResult.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/src/main/java/com/fc/enums/Gender.java" afterPath="$PROJECT_DIR$/module/src/main/java/com/fc/enums/Gender.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/service.iml" afterPath="$PROJECT_DIR$/service/service.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/fc/provider/TestProvider.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/fc/provider/TestProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/fc/provider/ThreadFactoryConsumer.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/fc/provider/ThreadFactoryConsumer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.iml" afterPath="$PROJECT_DIR$/test/test.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/fc/rmi/UserServiceRMI.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/fc/rmi/UserServiceRMI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/fc/rmi/client/UserServiceClient.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/fc/rmi/client/UserServiceClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/fc/service/FileUploadManager.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/fc/service/FileUploadManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/fc/service/imp/FileUploadManagerImp.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/fc/service/imp/FileUploadManagerImp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/demo/ArrayConvertsToArrayList.java" afterPath="$PROJECT_DIR$/test/test/java/com/demo/ArrayConvertsToArrayList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/demo/AtomicIntegerArrayDemo.java" afterPath="$PROJECT_DIR$/test/test/java/com/demo/AtomicIntegerArrayDemo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/demo/MappedByteBufferDemo.java" afterPath="$PROJECT_DIR$/test/test/java/com/demo/MappedByteBufferDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/demo/PerformanceTest.java" afterPath="$PROJECT_DIR$/test/test/java/com/demo/PerformanceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/demo/state/AbstractMMState.java" afterPath="$PROJECT_DIR$/test/test/java/com/demo/state/AbstractMMState.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/demo/state/Boy.java" afterPath="$PROJECT_DIR$/test/test/java/com/demo/state/Boy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/demo/state/MM.java" afterPath="$PROJECT_DIR$/test/test/java/com/demo/state/MM.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/demo/state/MMHappyState.java" afterPath="$PROJECT_DIR$/test/test/java/com/demo/state/MMHappyState.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/demo/state/MMUnhappyState.java" afterPath="$PROJECT_DIR$/test/test/java/com/demo/state/MMUnhappyState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/demo/thread/AccountingAyscDemo.java" afterPath="$PROJECT_DIR$/test/test/java/com/demo/thread/AccountingAyscDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/demo/thread/ArrayListMultiThread.java" afterPath="$PROJECT_DIR$/test/test/java/com/demo/thread/ArrayListMultiThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/demo/thread/CountImprov2.java" afterPath="$PROJECT_DIR$/test/test/java/com/demo/thread/CountImprov2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/demo/thread/Counter.java" afterPath="$PROJECT_DIR$/test/test/java/com/demo/thread/Counter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/demo/thread/CounterImprov1.java" afterPath="$PROJECT_DIR$/test/test/java/com/demo/thread/CounterImprov1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/demo/thread/ReadWriteLockDemo.java" afterPath="$PROJECT_DIR$/test/test/java/com/demo/thread/ReadWriteLockDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/demo/thread/ReenterLock.java" afterPath="$PROJECT_DIR$/test/test/java/com/demo/thread/ReenterLock.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/fc/bean/CouponVO.java" afterPath="$PROJECT_DIR$/test/test/java/com/fc/bean/CouponVO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/fc/designs/singleton/Singleton5.java" afterPath="$PROJECT_DIR$/test/test/java/com/fc/designs/singleton/Singleton5.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/fc/designs/singleton/TestVolatile.java" afterPath="$PROJECT_DIR$/test/test/java/com/fc/designs/singleton/TestVolatile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/fc/enums/SmallGameEnum.java" afterPath="$PROJECT_DIR$/test/test/java/com/fc/enums/SmallGameEnum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/fc/java/improve/OgnlDemo.java" afterPath="$PROJECT_DIR$/test/test/java/com/fc/java/improve/OgnlDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/fc/java/improve/TestReflect.java" afterPath="$PROJECT_DIR$/test/test/java/com/fc/java/improve/TestReflect.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/fc/work/ParseJsonStr.java" afterPath="$PROJECT_DIR$/test/test/java/com/fc/work/ParseJsonStr.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/fc/work/imp/ParseJsonResut.java" afterPath="$PROJECT_DIR$/test/test/java/com/fc/work/imp/ParseJsonResut.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/file/ImageAndBase64Transfer.java" afterPath="$PROJECT_DIR$/test/test/java/com/file/ImageAndBase64Transfer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/file/MulFileUpload.java" afterPath="$PROJECT_DIR$/test/test/java/com/file/MulFileUpload.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/jvm/dispatcher/DynamicDispatcher.java" afterPath="$PROJECT_DIR$/test/test/java/com/jvm/dispatcher/DynamicDispatcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/jvm/dispatcher/StaticDispatcher.java" afterPath="$PROJECT_DIR$/test/test/java/com/jvm/dispatcher/StaticDispatcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/jvm/gc/ReferenceCountTest.java" afterPath="$PROJECT_DIR$/test/test/java/com/jvm/gc/ReferenceCountTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/fc/bean/FormInfo.java" afterPath="$PROJECT_DIR$/test/test/java/com/fc/bean/FormInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/fc/bean/FormResult.java" afterPath="$PROJECT_DIR$/test/test/java/com/fc/bean/FormResult.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/fc/java/improve/CladdReloader.java" afterPath="$PROJECT_DIR$/test/test/java/com/fc/java/improve/CladdReloader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/fc/java/improve/CloneObject.java" afterPath="$PROJECT_DIR$/test/test/java/com/fc/java/improve/CloneObject.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/robin/WeightRoundRobin.java" afterPath="$PROJECT_DIR$/test/test/java/com/robin/WeightRoundRobin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/serialize/SerializeDemo.java" afterPath="$PROJECT_DIR$/test/test/java/com/serialize/SerializeDemo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/com/zip/AntZip.java" afterPath="$PROJECT_DIR$/test/test/java/com/zip/AntZip.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/test/test/Arith.java" afterPath="$PROJECT_DIR$/test/test/java/test/test/Arith.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/test/test/CalendarDemo.java" afterPath="$PROJECT_DIR$/test/test/java/test/test/CalendarDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/test/test/CollectionsDemo.java" afterPath="$PROJECT_DIR$/test/test/java/test/test/CollectionsDemo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/test/test/Comparators.java" afterPath="$PROJECT_DIR$/test/test/java/test/test/Comparators.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/test/test/DateUtil.java" afterPath="$PROJECT_DIR$/test/test/java/test/test/DateUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/test/test/ForeachMapDemo.java" afterPath="$PROJECT_DIR$/test/test/java/test/test/ForeachMapDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/test/test/ScheduleTimerDemo.java" afterPath="$PROJECT_DIR$/test/test/java/test/test/ScheduleTimerDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/test/test/StrArrDemo.java" afterPath="$PROJECT_DIR$/test/test/java/test/test/StrArrDemo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test/java/test/test/NumTest.java" afterPath="$PROJECT_DIR$/test/test/java/test/test/NumTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/main/java/com/fc/common/Asserts.java" afterPath="$PROJECT_DIR$/tools/main/java/com/fc/common/Asserts.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/main/java/com/fc/common/DateUtils.java" afterPath="$PROJECT_DIR$/tools/main/java/com/fc/common/DateUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/main/java/com/fc/common/EncryptUtils.java" afterPath="$PROJECT_DIR$/tools/main/java/com/fc/common/EncryptUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/main/java/com/fc/common/FileUtils.java" afterPath="$PROJECT_DIR$/tools/main/java/com/fc/common/FileUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/main/java/com/fc/enums/ErrorCodeEnum.java" afterPath="$PROJECT_DIR$/tools/main/java/com/fc/enums/ErrorCodeEnum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/main/java/com/fc/enums/MySchedule.java" afterPath="$PROJECT_DIR$/tools/main/java/com/fc/enums/MySchedule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/main/java/com/fc/resolver/DeepJacksonArgumentResolver.java" afterPath="$PROJECT_DIR$/tools/main/java/com/fc/resolver/DeepJacksonArgumentResolver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/main/java/com/fc/resolver/ErrorHandlerExceptionResolver.java" afterPath="$PROJECT_DIR$/tools/main/java/com/fc/resolver/ErrorHandlerExceptionResolver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/tools.iml" afterPath="$PROJECT_DIR$/tools/tools.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/controller/FileController.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/controller/FileController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/controller/TestController.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/controller/TestController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/TestExtends.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/TestExtends.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/CGLIBHelloService.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/CGLIBHelloService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/HelloService.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/HelloService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/HelloServiceMain.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/HelloServiceMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/Individual.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/Individual.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/IteratorPetCreator.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/IteratorPetCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/rand/RandomDemo.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/rand/RandomDemo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/Count.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/Count.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/CountThreadMain.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/CountThreadMain.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/Counter.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/Counter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/TestNotifyAndWait.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/TestNotifyAndWait.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/resources/spring-aop.xml" afterPath="$PROJECT_DIR$/webapp/src/main/resources/spring-aop.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/webapp/jsp/lottey.html" afterPath="$PROJECT_DIR$/webapp/src/main/webapp/jsp/lottey.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/webapp/jsp/lottey1.html" afterPath="$PROJECT_DIR$/webapp/src/main/webapp/jsp/lottey1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/webapp.iml" afterPath="$PROJECT_DIR$/webapp/webapp.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/com/fc/service/imp/UserServiceImp.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/fc/service/imp/UserServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/test/java/com/demo/state/MMState.java" afterPath="$PROJECT_DIR$/test/test/java/com/demo/state/AbstractMMState.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/test/java/junittest/BaseTestManager.java" afterPath="$PROJECT_DIR$/test/test/java/junittest/BaseManagerTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/HelloServiceImp.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/HelloServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/PetCreator.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/AbstractPetCreator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productAndConsumer/Consumer.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productconsumer/Consumer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productAndConsumer/Producer.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productconsumer/Producer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productAndConsumer/Storage.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productconsumer/Storage.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productAndConsumer/Test.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productconsumer/Test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productconsumer/Consumer.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productconsumer/Consumer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productconsumer/Producer.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productconsumer/Producer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productconsumer/Storage.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productconsumer/Storage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/com/fc/rmi/imp/UserServiceRMIImp.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/fc/rmi/imp/UserServiceRmiImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/test/java/test/test/test.java" afterPath="$PROJECT_DIR$/test/test/java/test/test/RemoveArrayElemenrt.java" />
     </list>
     <ignored path="maven_demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -641,60 +113,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Counter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/Counter.java">
+      <file leaf-file-name="FileUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools/main/java/com/fc/common/FileUtils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DateUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/main/java/com/fc/common/DateUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="418" column="7" selection-start-line="418" selection-start-column="7" selection-end-line="418" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ErrorCodeEnum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/main/java/com/fc/enums/ErrorCodeEnum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
               <folding>
-                <element signature="e#1057#1058#0" expanded="true" />
-                <element signature="e#1089#1090#0" expanded="true" />
-                <element signature="e#1123#1124#0" expanded="true" />
-                <element signature="e#1151#1152#0" expanded="true" />
-                <element signature="e#1185#1186#0" expanded="true" />
-                <element signature="e#1215#1216#0" expanded="true" />
-                <element signature="e#1246#1247#0" expanded="true" />
-                <element signature="e#1275#1276#0" expanded="true" />
+                <element signature="e#426#442#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MappedByteBufferDemo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test/java/com/demo/MappedByteBufferDemo.java">
+      <file leaf-file-name="FormInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test/java/com/fc/bean/FormInfo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+              <folding>
+                <element signature="e#638#639#0" expanded="true" />
+                <element signature="e#663#664#0" expanded="true" />
+                <element signature="e#697#698#0" expanded="true" />
+                <element signature="e#725#726#0" expanded="true" />
+                <element signature="e#756#757#0" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
+                <element signature="e#827#828#0" expanded="true" />
+                <element signature="e#863#864#0" expanded="true" />
+                <element signature="e#893#894#0" expanded="true" />
+                <element signature="e#919#920#0" expanded="true" />
+                <element signature="e#957#958#0" expanded="true" />
+                <element signature="e#987#988#0" expanded="true" />
+                <element signature="e#1022#1023#0" expanded="true" />
+                <element signature="e#1053#1054#0" expanded="true" />
+                <element signature="e#1101#1102#0" expanded="true" />
+                <element signature="e#1141#1142#0" expanded="true" />
+                <element signature="e#1175#1176#0" expanded="true" />
+                <element signature="e#1205#1206#0" expanded="true" />
+                <element signature="e#1251#1252#0" expanded="true" />
+                <element signature="e#1289#1290#0" expanded="true" />
+                <element signature="e#1325#1326#0" expanded="true" />
+                <element signature="e#1357#1358#0" expanded="true" />
+                <element signature="e#1407#1408#0" expanded="true" />
+                <element signature="e#1449#1450#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FormResult.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test/java/com/fc/bean/FormResult.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+              <folding>
+                <element signature="e#347#348#0" expanded="true" />
+                <element signature="e#376#377#0" expanded="true" />
+                <element signature="e#418#419#0" expanded="true" />
+                <element signature="e#454#455#0" expanded="true" />
+                <element signature="e#489#490#0" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#608#609#0" expanded="true" />
+                <element signature="e#654#655#0" expanded="true" />
+                <element signature="e#682#683#0" expanded="true" />
+                <element signature="e#737#738#0" expanded="true" />
+                <element signature="e#771#772#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gender.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/src/main/java/com/fc/enums/Gender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MulFileUpload.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test/java/com/file/MulFileUpload.java">
+      <file leaf-file-name="HelloService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/HelloService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.13544019">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ErrorHandlerExceptionResolver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools/main/java/com/fc/resolver/ErrorHandlerExceptionResolver.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
+              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -704,47 +217,58 @@
         <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/controller/FileController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
+              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ForeachMapDemo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test/java/test/test/ForeachMapDemo.java">
+      <file leaf-file-name="FileDO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/src/main/java/com/fc/bean/FileDO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="45" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="45" />
-              <folding />
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+              <folding>
+                <element signature="e#443#444#0" expanded="true" />
+                <element signature="e#468#469#0" expanded="true" />
+                <element signature="e#505#506#0" expanded="true" />
+                <element signature="e#533#534#0" expanded="true" />
+                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#591#592#0" expanded="true" />
+                <element signature="e#631#632#0" expanded="true" />
+                <element signature="e#663#664#0" expanded="true" />
+                <element signature="e#697#698#0" expanded="true" />
+                <element signature="e#727#728#0" expanded="true" />
+                <element signature="e#773#774#0" expanded="true" />
+                <element signature="e#811#812#0" expanded="true" />
+                <element signature="e#840#841#0" expanded="true" />
+                <element signature="e#867#868#0" expanded="true" />
+                <element signature="e#905#906#0" expanded="true" />
+                <element signature="e#937#938#0" expanded="true" />
+                <element signature="e#972#973#0" expanded="true" />
+                <element signature="e#1003#1004#0" expanded="true" />
+                <element signature="e#1051#1052#0" expanded="true" />
+                <element signature="e#1091#1092#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OgnlDemo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test/java/com/fc/java/improve/OgnlDemo.java">
+      <file leaf-file-name="FileUploadManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/com/fc/service/FileUploadManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParseJsonStr.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test/java/com/fc/work/ParseJsonStr.java">
+      <file leaf-file-name="FileUploadManagerImp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/com/fc/service/imp/FileUploadManagerImp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="54" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/controller/TestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33715597">
-              <caret line="149" column="50" selection-start-line="149" selection-start-column="50" selection-end-line="149" selection-end-column="50" />
+              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -776,57 +300,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/test/java/com/jvm/dispatcher/StaticDispatcher.java" />
-        <option value="$PROJECT_DIR$/tools/main/java/com/fc/resolver/ErrorHandlerExceptionResolver.java" />
-        <option value="$PROJECT_DIR$/test/test/java/com/file/ImageAndBase64Transfer.java" />
-        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productAndConsumer/Storage.java" />
-        <option value="$PROJECT_DIR$/test/test/java/com/fc/bean/CouponVO.java" />
-        <option value="$PROJECT_DIR$/test/test/java/com/demo/thread/AccountingAyscDemo.java" />
-        <option value="$PROJECT_DIR$/test/test/java/com/demo/thread/ArrayListMultiThread.java" />
-        <option value="$PROJECT_DIR$/test/test/java/com/demo/AtomicIntegerArrayDemo.java" />
-        <option value="$PROJECT_DIR$/test/test/java/com/demo/thread/Counter.java" />
-        <option value="$PROJECT_DIR$/test/test/java/com/demo/thread/CounterImprov1.java" />
-        <option value="$PROJECT_DIR$/test/test/java/com/demo/thread/CountImprov2.java" />
-        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/CountThreadMain.java" />
-        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/IteratorPetCreator.java" />
-        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/AbstarctPetCreator.java" />
-        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/AbstracttPetCreator.java" />
-        <option value="$PROJECT_DIR$/tools/main/java/com/fc/common/Asserts.java" />
-        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/HelloServiceMain.java" />
-        <option value="$PROJECT_DIR$/test/test/java/test/test/Comparators.java" />
-        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/TestNotifyAndWait.java" />
-        <option value="$PROJECT_DIR$/test/test/java/com/robin/WeightRoundRobin.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/fc/service/imp/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/module/src/main/java/com/fc/bean/FileDO.java" />
-        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productconsumer/Consumer.java" />
-        <option value="$PROJECT_DIR$/test/test/java/test/test/CollectionsDemo.java" />
-        <option value="$PROJECT_DIR$/test/test/java/test/test/DateUtil.java" />
-        <option value="$PROJECT_DIR$/tools/main/java/com/fc/common/EncryptUtils.java" />
-        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/rand/RandomDemo.java" />
-        <option value="$PROJECT_DIR$/test/test/java/com/demo/thread/ReadWriteLockDemo.java" />
-        <option value="$PROJECT_DIR$/test/test/java/com/demo/thread/ReenterLock.java" />
-        <option value="$PROJECT_DIR$/test/test/java/com/serialize/SerializeDemo.java" />
-        <option value="$PROJECT_DIR$/test/test/java/test/test/StrArrDemo.java" />
-        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/TestExtends.java" />
-        <option value="$PROJECT_DIR$/test/test/java/com/fc/java/improve/TestReflect.java" />
-        <option value="$PROJECT_DIR$/test/test/java/com/fc/designs/singleton/TestVolatile.java" />
-        <option value="$PROJECT_DIR$/test/test/java/com/zip/AntZip.java" />
-        <option value="$PROJECT_DIR$/test/test/java/test/test/CalendarDemo.java" />
-        <option value="$PROJECT_DIR$/tools/main/java/com/fc/common/FileUtils.java" />
-        <option value="$PROJECT_DIR$/test/test/java/junittest/BaseTestManager.java" />
-        <option value="$PROJECT_DIR$/test/test/java/junittest/BaseManagerTest.java" />
-        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/AbstractPetCreator.java" />
-        <option value="$PROJECT_DIR$/test/test/java/test/test/Arith.java" />
-        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/Counter.java" />
-        <option value="$PROJECT_DIR$/tools/main/java/com/fc/common/DateUtils.java" />
-        <option value="$PROJECT_DIR$/tools/main/java/com/fc/enums/ErrorCodeEnum.java" />
+        <option value="$PROJECT_DIR$/test/test/java/com/demo/state/AbstractMMState.java" />
+        <option value="$PROJECT_DIR$/test/test/java/com/demo/state/AbstractMmState.java" />
+        <option value="$PROJECT_DIR$/test/test/java/com/demo/state/Boy.java" />
+        <option value="$PROJECT_DIR$/test/test/java/com/demo/state/Mm.java" />
+        <option value="$PROJECT_DIR$/test/test/java/com/demo/state/MmUnhappyState.java" />
+        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/CglibHelloService.java" />
+        <option value="$PROJECT_DIR$/test/test/java/test/test/RemoveArrayElemenrt.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/fc/rmi/UserServiceRmi.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/fc/rmi/imp/UserServiceRmi.java" />
         <option value="$PROJECT_DIR$/test/test/java/com/demo/MappedByteBufferDemo.java" />
-        <option value="$PROJECT_DIR$/test/test/java/com/file/MulFileUpload.java" />
+        <option value="$PROJECT_DIR$/test/test/java/test/test/NumTest.java" />
+        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productconsumer/Producer.java" />
+        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productconsumer/Storage.java" />
+        <option value="$PROJECT_DIR$/test/test/java/com/robin/WeightRoundRobin.java" />
+        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/AbstractPetCreator.java" />
+        <option value="$PROJECT_DIR$/module/src/main/java/com/fc/common/AjaxResult.java" />
+        <option value="$PROJECT_DIR$/test/test/java/com/zip/AntZip.java" />
+        <option value="$PROJECT_DIR$/test/test/java/test/test/Arith.java" />
+        <option value="$PROJECT_DIR$/test/test/java/com/demo/ArrayConvertsToArrayList.java" />
+        <option value="$PROJECT_DIR$/tools/main/java/com/fc/common/Asserts.java" />
+        <option value="$PROJECT_DIR$/test/test/java/com/demo/AtomicIntegerArrayDemo.java" />
+        <option value="$PROJECT_DIR$/test/test/java/test/test/CalendarDemo.java" />
+        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/Cat.java" />
+        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/Dog.java" />
+        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/ExtendsCat.java" />
+        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/ExtendsDog.java" />
+        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/Individual.java" />
+        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/IteratorPetCreator.java" />
+        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/Pet.java" />
+        <option value="$PROJECT_DIR$/test/test/java/com/fc/java/improve/CloneObject.java" />
+        <option value="$PROJECT_DIR$/test/test/java/com/fc/java/improve/CladdReloader.java" />
+        <option value="$PROJECT_DIR$/test/test/java/test/test/Comparators.java" />
+        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productconsumer/Consumer.java" />
+        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/Count.java" />
+        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/Counter.java" />
+        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/CountThreadMain.java" />
+        <option value="$PROJECT_DIR$/test/test/java/com/fc/bean/CouponVO.java" />
+        <option value="$PROJECT_DIR$/test/test/java/test/test/DateUtil.java" />
+        <option value="$PROJECT_DIR$/tools/main/java/com/fc/resolver/DeepJacksonArgumentResolver.java" />
+        <option value="$PROJECT_DIR$/tools/main/java/com/fc/common/EncryptUtils.java" />
+        <option value="$PROJECT_DIR$/tools/main/java/com/fc/enums/ErrorCodeEnum.java" />
+        <option value="$PROJECT_DIR$/tools/main/java/com/fc/resolver/ErrorHandlerExceptionResolver.java" />
         <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/controller/FileController.java" />
-        <option value="$PROJECT_DIR$/test/test/java/test/test/ForeachMapDemo.java" />
-        <option value="$PROJECT_DIR$/test/test/java/com/fc/java/improve/OgnlDemo.java" />
-        <option value="$PROJECT_DIR$/test/test/java/com/fc/work/ParseJsonStr.java" />
-        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/module/src/main/java/com/fc/bean/FileDO.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/fc/service/FileUploadManager.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/fc/service/imp/FileUploadManagerImp.java" />
+        <option value="$PROJECT_DIR$/tools/main/java/com/fc/common/FileUtils.java" />
+        <option value="$PROJECT_DIR$/test/test/java/com/fc/bean/FormInfo.java" />
+        <option value="$PROJECT_DIR$/test/test/java/com/fc/bean/FormResult.java" />
+        <option value="$PROJECT_DIR$/module/src/main/java/com/fc/enums/Gender.java" />
+        <option value="$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/HelloService.java" />
       </list>
     </option>
   </component>
@@ -1262,48 +786,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reflect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1341,6 +823,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maven_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maven_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resolver" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1878,6 +1390,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="fc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maven_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maven_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="demo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -2087,6 +1633,78 @@
               <option name="myItemId" value="fc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rmi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maven_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maven_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rmi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maven_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maven_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2129,6 +1747,44 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="fc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enums" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maven_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maven_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2245,27 +1901,7 @@
       <recent name="D:\project\maven_demo\webapp\src\main\webapp\template" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.tomcat">
-    <configuration default="false" name="SerializeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.serialize.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.serialize.SerializeDemo" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="test" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.TestExtends">
     <configuration default="false" name="PerformanceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -2306,14 +1942,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="RemoveArrayElemenrt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="test.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="test.test.test" />
+      <option name="MAIN_CLASS_NAME" value="test.test.RemoveArrayElemenrt" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -2343,6 +1979,26 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="test" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestExtends" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.fc.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.fc.demo.TestExtends" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="webapp" />
       <envs />
       <method />
     </configuration>
@@ -2952,19 +2608,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcat" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.tomcat2" />
-      <item index="2" class="java.lang.String" itemvalue="Application.SerializeDemo" />
-      <item index="3" class="java.lang.String" itemvalue="Application.PerformanceTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.MappedByteBufferDemo" />
-      <item index="5" class="java.lang.String" itemvalue="Application.test" />
-      <item index="6" class="java.lang.String" itemvalue="Application.ScheduleTimerDemo" />
+      <item index="2" class="java.lang.String" itemvalue="Application.PerformanceTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.MappedByteBufferDemo" />
+      <item index="4" class="java.lang.String" itemvalue="Application.RemoveArrayElemenrt" />
+      <item index="5" class="java.lang.String" itemvalue="Application.ScheduleTimerDemo" />
+      <item index="6" class="java.lang.String" itemvalue="Application.TestExtends" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ScheduleTimerDemo" />
-        <item index="1" class="java.lang.String" itemvalue="Application.test" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MappedByteBufferDemo" />
-        <item index="3" class="java.lang.String" itemvalue="Application.PerformanceTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.SerializeDemo" />
+        <item index="0" class="java.lang.String" itemvalue="Application.TestExtends" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ScheduleTimerDemo" />
+        <item index="2" class="java.lang.String" itemvalue="Application.RemoveArrayElemenrt" />
+        <item index="3" class="java.lang.String" itemvalue="Application.MappedByteBufferDemo" />
+        <item index="4" class="java.lang.String" itemvalue="Application.PerformanceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -3066,7 +2722,7 @@
       <workItem from="1507599420129" duration="4969000" />
       <workItem from="1507687028694" duration="4900000" />
       <workItem from="1507772744216" duration="8429000" />
-      <workItem from="1507798485571" duration="1487000" />
+      <workItem from="1507798485571" duration="4358000" />
     </task>
     <task id="LOCAL-00001" summary="idea git 直接提交">
       <created>1496992485888</created>
@@ -3098,7 +2754,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="838075000" />
+    <option name="totallyTimeSpent" value="840946000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -3116,18 +2772,20 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32635984" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38075313" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39191073" sideWeight="0.39138818" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22594142" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1503856" sideWeight="0.49082568" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34401113" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1503856" sideWeight="0.49082568" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34170154" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39191073" sideWeight="0.6086118" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3523677" sideWeight="0.68251926" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31938633" sideWeight="0.68251926" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24128312" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32775453" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20565553" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20565553" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -3139,9 +2797,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38075313" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1503856" sideWeight="0.5091743" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26359832" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -3207,7 +2863,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="105" />
+      <option name="time" value="106" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -3216,408 +2872,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_67/src.zip!/java/util/concurrent/ExecutorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.702948">
-          <caret line="140" column="17" selection-start-line="140" selection-start-column="17" selection-end-line="140" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/com/demo/thread/ThreadPoolDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_67/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.503402">
-          <caret line="140" column="6" selection-start-line="140" selection-start-column="6" selection-end-line="140" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/com/fc/bean/CouponVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/com/demo/thread/AccountingAyscDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/com/demo/thread/ArrayListMultiThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/com/demo/AtomicIntegerArrayDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/com/demo/thread/Counter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-          <folding>
-            <element signature="e#546#547#0" expanded="false" />
-            <element signature="e#564#565#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/com/demo/thread/CountImprov2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-          <folding>
-            <element signature="e#350#351#0" expanded="false" />
-            <element signature="e#371#372#0" expanded="false" />
-            <element signature="e#432#433#0" expanded="false" />
-            <element signature="e#451#452#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/CountThreadMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/com/demo/thread/CounterImprov1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/IteratorPetCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/com/demo/thread/DateThreadLocalUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="29" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/main/java/com/fc/common/Asserts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="135" column="20" selection-start-line="135" selection-start-column="20" selection-end-line="135" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/HelloServiceMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/test/test/Comparators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/TestNotifyAndWait.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/com/robin/WeightRoundRobin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="109" column="41" selection-start-line="109" selection-start-column="41" selection-end-line="109" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/fc/service/imp/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/src/main/java/com/fc/bean/FileDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productconsumer/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/test/test/CollectionsDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-          <folding>
-            <element signature="e#704#705#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/test/test/DateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/main/java/com/fc/common/EncryptUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="157" column="41" selection-start-line="157" selection-start-column="41" selection-end-line="157" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/rand/RandomDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/com/demo/thread/ReadWriteLockDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="90" column="20" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
-          <folding>
-            <element signature="e#1736#2070#0" expanded="true" />
-            <element signature="e#2069#2070#0" expanded="true" />
-            <element signature="e#2106#2463#0" expanded="true" />
-            <element signature="e#2462#2463#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/com/demo/thread/ReenterLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/fc/service/imp/RegistryServiceConsumerImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/com/serialize/SerializeDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/test/test/StrArrDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/TestExtends.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/com/fc/java/improve/TestReflect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/com/fc/designs/singleton/TestVolatile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#519#736#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/CGLIBHelloService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/com/demo/state/AbstractMMState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/com/zip/AntZip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.642857">
-          <caret line="128" column="54" selection-start-line="128" selection-start-column="54" selection-end-line="128" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/test/test/CalendarDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/main/java/com/fc/common/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/junittest/BaseManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/demo1/AbstractPetCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/test/test/Arith.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/Counter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/main/java/com/fc/common/DateUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="418" column="7" selection-start-line="418" selection-start-column="7" selection-end-line="418" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/main/java/com/fc/enums/ErrorCodeEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-          <folding>
-            <element signature="e#1057#1058#0" expanded="true" />
-            <element signature="e#1089#1090#0" expanded="true" />
-            <element signature="e#1123#1124#0" expanded="true" />
-            <element signature="e#1151#1152#0" expanded="true" />
-            <element signature="e#1185#1186#0" expanded="true" />
-            <element signature="e#1215#1216#0" expanded="true" />
-            <element signature="e#1246#1247#0" expanded="true" />
-            <element signature="e#1275#1276#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/java/com/demo/MappedByteBufferDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test/java/com/file/MulFileUpload.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/controller/FileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -3648,8 +2906,486 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33715597">
+        <state vertical-scroll-proportion="0.0">
           <caret line="149" column="50" selection-start-line="149" selection-start-column="50" selection-end-line="149" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/java/com/demo/state/AbstractMmState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4285715">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/java/com/demo/state/Boy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.142857">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding>
+            <element signature="e#121#122#0" expanded="true" />
+            <element signature="e#139#140#0" expanded="true" />
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/java/com/demo/state/Mm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.142857">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding>
+            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/java/com/demo/state/MmUnhappyState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.142857">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/java/com/demo/state/MmHappyState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/HelloServiceMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/HelloServiceProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/java/test/test/RemoveArrayElemenrt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/fc/rmi/UserServiceRmi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/fc/rmi/imp/UserServiceRmiImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/fc/service/imp/RegistryServiceConsumerImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/java/com/demo/MappedByteBufferDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/java/test/test/NumTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productconsumer/Producer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#676#677#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productconsumer/Storage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
+          <folding>
+            <element signature="e#1867#1868#0" expanded="true" />
+            <element signature="e#1894#1895#0" expanded="true" />
+            <element signature="e#1946#1947#0" expanded="true" />
+            <element signature="e#1978#1979#0" expanded="true" />
+            <element signature="e#2009#2010#0" expanded="true" />
+            <element signature="e#2040#2041#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/java/com/robin/WeightRoundRobin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/src/main/java/com/fc/common/AjaxResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/java/com/zip/AntZip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5357144">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3865#3866#0" expanded="true" />
+            <element signature="e#3926#3927#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/java/test/test/Arith.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/java/com/demo/ArrayConvertsToArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#305#313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/main/java/com/fc/common/Asserts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/java/com/demo/AtomicIntegerArrayDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/java/test/test/CalendarDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/CglibHelloService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/java/com/fc/java/improve/CloneObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#216#260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/java/com/fc/java/improve/CladdReloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/java/test/test/Comparators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.285714">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="e#147#176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/productconsumer/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/Count.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/Counter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/thread/CountThreadMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/java/com/fc/bean/CouponVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/java/test/test/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/main/java/com/fc/resolver/DeepJacksonArgumentResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/main/java/com/fc/common/EncryptUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/main/java/com/fc/enums/ErrorCodeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/main/java/com/fc/resolver/ErrorHandlerExceptionResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/controller/FileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/src/main/java/com/fc/bean/FileDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#773#774#0" expanded="true" />
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1051#1052#0" expanded="true" />
+            <element signature="e#1091#1092#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/fc/service/FileUploadManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/fc/service/imp/FileUploadManagerImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/main/java/com/fc/common/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="e#426#442#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/java/com/fc/bean/FormInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+            <element signature="e#957#958#0" expanded="true" />
+            <element signature="e#987#988#0" expanded="true" />
+            <element signature="e#1022#1023#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1101#1102#0" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+            <element signature="e#1175#1176#0" expanded="true" />
+            <element signature="e#1205#1206#0" expanded="true" />
+            <element signature="e#1251#1252#0" expanded="true" />
+            <element signature="e#1289#1290#0" expanded="true" />
+            <element signature="e#1325#1326#0" expanded="true" />
+            <element signature="e#1357#1358#0" expanded="true" />
+            <element signature="e#1407#1408#0" expanded="true" />
+            <element signature="e#1449#1450#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/java/com/fc/bean/FormResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/src/main/java/com/fc/enums/Gender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/fc/demo/reflect/HelloService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13544019">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding />
         </state>
       </provider>

@@ -3,11 +3,11 @@ package com.fc.bean;
 import java.io.Serializable;
 import java.util.Map;
 
+/**
+ * @author fangcong
+ */
 public class FormResult implements Serializable {
 
-    /**
-     *
-     */
     private static final long serialVersionUID = -2514286363304242540L;
     private long infoId;
     private String userNick;
