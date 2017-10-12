@@ -15,7 +15,8 @@ public class AccountingAyscDemo implements Runnable{
 
     @Override
     public void run() {
-        for (int i = 0; i < 10000; i++) {
+        int loop = 10000;
+        for (int i = 0; i < loop; i++) {
             increase();
         }
     }

@@ -12,30 +12,9 @@ public class ReenterLock implements Runnable{
     private static ReenterLock instance = new ReenterLock();
     private static int i = 0;
 
-    /*@Override
-    public void run() {
-        for (int j = 0; j < 100000; j++) {
-            lock.lock();
-            try {
-                i++;
-            } finally {
-                lock.unlock();
-            }
-        }
-    }*/
-
     public static synchronized void increase() {
         i++;
     }
-
-    /*@Override
-    public void run() {
-        for (int j = 0; j < 100000; j++) {
-            synchronized (instance) {
-                i++;
-            }
-        }
-    }*/
 
     @Override
     public void run() {

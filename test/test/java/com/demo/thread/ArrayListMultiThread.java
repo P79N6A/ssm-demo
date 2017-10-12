@@ -17,7 +17,8 @@ public class ArrayListMultiThread {
 
         @Override
         public void run() {
-            for (int i = 0; i < 100000; i++) {
+            int loop = 100000;
+            for (int i = 0; i < loop; i++) {
                 vector.add(i);
                 //arrayList.add(i);
             }

@@ -13,8 +13,15 @@ public class PerformanceTest {
 
     private static final String DATE_FORMAT = "yyyy-MM-dd HH:mm:ss";
 
-    //单例
-    private static final SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT);
+    /**
+     * SimpleDateFormat是线程不安全的类，不定义未static变量，示例用法1如下：
+     * @param date
+     * @return
+     */
+    public static String getDateFormat(Date date) {
+        SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT);
+        return sdf.format(date);
+    }
 
     /**
      * 性能对比，普通方式每次都要new对象花费大量时间，改为全局final对象
@@ -24,10 +31,10 @@ public class PerformanceTest {
      */
     public static void main(String[] args) {
         int loop = 100000;
-        Date date = new Date();
         long startTime = System.currentTimeMillis();
+        Date date = new Date();
         for (int i = 0;i < loop;i++) {
-            sdf.format(date);
+            getDateFormat(date);
         }
         long end = System.currentTimeMillis();
         System.out.println("normal : " + (end - startTime) + "ms");
@@ -36,6 +43,7 @@ public class PerformanceTest {
         for (int i = 0;i < loop;i++) {
             DateThreadLocalUtil.format(date);
         }
+        DateThreadLocalUtil.remove();
         end = System.currentTimeMillis();
         System.out.println("threadLocal : " + (end - startTime) + "ms");
     }

@@ -19,11 +19,17 @@ import java.security.PrivilegedAction;
  */
 public class MappedByteBufferDemo {
 
-    //文件名
+    /**
+     * 文件名
+     */
     private String fileName;
-    //文件路径
+    /**
+     * 文件路径
+     */
     private String filePath;
-    //文件对象
+    /**
+     * 文件对象
+     */
     private File file;
 
     private MappedByteBuffer mappedByteBuffer;
@@ -40,9 +46,9 @@ public class MappedByteBufferDemo {
     //上一次刷的文件位置
     private long lastFlushFilePosition=0;
     //最大的脏数据量，系统必须触发一次强制刷
-    private long MAX_FLUSH_DATA_SIZE = 1024*512;
+    private long maxFlushDataSize = 1024*512;
     //最大的时间间隔，系统必须触发一次强制刷
-    private long MAX_FLUSH_TIME_GAP = 1000;
+    private long maxFlushTimeGap = 1000;
 
     public MappedByteBufferDemo(String fileName, String filePath) {
         super();
@@ -101,11 +107,11 @@ public class MappedByteBufferDemo {
 
         this.mappedByteBuffer.put(data);
         //检测修改量
-        if(writePosition-lastFlushFilePosition>this.MAX_FLUSH_DATA_SIZE){
+        if(writePosition-lastFlushFilePosition>this.maxFlushDataSize){
             flush();
         }
         //检测时间间隔
-        if(System.currentTimeMillis()-lastFlushTime>this.MAX_FLUSH_TIME_GAP && writePosition>lastFlushFilePosition){
+        if(System.currentTimeMillis()-lastFlushTime>this.maxFlushTimeGap && writePosition>lastFlushFilePosition){
             flush();
         }
 
@@ -160,13 +166,13 @@ public class MappedByteBufferDemo {
     }
 
 
-    public long getMAX_FLUSH_DATA_SIZE() {
-        return MAX_FLUSH_DATA_SIZE;
+    public long getMaxFlushDataSize() {
+        return maxFlushDataSize;
     }
 
 
-    public long getMAX_FLUSH_TIME_GAP() {
-        return MAX_FLUSH_TIME_GAP;
+    public long getMaxFlushTimeGap() {
+        return maxFlushTimeGap;
     }
 
     /**
@@ -189,7 +195,6 @@ public class MappedByteBufferDemo {
             in.close();
             out.close();
             clean(buf);
-            //System.out.println("源文件删除" + (source.delete() ? "成功" : "失败"));
         }catch(Exception e){
             e.printStackTrace();
         } finally {
@@ -225,6 +230,7 @@ public class MappedByteBufferDemo {
 
     public static void clean(final Object buffer) throws Exception {
         AccessController.doPrivileged(new PrivilegedAction() {
+            @Override
             public Object run() {
                 try {
                     Method getCleanerMethod = buffer.getClass().getMethod("cleaner",new Class[0]);
@@ -266,7 +272,6 @@ public class MappedByteBufferDemo {
         System.out.println("read time : " + (end - start));
 
         start = System.nanoTime();
-        //fos.write(bytes);
         mappedByteBuffer.flip();
         end = System.nanoTime();
         System.out.println("write time : " + (end -start));

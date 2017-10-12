@@ -30,8 +30,8 @@ public class Comparators {
 				int len1 = s1.length();
 				int len2 = s2.length();
 				int n = Math.min(len1, len2);
-				char v1[] = s1.toCharArray();
-				char v2[] = s2.toCharArray();
+				char[] v1 = s1.toCharArray();
+				char[] v2 = s2.toCharArray();
 				int pos = 0;
 
 				while (n-- != 0) {

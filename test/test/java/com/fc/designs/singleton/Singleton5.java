@@ -5,6 +5,9 @@ package com.fc.designs.singleton;
  */
 public enum Singleton5 {
 
+    /**
+     * 实例对象
+     */
     INSTANCE;
 
     private Singleton5(){}

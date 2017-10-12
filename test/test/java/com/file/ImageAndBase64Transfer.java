@@ -18,7 +18,7 @@ public class ImageAndBase64Transfer {
 	 * @param path
 	 * @return
 	 */
-	public static String ImageToBase64(String path){
+	public static String imageToBase64(String path){
 		byte[] data = null;
 		try{
 			InputStream in = new FileInputStream(path);
@@ -41,7 +41,7 @@ public class ImageAndBase64Transfer {
 	 * @param path 图片生成地址
 	 * @return
 	 */
-	public static boolean Base64ToImage(String base64Str,String path){
+	public static boolean base64ToImage(String base64Str,String path){
 		if (base64Str == null){
 			return false;
 		}
@@ -73,9 +73,9 @@ public class ImageAndBase64Transfer {
 		String srcPath = ImageAndBase64Transfer.class.getResource("/").getPath() + "image.jpeg";
 		System.out.println(srcPath);
 		System.out.println(path);
-		String base64Str = ImageToBase64(path);
+		String base64Str = imageToBase64(path);
 		System.out.println(base64Str);
-		boolean flag = Base64ToImage(base64Str, "F://test2/test.png");
+		boolean flag = base64ToImage(base64Str, "F://test2/test.png");
 		System.out.println(flag);
 	}
 }

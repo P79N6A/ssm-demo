@@ -107,7 +107,7 @@ public class WeightRoundRobin {
         serverCount = servers.size();
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         WeightRoundRobin weightRoundRobin = new WeightRoundRobin();
         weightRoundRobin.init();
 

@@ -19,15 +19,15 @@ public class FileUtils {
         mFileTypes.put("89504E47", ".png");
         mFileTypes.put("47494638", ".gif");
         mFileTypes.put("35343135", ".txt");
-        mFileTypes.put("0D0A0D0A", ".txt");//txt
-        mFileTypes.put("0D0A2D2D", ".txt");//txt
-        mFileTypes.put("0D0AB4B4", ".txt");//txt
-        mFileTypes.put("B4B4BDA8", ".txt");//文件头部为汉字
-        mFileTypes.put("73646673", ".txt");//txt,文件头部为英文字母
-        mFileTypes.put("32323232", ".txt");//txt,文件头部内容为数字
-        mFileTypes.put("0D0A09B4", ".txt");//txt,文件头部内容为数字
-        mFileTypes.put("3132330D", ".txt");//txt,文件头部内容为数字
-        mFileTypes.put("504B0304", ".xlsx");//MS Office 文件头，这里仅判断excel
+        mFileTypes.put("0D0A0D0A", ".txt");
+        mFileTypes.put("0D0A2D2D", ".txt");
+        mFileTypes.put("0D0AB4B4", ".txt");
+        mFileTypes.put("B4B4BDA8", ".txt");
+        mFileTypes.put("73646673", ".txt");
+        mFileTypes.put("32323232", ".txt");
+        mFileTypes.put("0D0A09B4", ".txt");
+        mFileTypes.put("3132330D", ".txt");
+        mFileTypes.put("504B0304", ".xlsx");
     }
 
     public static String getFileType(InputStream is, String fileName) {
@@ -116,7 +116,6 @@ public class FileUtils {
         response.reset();
         response.setContentType("application/" + suffixName);
         String name = fileName + "." + suffixName;
-        //name.replaceAll(" ", "_");
         name = new String(name.getBytes("GBK"), "ISO8859_1");
         response.setHeader("Content-Disposition", "attachment;" + "filename=" + name);
 

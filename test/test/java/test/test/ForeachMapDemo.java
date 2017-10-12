@@ -57,7 +57,7 @@ public class ForeachMapDemo {
 	}
 	
 	public static void main(String[] args) {
-		Map<Long,Integer> maps = new HashMap<Long, Integer>();
+		Map<Long,Integer> maps = new HashMap<>(16);
 		for(int i = 1;i < 100;i++){
 			maps.put(Long.parseLong(i + ""), i);
 		}

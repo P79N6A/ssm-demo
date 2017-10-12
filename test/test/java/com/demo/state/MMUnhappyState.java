@@ -1,6 +1,6 @@
 package com.demo.state;
 
-public class MMUnhappyState extends MMState{
+public class MMUnhappyState extends AbstractMMState {
 
 	@Override
 	public void smile() {

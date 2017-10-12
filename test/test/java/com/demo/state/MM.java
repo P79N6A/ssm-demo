@@ -4,7 +4,7 @@ public class MM {
 
 	private String name;
 	
-	private MMState state = new MMHappyState();
+	private AbstractMMState state = new MMHappyState();
 
 	public String getName() {
 		return name;

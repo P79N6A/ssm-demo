@@ -6,13 +6,13 @@ package com.jvm.dispatcher;
  */
 public class StaticDispatcher {
 
-    static abstract class Human {}
+    static abstract class AbstractHuman {}
 
-    static class Man extends Human {}
+    static class Man extends AbstractHuman {}
 
-    static class Women extends Human {}
+    static class Women extends AbstractHuman {}
 
-    public void sayHello(Human human) {
+    public void sayHello(AbstractHuman human) {
         System.out.println("human");
     }
 
@@ -26,8 +26,8 @@ public class StaticDispatcher {
 
     public static void main(String[] args) {
         //定义静态类型相同但实际类型不同的两个对象
-        Human man = new Man();
-        Human women = new Women();
+        AbstractHuman man = new Man();
+        AbstractHuman women = new Women();
 
         StaticDispatcher sd = new StaticDispatcher();
         //重载时根据参数的静态类型作为判定依据

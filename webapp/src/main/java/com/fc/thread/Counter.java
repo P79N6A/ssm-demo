@@ -11,7 +11,9 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class Counter {
 
-    //定义成员变量，原子变量和普通变量
+    /**
+     * 定义成员变量，原子变量和普通变量
+     */
     private AtomicInteger atomicI = new AtomicInteger(0);
     private int i = 0;
 
@@ -39,11 +41,13 @@ public class Counter {
         final Counter counter = new Counter();
         List<Thread> list = new ArrayList<>(500);
         long start = System.currentTimeMillis();
-        for (int j = 0;j < 100;j++) {
+        int count = 100;
+        for (int j = 0;j < count;j++) {
             Thread t = new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    for (int k = 0;k < 10000;k++) {
+                    int loop = 10000;
+                    for (int k = 0;k < loop;k++) {
                         counter.count();
                         counter.safeCount();
                     }

@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 
+import com.ali.com.google.common.util.concurrent.ThreadFactoryBuilder;
 import com.fc.rmi.UserServiceRMI;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,8 +22,13 @@ public class TestProvider {
 
     private static final Logger logger = LoggerFactory.getLogger(TestProvider.class);
 
+    /**
+     * 创建线程或线程池时需指定有意义的线程名称，方便出错时回溯
+     */
     private ExecutorService executorService = new ThreadPoolExecutor(4, 4, 0L, TimeUnit.MILLISECONDS,
-            new ArrayBlockingQueue<Runnable>(20));
+            new ArrayBlockingQueue<Runnable>(20), new ThreadFactoryBuilder().setNameFormat("demo-pool-%d").build(),
+            new ThreadPoolExecutor.AbortPolicy()
+        );
 
     @Resource
     private UserServiceRMI userServiceRMI;

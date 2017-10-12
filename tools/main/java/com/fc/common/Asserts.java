@@ -1,12 +1,12 @@
 package com.fc.common;
 
+import java.util.Collection;
+
 import com.fc.exception.IllegalArgumentException;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.util.Collection;
 
 /**
  * 校验参数
@@ -27,11 +27,11 @@ public class Asserts {
     public static void allCanNotNull(String errorMsg, Object... objs){
         if (objs != null && objs.length > 0){
             boolean hasNull = false;
-            Object[] arr$ = objs;
-            int length$ = objs.length;
+            Object[] arr = objs;
+            int length = objs.length;
 
-            for (int i$ = 0;i$ < length$; ++i$){
-                Object obj = arr$[i$];
+            for (int i = 0;i < length; ++i){
+                Object obj = arr[i];
                 if (obj instanceof String){
                     if (StringUtils.isBlank((String)obj)){
                         hasNull = true;
@@ -69,10 +69,10 @@ public class Asserts {
     public static void anyCanNull(String errorMsg,Object... objs){
         if (objs != null && objs.length > 0){
             boolean hasNotNull = false;
-            Object[] arr$ = objs;
-            int length$ = objs.length;
-            for (int i$ = 0;i$ < length$; ++i$){
-                Object obj = arr$[i$];
+            Object[] arr = objs;
+            int length = objs.length;
+            for (int i = 0;i < length; ++i){
+                Object obj = arr[i];
                 if (obj instanceof String){
                     if (StringUtils.isNotBlank((String)obj)){
                         hasNotNull = true;
@@ -109,10 +109,10 @@ public class Asserts {
      */
     public static void allCanNotFalse(String errorMsg,Boolean... condition){
         if (condition != null && condition.length > 0){
-            Boolean[] arr$ = condition;
-            int length$ = condition.length;
-            for (int i$ = 0;i$ < length$;++i$){
-                Boolean obj = arr$[i$];
+            Boolean[] arr = condition;
+            int length = condition.length;
+            for (int i = 0;i < length;++i){
+                Boolean obj = arr[i];
                 if (!obj.booleanValue()){
                     throw new IllegalArgumentException("500_E_INVALID",errorMsg);
                 }
@@ -130,11 +130,11 @@ public class Asserts {
     public static void anyCanTrue(String errMsg, Boolean... condition) {
         if(condition != null && condition.length > 0) {
             boolean hasTrue = false;
-            Boolean[] arr$ = condition;
-            int len$ = condition.length;
+            Boolean[] arr = condition;
+            int len = condition.length;
 
-            for(int i$ = 0; i$ < len$; ++i$) {
-                Boolean bool = arr$[i$];
+            for(int i = 0; i < len; ++i) {
+                Boolean bool = arr[i];
                 if(bool.booleanValue()) {
                     hasTrue = true;
                     break;

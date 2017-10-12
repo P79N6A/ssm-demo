@@ -5,7 +5,7 @@ package com.fc.thread;
  */
 public class TestNotifyAndWait {
 
-    private String flag[] = { "true" };
+    private String[] flag = { "true" };
 
     class NotifyThread extends Thread {
         public NotifyThread(String name) {

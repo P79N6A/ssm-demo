@@ -1,17 +1,17 @@
 package com.fc.resolver;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import com.fc.common.AjaxResult;
-import com.fc.enums.ErrorCodeEnum;
 import com.fc.common.JsonUtil;
+import com.fc.enums.ErrorCodeEnum;
+import com.fc.exception.IllegalArgumentException;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver;
-import com.fc.exception.IllegalArgumentException;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 /**
  * Created by fangcong on 2016/12/8.
@@ -50,7 +50,7 @@ public class ErrorHandlerExceptionResolver extends AbstractHandlerExceptionResol
                 logger.warn("Catch Exception:" + uri, ex);
             }
 
-            String ajax_flag = request.getHeader("X-Requested-With");
+            String ajaxFlag = request.getHeader("X-Requested-With");
             ResponseBody responseBody = null;
             if (handler instanceof HandlerMethod){
                 /**获取response body，由于response body标注的handler，
@@ -58,8 +58,8 @@ public class ErrorHandlerExceptionResolver extends AbstractHandlerExceptionResol
                  **/
                 responseBody = ((HandlerMethod)handler).getMethodAnnotation(ResponseBody.class);
             }
-            String ajaxFlag = "xmlhttprequest";
-            if (responseBody != null || ajaxFlag.equalsIgnoreCase(ajax_flag)){
+            String ajaxFlagDefault = "xmlhttprequest";
+            if (responseBody != null || ajaxFlagDefault.equalsIgnoreCase(ajaxFlag)){
                 try {
                     JsonUtil.printJsonOrJsonp(request, response, AjaxResult.getFailResult(errorCode, msg));
                 } catch (Exception e) {

@@ -39,22 +39,6 @@ public class TestReflect {
         field1.set(obj, "test");
         System.out.println(field1.get(obj));
 
-        /*String curDate = DateUtils.getFormatDate_CN(new Date());
-        String curMonthDay = DateUtils.getFormatMonthDay_CN(new Date());
-        System.out.println(curDate);
-        System.out.println(curMonthDay);
-
-        String str = getActivityStatus("2017-07-27", "2017-08-21");
-        String str1 = DateUtils.getDateFormat_MDCN("2017-07-27");
-        String str2 = DateUtils.getDateFormat_MDCN("2017-08-21");
-        System.out.println(str1 + "--" + str2);
-        System.out.println(str);*/
-
-        /*System.out.println("====================");
-        String str3 = DateUtils.getFormatDay(new Date());
-        String date = DateUtils.getFormatDate(DateUtils.getFormatDate("20170803", "yyyyMMdd"), "yyyy年MM月dd日");
-        System.out.println("date = " +date);*/
-
         System.out.println(System.getProperty("user.dir"));
         System.out.println(File.separator);
         String newStr = convertDateStr("20170802", "yyyyMMdd", "yyyy年MM月dd日");

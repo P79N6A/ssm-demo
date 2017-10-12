@@ -75,7 +75,6 @@ public class ReadWriteLockDemo {
             public void run() {
                 try {
                     int num = (int)demo.handleRead(readLock);
-                    //int num = (int)demo.handleRead(lock);
                     System.out.println(num);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -89,7 +88,6 @@ public class ReadWriteLockDemo {
             public void run() {
                 try {
                     demo.handleWrite(writeLock, new Random().nextInt());
-                    //demo.handleWrite(lock, new Random().nextInt());
                     System.out.println("write now ...");
                 } catch (InterruptedException e) {
                     e.printStackTrace();

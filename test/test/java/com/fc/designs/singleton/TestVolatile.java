@@ -9,12 +9,6 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class TestVolatile implements Serializable{
 
-    /*public volatile int inc = 0;
-
-    public synchronized void increase(){
-        inc++;
-    }*/
-
     public AtomicInteger inc = new AtomicInteger();
 
     public void increase(){
@@ -36,9 +30,6 @@ public class TestVolatile implements Serializable{
         }
         System.out.println("thread create over...");
         //所有的线程都执行完
-        /*while (Thread.activeCount() > 1){
-            Thread.yield();
-        }*/
         System.out.println(test.inc);
     }
 }

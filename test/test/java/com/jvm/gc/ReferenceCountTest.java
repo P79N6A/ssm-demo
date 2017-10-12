@@ -19,12 +19,12 @@ public class ReferenceCountTest {
      */
     public Object instance = null;
 
-    private static final int _1MB = 1024 * 1024;
+    private static final int SIZE_1MB = 1024 * 1024;
 
     /**
      * 该变量存在的唯一意义是占点内存，在GC日志看是否被回收过
      */
-    private byte[] bigSize = new byte[2 * _1MB];
+    private byte[] bigSize = new byte[2 * SIZE_1MB];
 
     public static void main(String[] args) {
         ReferenceCountTest objA = new ReferenceCountTest();

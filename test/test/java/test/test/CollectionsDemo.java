@@ -25,7 +25,6 @@ public class CollectionsDemo {
 		for(int i=0;i<array.length;i++){
 			list.add(array[i]);
 		}
-		//Collections.sort(list);
 		Collections.sort(list, new Comparator<Double>() {
 			@Override
 			public int compare(Double d1, Double d2) {
@@ -60,7 +59,7 @@ public class CollectionsDemo {
 	 */
 	private static void shufulling(){
 		List<Double> list = new ArrayList<Double>();
-		double array[] = {112, 111, 23, 456, 231 };
+		double[] array = {112, 111, 23, 456, 231 };
 		for (int i = 0; i < array.length; i++) {
 			list.add(new Double(array[i]));
 		}
@@ -76,7 +75,7 @@ public class CollectionsDemo {
 	 */
 	private static void reverse(){
 		List<Double> list = new ArrayList<Double>();
-		double array[] = {112, 111, 23, 456, 231 };
+		double[] array = {112, 111, 23, 456, 231 };
 		for (int i = 0; i < array.length; i++) {
 			list.add(new Double(array[i]));
 		}
@@ -92,7 +91,7 @@ public class CollectionsDemo {
 	 */
 	private static void fill(){
 		List<Double> list = new ArrayList<Double>();
-		double array[] = {112, 111, 23, 456, 231 };
+		double[] array = {112, 111, 23, 456, 231 };
 		for (int i = 0; i < array.length; i++) {
 			list.add(new Double(array[i]));
 		}
@@ -108,13 +107,13 @@ public class CollectionsDemo {
 	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private static void copy(){
-		double array[] = {112, 111, 23, 456, 231 };
+		double[] array = {112, 111, 23, 456, 231 };
 		List list = new ArrayList();
 		List li = new ArrayList();
 		for (int i = 0; i < array.length; i++) {
 			list.add(new Double(array[i]));
 		}
-		double arr[] = {1131,333};
+		double[] arr = {1131,333};
 		for(int j=0;j<arr.length;j++){
 			li.add(new Double(arr[j]));
 		}
@@ -130,7 +129,7 @@ public class CollectionsDemo {
 	 */
 	private static void minAndMax(){
 		List<Double> list = new ArrayList<Double>();
-		double array[] = {112, 111, 23, 456, 231 };
+		double[] array = {112, 111, 23, 456, 231 };
 		for (int i = 0; i < array.length; i++) {
 			list.add(new Double(array[i]));
 		}

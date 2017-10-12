@@ -17,7 +17,7 @@ import com.google.gson.reflect.TypeToken;
  */
 public class ParseJsonResut {
 
-    private static final String resultStr = "{\"info\":{\"ok\":true,\"code\":\"S001\",\"message\":\"调用成功\"},"
+    private static final String RESULT_STR = "{\"info\":{\"ok\":true,\"code\":\"S001\",\"message\":\"调用成功\"},"
         + "\"data\":{\"result\":[{\"id\":0,\"userNick\":\"晴****彦\",\"target\":\"view_pop\",\"mount\":0,"
         + "\"createTime\":\"2017-06-13 10:09:25.0\"},{\"id\":0,\"userNick\":\"晴****彦\",\"target\":\"leftFollow\","
         + "\"mount\":0,\"createTime\":\"2017-06-13 11:01:48.0\"},{\"id\":0,\"userNick\":\"晴****彦\","
@@ -35,7 +35,7 @@ public class ParseJsonResut {
     public static void main(String[] args) {
         Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd").create();
         System.out.println("============================================");
-        ResultBean resultBean = gson.fromJson(resultStr, ResultBean.class);
+        ResultBean resultBean = gson.fromJson(RESULT_STR, ResultBean.class);
         System.out.println(resultBean.getInfo().getCode() + "\t" + resultBean.getInfo().getMessage());
         List<ResultEntity> list = resultBean.getData().getResult();
         for (ResultEntity entity : list) {
@@ -43,14 +43,14 @@ public class ParseJsonResut {
         }
 
         System.out.println("============================================");
-        Map<String, Object> map = gson.fromJson(resultStr, new TypeToken<Map<String, Object>>(){}.getType());
+        Map<String, Object> map = gson.fromJson(RESULT_STR, new TypeToken<Map<String, Object>>(){}.getType());
         for (Entry<String, Object> entry : map.entrySet()) {
             System.out.println(entry.getKey());
             System.out.println(entry.getValue());
         }
 
         System.out.println("============================================");
-        JSONObject jsonObject = JSON.parseObject(resultStr);
+        JSONObject jsonObject = JSON.parseObject(RESULT_STR);
         for (Entry<String, Object> entry : jsonObject.entrySet()) {
             System.out.println(entry.getKey());
             System.out.println(entry.getValue());

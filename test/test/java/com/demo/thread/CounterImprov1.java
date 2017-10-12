@@ -14,7 +14,8 @@ public class CounterImprov1 {
 	private static CountDownLatch countDownLatch = new CountDownLatch(100);
 	
 	public static void main(String[] args) throws Exception {
-		for(int i=0;i<2000;i++){
+		int loop = 2000;
+		for(int i=0;i<loop;i++){
 			new Thread(){
 				@Override
 				public void run() {

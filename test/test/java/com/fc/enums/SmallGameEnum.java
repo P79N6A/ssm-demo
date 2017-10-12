@@ -2,8 +2,17 @@ package com.fc.enums;
 
 public enum SmallGameEnum {
 
+	/**
+	 * 石头
+	 */
 	STONE(0,"石头"),
+	/**
+	 * 剪刀
+	 */
 	SCISSORS(1,"剪刀"),
+	/**
+	 * 布
+	 */
 	CLOTH(2,"布");
 	
 	private Integer value;

@@ -1,14 +1,15 @@
 package com.fc.work;
 
-import com.alibaba.fastjson.JSONArray;
-import com.fc.bean.CouponVO;
-import com.fc.bean.FormInfo;
-import com.fc.bean.FormResult;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import com.alibaba.fastjson.JSONArray;
+
+import com.fc.bean.CouponVO;
+import com.fc.bean.FormInfo;
+import com.fc.bean.FormResult;
 
 /**
  * Created by fangcong on 2017/1/16.
@@ -49,13 +50,13 @@ public class ParseJsonStr {
     }
 
     private static List<FormResult> convertResult(List<FormInfo> list) {
-        Map<Long, FormResult> formmap = new HashMap<>();
+        Map<Long, FormResult> formmap = new HashMap<>(16);
         for (int i = 0; i < list.size(); i++) {
             FormInfo info = list.get(i);
             FormResult result = new FormResult();
             result.setInfoId(info.getInfoId());
             result.setUserNick(info.getUserNick());
-            Map<String, Object> map = new HashMap<>();
+            Map<String, Object> map = new HashMap<>(16);
             map.put(info.getDataKey(), info.getDataValue());
             if (!formmap.containsKey(info.getInfoId())) {
                 result.setInfos(map);

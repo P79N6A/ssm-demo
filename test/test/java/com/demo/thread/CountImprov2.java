@@ -27,7 +27,8 @@ public class CountImprov2 {
 	}
 	
 	public static void main(String[] args) {
-		for(int i = 0;i < 1000;i++){
+		int loop = 1000;
+		for(int i = 0;i < loop;i++){
 			new Thread(){
 				@Override
 				public void run() {

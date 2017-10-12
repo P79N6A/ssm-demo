@@ -7,7 +7,7 @@
        <import resource="spring-ehcache.xml"/>
 
        <!-- 配置切面bean -->
-       <bean id="userServiceTarget" class="com.fc.service.imp.UserServiceImp"/>
+       <bean id="userServiceTarget" class="com.fc.service.imp.UserServiceImpl"/>
        <bean id="userService" class="org.springframework.aop.framework.ProxyFactoryBean">
               <property name="target">
                      <ref local="userServiceTarget"/>

@@ -13,21 +13,23 @@ public class AtomicIntegerArrayDemo {
 
         @Override
         public void run() {
-            for (int k = 0;k < 10000;k++){
+            int loop = 10000;
+            for (int k = 0;k < loop;k++){
                 arr.getAndIncrement(k%arr.length());
             }
         }
     }
 
     public static void main(String[] args) throws InterruptedException {
-        Thread[] thread = new Thread[10];
-        for (int k = 0;k < 10;k++){
+        int size = 10;
+        Thread[] thread = new Thread[size];
+        for (int k = 0;k < size;k++){
             thread[k] = new Thread(new AddThread());
         }
-        for (int k = 0;k < 10;k++){
+        for (int k = 0;k < size;k++){
             thread[k].start();
         }
-        for (int k = 0;k < 10;k++){
+        for (int k = 0;k < size;k++){
             thread[k].join();
         }
         System.out.println(arr);

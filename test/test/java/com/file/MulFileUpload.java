@@ -13,11 +13,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.commons.fileupload.DiskFileUpload;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileUploadException;
+import org.apache.commons.fileupload.servlet.ServletFileUpload;
+import org.apache.commons.lang.StringUtils;
 
-@SuppressWarnings({ "serial", "deprecation" })
 public class MulFileUpload extends HttpServlet {
 	private static final String CONTENT_TYPE = "text/html; charset=GB2312";
 
@@ -29,13 +29,9 @@ public class MulFileUpload extends HttpServlet {
 		response.setContentType(CONTENT_TYPE);
 		PrintWriter out = response.getWriter();
 		try {
-			DiskFileUpload fu = new DiskFileUpload();
+			ServletFileUpload fu = new ServletFileUpload();
 			// 设置允许用户上传文件大小,单位:字节，这里设为2m
 			fu.setSizeMax(2 * 1024 * 1024);
-			// 设置最多只允许在内存中存储的数据,单位:字节
-			fu.setSizeThreshold(4096);
-			// 设置一旦文件大小超过getSizeThreshold()的值时数据存放在硬盘的目录
-			fu.setRepositoryPath("c://windows//temp");
 			// 开始读取上传信息
 			List fileItems = fu.parseRequest(request);
 			// 依次处理每个上传的文件
@@ -53,7 +49,7 @@ public class MulFileUpload extends HttpServlet {
 				if (!item.isFormField()) {
 					String name = item.getName();
 					long size = item.getSize();
-					if ((name == null || name.equals("")) && size == 0) {
+					if (StringUtils.isBlank(name) && size == 0) {
 						continue;
 					}
 					Matcher m = p.matcher(name);

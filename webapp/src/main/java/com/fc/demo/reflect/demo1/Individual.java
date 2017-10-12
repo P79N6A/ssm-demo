@@ -6,7 +6,7 @@ package com.fc.demo.reflect.demo1;
 public class Individual implements Comparable<Individual> {
 
     private static long counter = 0;
-    private static final long id = counter++;
+    private static final long ID = counter++;
     private String name;
 
     public Individual() {}
@@ -29,7 +29,7 @@ public class Individual implements Comparable<Individual> {
                 return secondCompare;
             }
         }
-        return obj.id < id ? -1 : (obj.id == id ? 0 : 1);
+        return Individual.ID < ID ? -1 : (Individual.ID == ID ? 0 : 1);
     }
 
     @Override
@@ -41,7 +41,7 @@ public class Individual implements Comparable<Individual> {
 
     @Override
     public boolean equals(Object o) {
-        return o instanceof Individual && id == ((Individual) o).id;
+        return o instanceof Individual && ID == Individual.ID;
     }
 
     @Override
@@ -50,7 +50,7 @@ public class Individual implements Comparable<Individual> {
         if (name != null) {
             result = 37 * result + name.hashCode();
         }
-        result = 37 * result + (int)id;
+        result = 37 * result + (int)ID;
         return result;
     }
 }

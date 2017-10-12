@@ -4,17 +4,31 @@ package com.fc.enums;
  * Created by fangcong on 2016/12/12.
  */
 public enum ErrorCodeEnum {
+    /**
+     * 参数错误
+     */
     PARAM_ERROR(400,IllegalAccessException.class,"参数错误",true),
+    /**
+     * 系统错误
+     */
     UNKNOWN_ERROR(409,Exception.class,"系统错误",false)
     ;
 
-    //错误码
+    /**
+     * 错误码
+     */
     private int errorCode;
-    //异常类
+    /**
+     * 异常类
+     */
     private Class<?> clazz;
-    //简要错误信息
+    /**
+     * 简要错误信息
+     */
     private String message;
-    //是否显示详细错误信息
+    /**
+     * 是否显示详细错误信息
+     */
     private boolean isShow;
 
     private ErrorCodeEnum(int errorCode, Class<?> clazz, String message, boolean isShow) {

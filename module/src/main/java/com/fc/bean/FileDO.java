@@ -1,63 +1,74 @@
 package com.fc.bean;
+
 import java.io.Serializable;
 
-public class FileDO implements Serializable{
-	private static final long serialVersionUID = 3828952714036125659L;
+public class FileDO implements Serializable {
+    private static final long serialVersionUID = 3828952714036125659L;
 
-	private int id;
-	
-	private String tfsName;
-	/**
-	 * 文件大小
-	 */
-	private long size;
-	/**
-	 * 文件类型
-	 */
-	private String type;
-	/**
-	 * 上传前文件名称
-	 */
-	private String fileName;
-	
-	public int getId() {
-		return id;
-	}
+    private Integer id;
 
-	public void setId(int id) {
-		this.id = id;
-	}
+    private String tfsName;
+    /**
+     * 文件大小
+     */
+    private Long size;
+    /**
+     * 文件类型
+     */
+    private String type;
+    /**
+     * 上传前文件名称
+     */
+    private String fileName;
 
-	public String getType() {
-		return type;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public void setType(String type) {
-		this.type = type;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public String getTfsName() {
-		return tfsName;
-	}
+    public String getType() {
+        return type;
+    }
 
-	public void setTfsName(String tfsName) {
-		this.tfsName = tfsName;
-	}
+    public void setType(String type) {
+        this.type = type;
+    }
 
-	public long getSize() {
-		return size;
-	}
+    public String getTfsName() {
+        return tfsName;
+    }
 
-	public void setSize(long size) {
-		this.size = size;
-	}
+    public void setTfsName(String tfsName) {
+        this.tfsName = tfsName;
+    }
 
-	public String getFileName() {
-		return fileName;
-	}
+    public Long getSize() {
+        return size;
+    }
 
-	public void setFileName(String fileName) {
-		this.fileName = fileName;
-	}
+    public void setSize(Long size) {
+        this.size = size;
+    }
 
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
+
+    @Override
+    public String toString() {
+        return "FileDO{" +
+            "id=" + id +
+            ", tfsName='" + tfsName + '\'' +
+            ", size=" + size +
+            ", type='" + type + '\'' +
+            ", fileName='" + fileName + '\'' +
+            '}';
+    }
 }

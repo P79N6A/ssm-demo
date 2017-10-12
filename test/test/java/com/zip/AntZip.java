@@ -98,32 +98,36 @@ public class AntZip {
 	 * @param dstDirectoryPath  解压到的文件夹
 	 */
 	public static void unRarFile(String srcRarPath, String dstDirectoryPath) {
-		if (!srcRarPath.toLowerCase().endsWith(".rar")) {
+		String ext = ".rar";
+		if (!srcRarPath.toLowerCase().endsWith(ext)) {
 			System.out.println("非rar文件！");
 			return;
 		}
 		File dstDiretory = new File(dstDirectoryPath);
-		if (!dstDiretory.exists()) {// 目标目录不存在时，创建该文件夹
+		// 目标目录不存在时，创建该文件夹
+		if (!dstDiretory.exists()) {
 			dstDiretory.mkdirs();
 		}
 		Archive a = null;
 		try {
 			a = new Archive(new File(srcRarPath));
 			if (a != null) {
-				a.getMainHeader().print(); // 打印文件信息.
+				// 打印文件信息.
+				a.getMainHeader().print();
 				FileHeader fh = a.nextFileHeader();
 				while (fh != null) {
-					if (fh.isDirectory()) { // 文件夹
+					if (fh.isDirectory()) {
 						File fol = new File(dstDirectoryPath + File.separator
 								+ fh.getFileNameString());
 						fol.mkdirs();
-					} else { // 文件
+					} else {
 						File out = new File(dstDirectoryPath + File.separator
 								+ fh.getFileNameString().trim());
-						// System.out.println(out.getAbsolutePath());
-						try {// 之所以这么写try，是因为万一这里面有了异常，不影响继续解压.
+						// 之所以这么写try，是因为万一这里面有了异常，不影响继续解压.
+						try {
 							if (!out.exists()) {
-								if (!out.getParentFile().exists()) {// 相对路径可能多级，可能需要创建父目录.
+								// 相对路径可能多级，可能需要创建父目录.
+								if (!out.getParentFile().exists()) {
 									out.getParentFile().mkdirs();
 								}
 								out.createNewFile();

@@ -9,9 +9,6 @@ import com.caucho.hessian.io.HessianSerializerInput;
 import com.caucho.hessian.io.HessianSerializerOutput;
 import com.fc.bean.FieldVO;
 
-/*import com.alibaba.com.caucho.hessian.io.HessianSerializerInput;
-import com.alibaba.com.caucho.hessian.io.HessianSerializerOutput;*/
-
 /**
  * @author fangcong on 2017/8/21.
  */

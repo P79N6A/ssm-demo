@@ -27,8 +27,9 @@ public class CalendarDemo {
         System.out.println("相差"+days+"天");  
           
         //重新设定c2对象的时间  
-        System.out.println("+++++++++++++++++重新设定后时间++++++++++++：");  
-        c2.set(2012,11,23);//月份和日期都是0开头。月份中0表示一月。月中的日期，0表示一日。  
+        System.out.println("+++++++++++++++++重新设定后时间++++++++++++：");
+        //月份和日期都是0开头。月份中0表示一月。月中的日期，0表示一日。
+        c2.set(2012,11,23);
         c2.set(Calendar.HOUR, 22);  
         c2.set(Calendar.MINUTE,12);  
         c2.set(Calendar.SECOND, 12);  

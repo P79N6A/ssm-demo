@@ -30,13 +30,13 @@ public class FileController {
     @ResponseBody
     @RequestMapping(value = "/file/upload.json")
     public AjaxResult fileUpload(@RequestParam("txt_file") MultipartFile[] files, String tfsName) {
-        Map<String, Object> map = new HashMap<>();
+        Map<String, Object> map = new HashMap<>(16);
         MultipartFile file = files[0];
         long size = file.getSize();
         try {
             String fileName = file.getOriginalFilename();
             String ext = FileUtils.getFileType(file.getInputStream(), fileName);
-            if(!fileName.endsWith(ext)&&!ext.equals("SUCCESS")) {
+            if (!fileName.endsWith(ext) && !"SUCCESS".equals(ext)) {
                 return AjaxResult.getFailResult("E002", "文件格式错误");
             }
             String[] result = fileUploadManager.uploadFile(file.getBytes(), tfsName);
@@ -58,7 +58,7 @@ public class FileController {
     @ResponseBody
     public AjaxResult getBase64Str(String app) {
         String path = "D:/project/maven_demo/test/target/classes/test.png";
-        String base64Str = ImageAndBase64Transfer.ImageToBase64(path);
+        String base64Str = ImageAndBase64Transfer.imageToBase64(path);
         return AjaxResult.getSuccessResult(base64Str);
     }
 }

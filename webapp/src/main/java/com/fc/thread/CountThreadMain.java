@@ -7,7 +7,8 @@ public class CountThreadMain {
 
     public static void main(String[] args) {
         Count count = new Count();
-        for (int i = 0; i < 5; i++) {
+        int loop = 5;
+        for (int i = 0; i < loop; i++) {
             ThreadA task = new ThreadA(count);
             task.start();
         }

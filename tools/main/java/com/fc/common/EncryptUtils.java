@@ -1,10 +1,10 @@
 package com.fc.common;
 
-import sun.misc.BASE64Decoder;
-import sun.misc.BASE64Encoder;
-
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
+
+import sun.misc.BASE64Decoder;
+import sun.misc.BASE64Encoder;
 
 /**
  * Created by fangcong on 2017/2/17.
@@ -120,7 +120,8 @@ public class EncryptUtils {
         byte[] bytes = strIn.getBytes();
         int length = bytes.length;
         byte[] outs = new byte[length/2];
-        for (int i = 0;i < length;i = i + 2) {
+        int skip = 2;
+        for (int i = 0;i < length;i = i + skip) {
             String tmp = new String(bytes, i, 2);
             outs[i/2] = (byte) Integer.parseInt(tmp, 16);
         }
@@ -154,12 +155,6 @@ public class EncryptUtils {
     }
 
     public static void main(String[] args) throws Exception{
-        /*String name = "zhangsan";
-        String key = "*(&^!#$^#@2f%&9$";
-        String encryptStr = aesEncrypt(name, key);
-        System.out.println(encryptStr);
-        String decryptStr = aesDecrypt(encryptStr, key);
-        System.out.println(decryptStr);*/
         String base64EncryptStr = base64Encrypt("张三");
         System.out.println(base64EncryptStr);
         String base64DecryptStr = base64Decrypt(base64EncryptStr);

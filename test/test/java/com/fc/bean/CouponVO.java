@@ -29,4 +29,12 @@ public class CouponVO {
     public void setActivityId(String activityId) {
         this.activityId = activityId;
     }
+
+    @Override
+    public String toString() {
+        return "CouponVO{" +
+            "sellerId=" + sellerId +
+            ", activityId='" + activityId + '\'' +
+            '}';
+    }
 }

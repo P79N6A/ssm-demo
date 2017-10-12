@@ -9,9 +9,9 @@ import java.util.Date;
  */
 public class DateUtils {
 
-    ///
-    //定义时间日期显示格式
-    ///
+    /**
+     * 定义时间格式
+     */
     private final static String DATE_FORMAT = "yyyy-MM-dd";
     private final static String DATE_FORMAT_CN = "yyyy年MM月dd日";
     private final static String TIME_FORMAT = "yyyy-MM-dd HH:mm:ss";
@@ -70,7 +70,7 @@ public class DateUtils {
      * @return String 返回格式化后的日期，默认格式为yyyy年MM月dd日，如2006年02月15日
      * @see #getFormatDate(java.util.Date, String)
      */
-    public static String getFormatDate_CN(java.util.Date currDate) {
+    public static String getFormatDateCN(java.util.Date currDate) {
         return getFormatDate(currDate, DATE_FORMAT_CN);
     }
 
@@ -79,7 +79,7 @@ public class DateUtils {
      * @param currDate
      * @return
      */
-    public static String getDateFormat_MDCN(String currDate) {
+    public static String getDateFormatMDCN(String currDate) {
         return getFormatDate(getFormatDate(currDate, DATE_FORMAT_CN));
     }
 
@@ -88,7 +88,7 @@ public class DateUtils {
      * @param currDate 要格式化的日期
      * @return String 返回格式化后的日期
      */
-    public static String getFormatMonthDay_CN(java.util.Date currDate) {
+    public static String getFormatMonthDayCN(java.util.Date currDate) {
         return getFormatDate(currDate, MONTH_DAY_FORMAT);
     }
 
@@ -97,10 +97,10 @@ public class DateUtils {
      *
      * @param currDate 要格式化的日期
      * @return Date 返回格式化后的日期，默认格式为yyyy年MM月dd日，如2006年02月15日
-     * @see #getFormatDate_CN(String)
+     * @see #getFormatDateCN(String)
      */
-    public static Date getFormatDateToDate_CN(java.util.Date currDate) {
-        return getFormatDate_CN(getFormatDate_CN(currDate));
+    public static Date getFormatDateToDateCN(java.util.Date currDate) {
+        return getFormatDateCN(getFormatDateCN(currDate));
     }
 
     /**
@@ -121,7 +121,7 @@ public class DateUtils {
      * @return 返回格式化后的日期，默认格式为yyyy年MM月dd日，如2006年02月15日
      * @see #getFormatDate(String, String)
      */
-    public static Date getFormatDate_CN(String currDate) {
+    public static Date getFormatDateCN(String currDate) {
         return getFormatDate(currDate, DATE_FORMAT_CN);
     }
 
@@ -184,7 +184,7 @@ public class DateUtils {
      * @return String 返回格式化后的时间，默认格式为yyyy年MM月dd日 HH:mm:ss，如2006年02月15日 15:23:45
      * @see #getFormatDateTime(java.util.Date, String)
      */
-    public static String getFormatDateTime_CN(java.util.Date currDate) {
+    public static String getFormatDateTimeCN(java.util.Date currDate) {
         return getFormatDateTime(currDate, TIME_FORMAT_CN);
     }
 
@@ -193,10 +193,10 @@ public class DateUtils {
      *
      * @param currDate 要格式化的时间
      * @return Date 返回格式化后的时间，默认格式为yyyy年MM月dd日 HH:mm:ss，如2006年02月15日 15:23:45
-     * @see #getFormatDateTime_CN(String)
+     * @see #getFormatDateTimeCN(String)
      */
-    public static Date getFormatDateTimeToTime_CN(java.util.Date currDate) {
-        return getFormatDateTime_CN(getFormatDateTime_CN(currDate));
+    public static Date getFormatDateTimeToTimeCN(java.util.Date currDate) {
+        return getFormatDateTimeCN(getFormatDateTimeCN(currDate));
     }
 
     /**
@@ -206,7 +206,7 @@ public class DateUtils {
      * @return Date 返回格式化后的时间，默认格式为yyyy年MM月dd日 HH:mm:ss，如2006年02月15日 15:23:45
      * @see #getFormatDateTime(String, String)
      */
-    public static Date getFormatDateTime_CN(String currDate) {
+    public static Date getFormatDateTimeCN(String currDate) {
         return getFormatDateTime(currDate, TIME_FORMAT_CN);
     }
 
@@ -299,7 +299,7 @@ public class DateUtils {
      * @return String 返回当前服务器系统日期，格式为yyyy年MM月dd日，如2006年02月15日
      * @see #getFormatDate(java.util.Date, String)
      */
-    public static String getCurrDateStr_CN() {
+    public static String getCurrDateStrCN() {
         return getFormatDate(getCurrDate(), DATE_FORMAT_CN);
     }
 
@@ -309,7 +309,7 @@ public class DateUtils {
      * @return String 返回格式化后的当前服务器系统时间，格式为yyyy年MM月dd日 HH:mm:ss，如2006年02月15日 15:23:45
      * @see #getFormatDateTime(java.util.Date, String)
      */
-    public static String getCurrDateTimeStr_CN() {
+    public static String getCurrDateTimeStrCN() {
         return getFormatDateTime(getCurrDate(), TIME_FORMAT_CN);
     }
 
@@ -409,14 +409,14 @@ public class DateUtils {
         return cal.getTime();
     }
 
-    /*
+    /**
      * 得到参数指定日期比当前时间的秒数
      */
     public static int getIntervalSeconds(Date endDate) {
         return getIntervalSeconds(endDate, new Date());
     }
 
-    /*
+    /**
      * 得到参数指定日期比当前时间的秒数
      */
     public static int getIntervalSeconds(Date endDate, Date startDate) {

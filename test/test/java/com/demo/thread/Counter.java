@@ -25,8 +25,9 @@ public class Counter {
 	}
 	
 	public static void main(String[] args) {
+		int count = 100;
 		//同时启动100个线程，查看结果
-		for (int k = 0; k < 100; k++) {
+		for (int k = 0; k < count; k++) {
 			new Thread(new Runnable() {
 				
 				@Override

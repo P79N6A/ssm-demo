@@ -147,7 +147,7 @@ public class TestController {
     @RequestMapping(value = "test/getRequestInfo.json", method = RequestMethod.GET)
     @ResponseBody
     public AjaxResult testHttpRequest(HttpServletRequest request){
-        Map<String, Object> map = new HashMap<>();
+        Map<String, Object> map = new HashMap<>(16);
         String url = request.getRequestURL().toString();
         String uri = request.getRequestURI();
         String queryString = request.getQueryString();
@@ -170,8 +170,6 @@ public class TestController {
         map.put("localAddr", localAddr);
         map.put("localName", localName);
         map.put("localPort", localPort);
-        /*map.put("paramMap", paramMap);
-        map.put("enumHeader", enumHeader);*/
         return AjaxResult.getSuccessResult(map);
     }
 

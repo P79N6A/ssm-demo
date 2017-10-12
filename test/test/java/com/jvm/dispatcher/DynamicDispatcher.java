@@ -6,11 +6,11 @@ package com.jvm.dispatcher;
  */
 public class DynamicDispatcher {
 
-    static abstract class Human {
+    static abstract class AbstractHuman {
         protected abstract void sayHello();
     }
 
-    static class Man extends Human {
+    static class Man extends AbstractHuman {
 
         @Override
         protected void sayHello() {
@@ -18,7 +18,7 @@ public class DynamicDispatcher {
         }
     }
 
-    static class Woman extends Human {
+    static class Woman extends AbstractHuman {
 
         @Override
         protected void sayHello() {
@@ -27,8 +27,8 @@ public class DynamicDispatcher {
     }
 
     public static void main(String[] args) {
-        Human man = new Man();
-        Human women = new Woman();
+        AbstractHuman man = new Man();
+        AbstractHuman women = new Woman();
 
         man.sayHello();
         women.sayHello();
