@@ -11,9 +11,11 @@ import com.fc.bean.User;
 public interface UserServiceRmi extends Remote {
 
     /**
-     * 根据用户名查询用户
+     * 查询用户信息，测试rmi调用
+     *
      * @param name
      * @return
+     * @throws RemoteException
      */
     User getUserByName(String name) throws RemoteException;
 }

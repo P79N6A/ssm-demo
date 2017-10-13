@@ -1,7 +1,7 @@
 package com.fc.designs.singleton;
 
 /**
- * Created by fangcong on 2017/2/20.
+ * @author fangcong on 2017/2/20.
  * 静态内部类的方式获取单例对象
  */
 public class Singleton4 {

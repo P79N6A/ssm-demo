@@ -1,5 +1,8 @@
 package com.fc.enums;
 
+/**
+ * @author fangcong
+ */
 public enum SmallGameEnum {
 
 	/**

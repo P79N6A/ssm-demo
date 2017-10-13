@@ -7,7 +7,9 @@ import ognl.Ognl;
 import ognl.OgnlException;
 
 /**
- * Created by fangcong on 2017/3/31.
+ * ognl简单表达式测试
+ *
+ * @author fangcong on 2017/3/31.
  */
 public class OgnlDemo {
 

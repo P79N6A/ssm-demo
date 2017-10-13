@@ -1,11 +1,11 @@
 package com.fc.demo;
 
-import com.fc.enums.Gender;
-
 import java.io.Serializable;
 
+import com.fc.enums.Gender;
+
 /**
- * Created by fangcong on 2017/2/28.
+ * @author fangcong on 2017/2/28.
  */
 public class Person implements Serializable {
 

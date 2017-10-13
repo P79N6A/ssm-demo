@@ -1,7 +1,7 @@
 package com.fc.thread;
 
 /**
- * Created by fangcong on 2017/4/1.
+ * @author fangcong on 2017/4/1.
  */
 public class ThreadA extends Thread {
 

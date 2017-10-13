@@ -1,7 +1,7 @@
 package com.fc.designs.singleton;
 
 /**
- * Created by fangcong on 2017/2/20.
+ * @author fangcong on 2017/2/20.
  * 线程安全的单例模式（懒汉式）,饿汉式见Singleton3
  */
 public class Singleton2 {

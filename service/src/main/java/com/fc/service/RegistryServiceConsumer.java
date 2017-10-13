@@ -5,5 +5,11 @@ package com.fc.service;
  */
 public interface RegistryServiceConsumer {
 
+    /**
+     * dubbo消费者接口方法
+     *
+     * @param words
+     * @return
+     */
     String sayHello(String words);
 }

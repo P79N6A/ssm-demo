@@ -2,7 +2,7 @@ package com.fc.exception;
 
 /**
  * 参数异常
- * Created by fangcong on 2016/12/9.
+ * @author fangcong on 2016/12/9.
  */
 public class IllegalArgumentException extends RuntimeException {
 

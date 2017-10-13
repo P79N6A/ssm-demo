@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Random;
 
 /**
- * Created by fangcong on 2017/4/7.
+ * @author fangcong on 2017/4/7.
  */
 public class RandomDemo {
 

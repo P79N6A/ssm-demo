@@ -2,6 +2,8 @@ package com.demo.thread;
 
 import java.util.concurrent.locks.ReentrantLock;
 
+import com.fc.constant.NormalNumberConstant;
+
 /**
  * @author fangcong on 2017/6/13.
  * 重入锁
@@ -18,7 +20,7 @@ public class ReenterLock implements Runnable{
 
     @Override
     public void run() {
-        for (int j = 0; j < 100000; j++) {
+        for (int j = 0; j < NormalNumberConstant.INT_10000; j++) {
             increase();
         }
     }

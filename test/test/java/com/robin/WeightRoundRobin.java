@@ -110,8 +110,8 @@ public class WeightRoundRobin {
     public static void main(String[] args) {
         WeightRoundRobin weightRoundRobin = new WeightRoundRobin();
         weightRoundRobin.init();
-
-        for (int i = 0; i < 15; i++) {
+        int requestCount = 15;
+        for (int i = 0; i < requestCount; i++) {
             Server server = weightRoundRobin.getServer();
             System.out.println("server " + server.getIp() + " weight=" + server.getWeight());
         }

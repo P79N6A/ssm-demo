@@ -3,7 +3,7 @@ package com.fc.common;
 import java.util.regex.Pattern;
 
 /**
- * Created by fangcong on 2017/3/6.
+ * @author fangcong on 2017/3/6.
  * 常用正则表达式
  */
 public class RegexUtils {

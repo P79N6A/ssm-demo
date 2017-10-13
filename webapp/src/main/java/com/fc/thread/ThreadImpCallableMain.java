@@ -4,7 +4,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 /**
- * Created by fangcong on 2017/4/5.
+ * @author fangcong on 2017/4/5.
  */
 public class ThreadImpCallableMain {
 

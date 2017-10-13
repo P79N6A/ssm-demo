@@ -7,6 +7,10 @@ package com.jvm.dispatcher;
 public class DynamicDispatcher {
 
     static abstract class AbstractHuman {
+
+        /**
+         * 默认抽象方法
+         */
         protected abstract void sayHello();
     }
 

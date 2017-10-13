@@ -1,5 +1,7 @@
 package com.fc.convert;
 
+import com.fc.constant.NormalNumberConstant;
+
 /**
  * @author fangcong
  */
@@ -60,7 +62,7 @@ public class StrToBinary {
 		StringBuffer output = new StringBuffer();
 		String[] tempStr = strToStrArray(input);
 		for (int i = 0; i < tempStr.length; i++) {
-			for (int j = 16 - tempStr[i].length(); j > 0; j--) {
+			for (int j = NormalNumberConstant.INT_16 - tempStr[i].length(); j > 0; j--) {
 				output.append('0');
 			}
 			output.append(tempStr[i] + " ");
@@ -78,7 +80,7 @@ public class StrToBinary {
 		StringBuffer output = new StringBuffer();
 		String[] tempStr = strToStrArray(input);
 		for (int i = 0; i < tempStr.length; i++) {
-			for (int j = 0; j < 16; j++) {
+			for (int j = 0; j < NormalNumberConstant.INT_16; j++) {
 				if (tempStr[i].charAt(j) == '1') {
 					output.append(tempStr[i].substring(j) + " ");
 					break;

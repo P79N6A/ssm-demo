@@ -1,7 +1,7 @@
 package com.fc.demo.reflect;
 
 /**
- * Created by fangcong on 2017/4/18.
+ * @author fangcong on 2017/4/18.
  */
 public class HelloServiceImpl implements HelloService {
 

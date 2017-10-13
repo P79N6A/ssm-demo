@@ -5,5 +5,10 @@ package com.fc.demo.reflect;
  */
 public interface HelloService {
 
+    /**
+     * 测试方法
+     *
+     * @param name
+     */
     void sayHello(String name);
 }

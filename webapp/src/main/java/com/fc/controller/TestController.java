@@ -14,6 +14,7 @@ import com.demo.thread.ThreadPoolDemo.MyTask;
 import com.fc.bean.User;
 import com.fc.common.AjaxResult;
 import com.fc.common.Asserts;
+import com.fc.constant.NormalNumberConstant;
 import com.fc.resolver.JsonParam;
 import com.fc.service.TestSetBean;
 import com.fc.service.UserService;
@@ -30,7 +31,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * Created by fangcong on 2016/11/29.
+ * @author fangcong on 2016/11/29.
  */
 @Controller
 public class TestController {
@@ -190,7 +191,7 @@ public class TestController {
     @ResponseBody
     public AjaxResult getThreadName() {
         MyTask myTask = new MyTask();
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < NormalNumberConstant.INT_10; i++) {
             taskExecutor.execute(myTask);
         }
         taskExecutor.shutdown();

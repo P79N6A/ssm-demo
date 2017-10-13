@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.fc.bean.TestBean;
+import com.fc.constant.NormalNumberConstant;
 
 /**
  * 比较map遍历的几种方式的效率
@@ -58,7 +59,7 @@ public class ForeachMapDemo {
 	
 	public static void main(String[] args) {
 		Map<Long,Integer> maps = new HashMap<>(16);
-		for(int i = 1;i < 100;i++){
+		for(int i = 1; i < NormalNumberConstant.INT_100; i++){
 			maps.put(Long.parseLong(i + ""), i);
 		}
 		long time1 = forUseTime(maps);

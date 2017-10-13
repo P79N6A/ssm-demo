@@ -36,7 +36,7 @@ public class FileController {
         try {
             String fileName = file.getOriginalFilename();
             String ext = FileUtils.getFileType(file.getInputStream(), fileName);
-            if (!fileName.endsWith(ext) && !"SUCCESS".equals(ext)) {
+            if (!fileName.endsWith(ext)) {
                 return AjaxResult.getFailResult("E002", "文件格式错误");
             }
             String[] result = fileUploadManager.uploadFile(file.getBytes(), tfsName);

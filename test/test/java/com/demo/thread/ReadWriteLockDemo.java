@@ -7,6 +7,8 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock;
 
+import com.fc.constant.NormalNumberConstant;
+
 /**
  * @author fangcong on 2017/7/6.
  * 重入锁将使线程串行执行，而读写锁的读操作是并行，将提升执行效率
@@ -95,11 +97,12 @@ public class ReadWriteLockDemo {
             }
         };
 
-        for (int i = 0; i < 18; i++) {
+        int readNum = 18;
+        for (int i = 0; i < readNum; i++) {
             new Thread(readRunnable).start();
         }
 
-        for (int i = 18; i < 20; i++) {
+        for (int i = readNum; i < NormalNumberConstant.INT_20; i++) {
             new Thread(writeRunnable).start();
         }
     }

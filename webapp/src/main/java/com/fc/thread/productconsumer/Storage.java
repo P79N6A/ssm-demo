@@ -3,7 +3,7 @@ package com.fc.thread.productconsumer;
 import java.util.LinkedList;
 
 /**
- * Created by fangcong on 2017/4/17.
+ * @author fangcong on 2017/4/17.
  * 生产者-消费者模式示例
  */
 public class Storage {

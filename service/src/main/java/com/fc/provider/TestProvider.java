@@ -16,7 +16,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Created by fangcong on 2017/3/31.
+ * 服务启动时执行
+ *
+ * @author fangcong on 2017/3/31.
  */
 public class TestProvider {
 
@@ -26,9 +28,9 @@ public class TestProvider {
      * 创建线程或线程池时需指定有意义的线程名称，方便出错时回溯
      */
     private ExecutorService executorService = new ThreadPoolExecutor(4, 4, 0L, TimeUnit.MILLISECONDS,
-            new ArrayBlockingQueue<Runnable>(20), new ThreadFactoryBuilder().setNameFormat("demo-pool-%d").build(),
-            new ThreadPoolExecutor.AbortPolicy()
-        );
+        new ArrayBlockingQueue<Runnable>(20), new ThreadFactoryBuilder().setNameFormat("demo-pool-%d").build(),
+        new ThreadPoolExecutor.AbortPolicy()
+    );
 
     @Resource
     private UserServiceRmi userServiceRMI;

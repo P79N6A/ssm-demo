@@ -35,9 +35,6 @@ public class FileUtils {
 
     public static String getFileType(InputStream is, String fileName) {
         byte[] b = new byte[4];
-        if (fileName.endsWith("txt") || fileName.endsWith("csv")|| fileName.endsWith("js")) {
-            return "SUCCESS";
-        }
         if (is != null) {
             try {
                 is.read(b, 0, b.length);

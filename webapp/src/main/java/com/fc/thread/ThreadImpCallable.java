@@ -3,7 +3,7 @@ package com.fc.thread;
 import java.util.concurrent.Callable;
 
 /**
- * Created by fangcong on 2017/4/5.
+ * @author fangcong on 2017/4/5.
  */
 public class ThreadImpCallable implements Callable {
 

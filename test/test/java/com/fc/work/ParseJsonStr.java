@@ -10,9 +10,12 @@ import com.alibaba.fastjson.JSONArray;
 import com.fc.bean.CouponVO;
 import com.fc.bean.FormInfo;
 import com.fc.bean.FormResult;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 
 /**
- * Created by fangcong on 2017/1/16.
+ * @author fangcong on 2017/1/16.
  */
 public class ParseJsonStr {
 
@@ -22,7 +25,7 @@ public class ParseJsonStr {
         for (CouponVO couponVO : list) {
             System.out.println(couponVO.getSellerId() + "--" + couponVO.getActivityId());
         }
-        /*String jsonStr = "{\"name\":\"zhangsan\",\"address\":\"hangzhou\",\"phone\":\"18752143266\"}";
+        String jsonStr1 = "{\"name\":\"zhangsan\",\"address\":\"hangzhou\",\"phone\":\"18752143266\"}";
         Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd").create();
         Map<String, Object> map = gson.fromJson(jsonStr,new TypeToken<Map<String, Object>>(){}
                 .getType());
@@ -33,20 +36,20 @@ public class ParseJsonStr {
 
         for (Map.Entry<String, Object> entry: map.entrySet()){
             System.out.print(entry.getValue() + ",");
-        }*/
-        /*List<FormInfo> list = new ArrayList<>();
+        }
+        List<FormInfo> list1 = new ArrayList<>();
         FormInfo info1 = new FormInfo(3469, "mini1", "phone", "123456789");
-        list.add(info1);
+        list1.add(info1);
         info1 = new FormInfo(3469, "mini1", "address", "aasada");
-        list.add(info1);
+        list1.add(info1);
         FormInfo info2 = new FormInfo(3450, "mini2", "phone", "23322212");
-        list.add(info2);
+        list1.add(info2);
         info2 = new FormInfo(3450, "mini2", "address", "ssdddss");
-        list.add(info2);
-        List<FormResult> formResults = convertResult(list);
+        list1.add(info2);
+        List<FormResult> formResults = convertResult(list1);
         for (FormResult result : formResults) {
             System.out.println(result.toString());
-        }*/
+        }
     }
 
     private static List<FormResult> convertResult(List<FormInfo> list) {

@@ -8,7 +8,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Created by fangcong on 2017/3/30.
+ * @author fangcong on 2017/3/30.
  */
 public class TestReflect {
 

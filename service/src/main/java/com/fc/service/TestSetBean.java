@@ -5,5 +5,8 @@ package com.fc.service;
  */
 public interface TestSetBean {
 
+    /**
+     * just test
+     */
     void getback();
 }

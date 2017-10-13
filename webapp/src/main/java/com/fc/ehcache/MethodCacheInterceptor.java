@@ -9,15 +9,16 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;
 
 /**
- * Created by fangcong on 2016/12/5.
  * 缓存方法拦截器代码
+ *
+ * @author fangcong on 2016/12/5.
  */
-public class MethodCacheInterceptor implements MethodInterceptor,InitializingBean {
+public class MethodCacheInterceptor implements MethodInterceptor, InitializingBean {
 
     private static final Logger logger = LoggerFactory.getLogger(MethodCacheInterceptor.class);
     private Cache cache;
 
-    public void setCache(Cache cache){
+    public void setCache(Cache cache) {
         this.cache = cache;
     }
 
@@ -32,15 +33,15 @@ public class MethodCacheInterceptor implements MethodInterceptor,InitializingBea
         String methodName = invocation.getMethod().getName();
         Object[] arguments = invocation.getArguments();
         Object result;
-        String cacheKey = getCacheKey(targetName,methodName,arguments);
+        String cacheKey = getCacheKey(targetName, methodName, arguments);
         Element element;
-        synchronized (this){
+        synchronized (this) {
             element = cache.get(cacheKey);
-            if (element == null){
+            if (element == null) {
                 logger.info(cacheKey + "加入到缓存" + cache.getName());
                 //调用实际的方法
                 result = invocation.proceed();
-                element = new Element(cacheKey,result);
+                element = new Element(cacheKey, result);
                 cache.put(element);
             } else {
                 logger.info(cacheKey + "使用缓存" + cache.getName());
@@ -51,16 +52,17 @@ public class MethodCacheInterceptor implements MethodInterceptor,InitializingBea
 
     /**
      * 返回具体的方法 全路径名称 参数
+     *
      * @param targetName 全路径
      * @param methodName 方法名称
      * @param arguments  参数
      * @return 完整方法名称
      */
-    private String getCacheKey(String targetName,String methodName,Object[] arguments){
+    private String getCacheKey(String targetName, String methodName, Object[] arguments) {
         StringBuffer sb = new StringBuffer();
         sb.append(targetName).append(".").append(methodName);
-        if (arguments != null && arguments.length != 0){
-            for (int i = 0;i < arguments.length;i++){
+        if (arguments != null && arguments.length != 0) {
+            for (int i = 0; i < arguments.length; i++) {
                 sb.append(".").append(arguments[i]);
             }
         }

@@ -1,7 +1,7 @@
 package com.fc.designs.singleton;
 
 /**
- * Created by fangcong on 2017/1/23.
+ * @author fangcong on 2017/1/23.
  * 单例模式
  */
 public class Singleton{

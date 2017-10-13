@@ -2,6 +2,8 @@ package com.fc.rand;
 
 import java.util.Random;
 
+import com.fc.constant.NormalNumberConstant;
+
 /**
  * @author fangcong on 2017/6/26.
  */
@@ -12,7 +14,7 @@ public class RandomValueValidate {
 
     public static void main(String[] args) {
         int count = 0;
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < NormalNumberConstant.INT_100; i++) {
             int a1 = RANDOM1.nextInt(100);
             int a2 = RANDOM2.nextInt(100);
             if (a1 == a2) {

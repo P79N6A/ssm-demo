@@ -1,13 +1,16 @@
 package com.fc.thread;
 
 /**
- * Created by fangcong on 2017/4/17.
+ * @author fangcong on 2017/4/17.
  */
 public class TestNotifyAndWait {
 
     private String[] flag = { "true" };
 
+    private static String falseFlag = "false";
+
     class NotifyThread extends Thread {
+
         public NotifyThread(String name) {
             super(name);
         }
@@ -34,7 +37,7 @@ public class TestNotifyAndWait {
         @Override
         public void run() {
             synchronized (flag) {
-                while (flag[0] != "false") {
+                while (flag[0] != falseFlag) {
                     System.out.println(getName() + " begin waiting!");
                     long waitTime = System.currentTimeMillis();
                     try {

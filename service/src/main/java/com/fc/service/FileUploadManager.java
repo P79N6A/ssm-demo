@@ -7,7 +7,20 @@ import com.fc.bean.FileDO;
  */
 public interface FileUploadManager {
 
+    /**
+     * 上传文件到tfs
+     *
+     * @param bytes
+     * @param tfsName
+     * @return
+     */
     String[] uploadFile(byte[] bytes, String tfsName);
 
+    /**
+     * 记录文件信息
+     *
+     * @param fileDO
+     * @return
+     */
     boolean insertInfo(FileDO fileDO);
 }

@@ -7,6 +7,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 import com.ali.com.google.common.util.concurrent.ThreadFactoryBuilder;
+import com.fc.constant.NormalNumberConstant;
 
 /**
  * @author fangcong on 2017/6/16.
@@ -41,7 +42,7 @@ public class ThreadPoolDemo {
         ExecutorService executorService = new ThreadPoolExecutor(5, 10,
             0L, TimeUnit.MILLISECONDS,
             new LinkedBlockingDeque<Runnable>(1024), namedThreadFactory, new ThreadPoolExecutor.AbortPolicy());
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < NormalNumberConstant.INT_10; i++) {
             executorService.execute(myTask);
         }
         executorService.shutdown();

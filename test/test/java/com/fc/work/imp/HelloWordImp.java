@@ -3,7 +3,7 @@ package com.fc.work.imp;
 import com.fc.work.HelloWord;
 
 /**
- * Created by fangcong on 2016/12/15.
+ * @author fangcong on 2016/12/15.
  */
 public class HelloWordImp implements HelloWord {
 

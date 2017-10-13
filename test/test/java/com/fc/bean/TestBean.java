@@ -2,6 +2,9 @@ package com.fc.bean;
 
 import java.io.Serializable;
 
+/**
+ * @author fangcong
+ */
 public class TestBean implements Serializable {
 
 	/**
