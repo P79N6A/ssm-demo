@@ -79,12 +79,7 @@
             },
             success: function (data) {
                 if (data.info.code == "S001") {
-                    alert("success");
                 }
-                if (data.info.code == "E001") {
-                    alert(data.info.message + ":" + data.data.errorCode);
-                }
-
             },
             error: function (data) {
                 $(".errorMsg").text("失败");

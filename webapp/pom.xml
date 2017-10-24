@@ -17,11 +17,6 @@
             <artifactId>service</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.fc</groupId>
-            <artifactId>test</artifactId>
-            <version>${project.version}</version>
-        </dependency>
     </dependencies>
     <packaging>war</packaging>
 </project>

@@ -4,7 +4,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd"
        default-autowire="byName">
 
-    <!--加载biz bean-->
+    <!--加载biz bean 通过xml启动组件扫描 -->
     <context:component-scan base-package="com.fc"/>
 
     <bean class="com.fc.provider.TestProvider" init-method="initMethod">
@@ -27,4 +27,5 @@
     </bean>
 
     <bean id="testSetBean" class="com.fc.service.imp.TestSetBeanImp"/>
+
 </beans>

@@ -10,7 +10,7 @@ import com.fc.bean.FileDO;
 import com.fc.common.AjaxResult;
 import com.fc.common.FileUtils;
 import com.fc.service.FileUploadManager;
-import com.file.ImageAndBase64Transfer;
+import com.fc.file.ImageAndBase64Transfer;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

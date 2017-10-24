@@ -8,8 +8,7 @@
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
-            classpath:spring-application.xml,
-            WEB-INF/spring-mybatis.xml
+            classpath:spring-application.xml
         </param-value>
     </context-param>
     <!-- 初始化log4j -->

@@ -6,4 +6,5 @@
     <import resource="classpath:spring-aop.xml"/>
     <import resource="classpath*:spring-hsf-cosumer.xml"/>
     <import resource="classpath*:spring-bz.xml"/>
+    <import resource="classpath*:spring-mybatis.xml"/>
 </beans>
