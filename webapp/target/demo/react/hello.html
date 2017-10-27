@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>react start demo</title>
+    <script src="../js/react.min.js"></script>
+    <script src="../js/react-dom.min.js"></script>
+    <script src="../js/babel.min.js"></script>
+</head>
+<body>
+    <div id="example"></div>
+    <div id="zujian"></div>
+    <div id="website"></div>
+    <script type="text/babel">
+
+        var Message = React.createClass({
+            getDefaultProps : function() {
+                return {message : 'unknown'};
+            },
+            propTypes : {
+                message : React.PropTypes.string.isRequired
+            },
+            render : function() {
+                return <h2>hello {this.props.message}</h2>;
+            }
+        });
+
+        var Validators = React.createClass({
+            propTypes: {
+                // 可以声明 prop 为指定的 JS 基本数据类型，默认情况，这些数据是可选的
+                optionalArray: React.PropTypes.array,
+                optionalBool: React.PropTypes.bool,
+                optionalFunc: React.PropTypes.func,
+                optionalNumber: React.PropTypes.number,
+                optionalObject: React.PropTypes.object,
+                optionalString: React.PropTypes.string,
+
+                // 可以被渲染的对象 numbers, strings, elements 或 array
+                optionalNode: React.PropTypes.node,
+
+                //  React 元素
+                optionalElement: React.PropTypes.element,
+
+                // 用 JS 的 instanceof 操作符声明 prop 为类的实例。
+                optionalMessage: React.PropTypes.instanceOf(Message),
+
+                // 用 enum 来限制 prop 只接受指定的值。
+                optionalEnum: React.PropTypes.oneOf(['News', 'Photos']),
+
+                // 可以是多个对象类型中的一个
+                optionalUnion: React.PropTypes.oneOfType([
+                    React.PropTypes.string,
+                    React.PropTypes.number,
+                    React.PropTypes.instanceOf(Message)
+                ]),
+
+                // 指定类型组成的数组
+                optionalArrayOf: React.PropTypes.arrayOf(React.PropTypes.number),
+
+                // 指定类型的属性构成的对象
+                optionalObjectOf: React.PropTypes.objectOf(React.PropTypes.number),
+
+                // 特定 shape 参数的对象
+                optionalObjectWithShape: React.PropTypes.shape({
+                    color: React.PropTypes.string,
+                    fontSize: React.PropTypes.number
+                }),
+
+                // 任意类型加上 `isRequired` 来使 prop 不可空。
+                requiredFunc: React.PropTypes.func.isRequired,
+
+                // 不可空的任意类型
+                requiredAny: React.PropTypes.any.isRequired,
+
+                // 自定义验证器。如果验证失败需要返回一个 Error 对象。不要直接使用 `console.warn` 或抛异常，因为这样 `oneOfType` 会失效。
+                customProp: function(props, propName, componentName) {
+                    if (!/matchme/.test(props[propName])) {
+                        return new Error('Validation failed!');
+                    }
+                }
+            },
+            render : function() {
+                return new Error('failed');
+            }
+        });
+
+        /*定义组件*/
+        var HelloMessage = React.createClass({
+            render : function() {
+                return <h1>hello world</h1>;
+            }
+        });
+
+        /*定义带变量组件*,props可指定默认值
+        * propTypes 可进行校验数据是否有效
+        * */
+        var HelloName = React.createClass({
+            getDefaultProps : function() {
+                return {name : 'visitor'};
+            },
+            propTypes : {
+                name : React.PropTypes.string.isRequired,
+            },
+            render : function() {
+                return <h2>hello {this.props.name}</h2>;
+            }
+        });
+
+        /*定义复合组件，网站地址和名称*/
+        var WebSite = React.createClass({
+            render : function() {
+                return (
+                    <div>
+                        <Name name={this.props.name}/>
+                        <Link site={this.props.site}/>
+                    </div>
+                )
+            }
+        });
+
+        var Name = React.createClass({
+            render : function() {
+                return <h1>{this.props.name}</h1>;
+            }
+        });
+
+        var Link = React.createClass({
+            render : function() {
+                return (
+                    <a href={this.props.site} target='_blank'>{this.props.site}</a>
+                )
+            }
+        });
+
+        /*react state自动切换状态*/
+        var ButtonState = React.createClass({
+            getInitialState : function() {
+                return {liked : false};
+            },
+            handleClick : function(event) {
+                this.setState({liked : !this.state.liked});
+            },
+            render : function() {
+                var text = this.state.liked ? "喜欢" : "不喜欢";
+                return (
+                    <p onClick={this.handleClick}>
+                        点击 {text} 切换状态
+                    </p>
+                );
+            }
+        });
+
+        var myStyle = {
+            fontSize : 10,
+            color : '#FF0000'
+        };
+
+        var arr = [
+            <h1>菜鸟教程</h1>,
+            <h2>render中插入数组</h2>
+        ];
+
+        ReactDOM.render(
+            <div id='arrDiv'>
+                <HelloMessage/>
+                <span>不用一个标签包裹会报错</span>
+                {arr}
+                <h1 style={myStyle}>hello react</h1>
+            </div>,
+            document.getElementById('example')
+        );
+
+        ReactDOM.render(
+            <HelloName name='zhangsan'/>,
+            document.getElementById('zujian')
+        );
+
+        ReactDOM.render(
+            <div id="likedDiv">
+                <WebSite name="百度" site="https://www.baidu.com"/>
+                <ButtonState/>
+            </div>,
+            document.getElementById('website')
+        );
+    </script>
+</body>
+</html>

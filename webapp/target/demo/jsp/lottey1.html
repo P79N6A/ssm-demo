@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0055)http://localhost:63343/Demo01/showcase/Demo/lottey.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>无标题文档</title>
+    <link href="./页面抽奖测试_files/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./页面抽奖测试_files/demo.css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="./页面抽奖测试_files/easyui-lang-zh_CN.js.下载"></script>
+
+  <!-- <script>
+        //抽奖ua
+        if (!window.UA_Opt) {
+            var UA_Opt = new Object;
+            UA_Opt.SendMethod = 8;
+            UA_Opt.LogVal = "ua";
+            window[UA_Opt.LogVal] = "";
+            UA_Opt.Token = new Date().getTime() + ":" + Math.random();
+            UA_Opt.MaxMCLog = 5;
+            UA_Opt.MaxKSLog = 5;
+            UA_Opt.MaxMPLog = 5;
+            UA_Opt.MaxTCLog = 150;
+            UA_Opt.MaxFocusLog = 5;
+            UA_Opt.Flag = 1932494
+        }
+
+        function getUA() {
+            var tmp_ua = window[UA_Opt.LogVal];
+            UA_Opt.Token = new Date().getTime() + ":" + Math.random();
+            UA_Opt.reload && UA_Opt.reload();
+            return tmp_ua;
+        }
+    </script>
+    <script src="http://uaction.aliyuncdn.com/js/ua.js"></script>
+-->
+
+</head>
+<body>
+
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <li><a href="http://localhost:63343/Demo01/showcase/Demo/lottey.html#">首页</a></li>
+        <li><a href="http://localhost:63343/Demo01/showcase/Demo/lottey.html#">表单</a></li>
+    </ul>
+</div>
+<div class="mybody">
+	<script src="https://g.alicdn.com/sd/ctl/ctl.js" type="text/javascript"></script>
+    <input id="ua" />
+    <input id="umidtoken" />
+    <input type="button" id="game_start" onclick="uaClick();umidToken()"/>
+    <script>
+        document.getElementById("game_start").disabled = true;
+        var c = ctl.noConflict();
+        c.config("h5");
+        c.ready(function(){
+            document.getElementById("game_start").disabled = false;
+        });
+
+        function uaClick(){
+            document.getElementById('ua').value = c.getUA();
+        }
+        function umidToken(){
+            document.getElementById('umidtoken').value = c.getUmidToken();
+        }
+		function lottey(){
+			var url="https://showcase.simba.taobao.com/guagua/lottery.json";
+			 $.ajax({
+			  url:url,
+			  type:"get",
+			  dataType:"jsonp",
+			  data:{
+				  app:"guaguaLottey",
+				  asac:"1A16C09HMSTI2HVW476XPO",
+				  ua:c.getUA()
+			  },
+			  success:function(data){
+
+				  if(data.info.code=="S001"){
+				  }
+			  },
+			  error:function(data){
+				  alert("失败");
+			  }
+      })
+  }
+    </script>
+    <a href="javascript:lottey()">点我抽奖呀</a>
+
+
+</div>
+
+
+
+
+<script type="text/javascript">
+
+
+
+
+
+</script><div style="height: 0px; width: 0px; overflow: hidden;"><object width="0" height="0" style="height:0;width:0;overflow:hidden;" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab" id="JSocket"><param name="allowScriptAccess" value="always"><param name="movie" value="http://acjs.aliyun.com/flash/JSocket.swf"> <embed src="http://acjs.aliyun.com/flash/JSocket.swf" name="JSocket" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_cn" width="0" height="0"></object></div></body></html>

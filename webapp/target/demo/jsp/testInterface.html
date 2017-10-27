@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0055)http://localhost:63343/Demo01/showcase/Demo/lottey.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>无标题文档</title>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+</head>
+<body>
+
+<div class="mybody">
+    <a href="javascript:testList()">展示点赞</a>
+    <a href="javascript:lottey()">提交请求</a>
+    <a href="javascript:addUser()">添加用户</a>
+    <a href="javascript:test()">测试接口</a>
+    <a href="javascript:getBase64Str()">图片转化</a>
+    <input type="button" id="btnPost" value="ceshi">
+    <form class="myForm">
+        <input type="hidden" id="base64Str" name="base64Str"/>
+    </form>
+    <span class="baseStr"></span>
+    <div class="dianzan">
+        <span class="leftFollow"></span>
+        <span class="rightFollow"></span>
+        <span class="leftFollow4"></span>
+        <span class="leftFollow3"></span>
+        <span class="rightFollow3"></span>
+        <span class="leftFollow2"></span>
+        <span class="rightFollow2"></span>
+        <span class="rightFollow1"></span>
+        <span class="qafollow4"></span>
+        <span class="grey_pop"></span>
+        <span class="qafollow1"></span>
+        <span class="leftFollow1"></span>
+        <span class="qafollow3"></span>
+        <span class="qafollow2"></span>
+        <a href="javascript:addVote('leftFollow')">点赞</a>
+    </div>
+</div>
+
+
+<!--<script>
+    var client = new XMLHttpRequest();
+    client.set('Access-Control-Allow-Origin', 'http://127.0.0.1:8100');
+    client.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+    client.set('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type');
+    client.open("POST", "//showcase.display.taobao.com/common/picForBase64All.shtml", true);
+    client.onreadystatechange = test();
+    client.send();
+</script>-->
+
+<script type="text/javascript">
+
+    /*jQuery.support.cors = true;*/
+
+    function test() {
+        var url = "//showcase.simba.taobao.com/common/picForBase64All.shtml";
+        $.ajax({
+            url : url,
+            type : "POST",
+            dataType : "html",
+            contentType: "application/x-www-form-urlencoded",
+            crossDomain: true,
+            data : {
+                app : "fxImage",
+                base64Str : $("#base64Str").val()
+            },
+            success : function(data){
+                if (data.success){
+                    alert(data.info.data);
+                }
+            },
+            error : function(){
+                alert("失败");
+            }
+        });
+    }
+
+    function getBase64Str() {
+        var url = "/file/getBase64Str.json";
+        $.ajax({
+            url : url,
+            type : "get",
+            dataType : "json",
+            data : {
+                app : "test"
+            },
+            success : function(data){
+                if (data.success){
+                   var str = data.data;
+                    $("#base64Str").val(str);
+                }
+            },
+            error : function(){
+                alert("失败");
+            }
+        });
+    }
+
+    function addUser(){
+        var url = "http://localhost:8100/test/addUserNew.json";
+        $.ajax({
+            url : url,
+            type : "get",
+            dataType : "jsonp",
+            data : {
+                realName : "tianqi",
+                age : "24",
+                loginName : "tianqi",
+                loginPassword : "1235456",
+                joinDate : "2017-01-01"
+            },
+            success : function(data){
+                if (data.success){
+                    alert(data.data);
+                }
+            },
+            error : function(){
+                alert("失败");
+            }
+        })
+    }
+
+    function lottey(){
+        var url="http://showcase.simba.taobao.com/guagua/addStrategy.json";
+        $.ajax({
+            url:url,
+            type:"get",
+            dataType:"jsonp",
+            data:{
+                whiteApp:"guagua",
+                app:"guaguaVote",
+                target:"家居,6,新品",
+                ztcPlan:"爆款计划,测试计划,大促计划,老客计划,新品计划",
+                ztcKeyType:"热搜词,新品",
+                ztcKeyIndex:"无线,成本,转化",
+                ztcPeople:"优质人群,活动人群,天气人群",
+                ztcStrategy:"点击率,展现量,成本,新老用户占比",
+                zuanPlan:"测试计划,拉新计划,成本计划,全店计划,单品计划",
+                zzDirectCPC:"访客定向,相似宝贝定向",
+                zzDirectCPM:"营销场景定向-核心客户,行业内客户定向",
+                zzSourceIndexIn:"展现,平均引流成本",
+                zzSourceIndexOut:"行业点击率,资源环境位",
+                zzSourceIn:"无线、网上购物_手淘app流量包_手淘焦点图",
+                zzSourceOut:"PC_智能优化流量包,资源位环境",
+                zzIdeaWord:"促销,情感,网红型",
+                zzIdeaStyle:"科技感,时尚,功能",
+                zzIdeaColor:"黑,白,灰,红",
+                zuanStrategy:"宝贝收藏,展现量,成本,新老用户占比"
+            },
+            success:function(data){
+
+                if(data.info.code=="S001"){
+                }
+            },
+            error:function(data){
+                alert("失败");
+            }
+        })
+    }
+
+    function testList() {
+        $.ajax({
+            url: "https://showcase.display.taobao.com/common/MaterialList.json",
+            type: "get",
+            dataType: "jsonp",
+            data: {
+                app: "ztcYinXiao",
+                pageSize : 20,
+                orderStr : 'create_time'
+            },
+            success: function(a) {
+                var o = a.data.result;
+                for (var i = 0; i < o.length; i++) {
+                    $("." + o[i].target).html(o[i].mount);
+                }
+            }
+        });
+    }
+
+    function addVote(obj) {
+        $.ajax({
+            url: "https://showcase.display.taobao.com/ztc/addVote.json",
+            dataType: "jsonp",
+            data: {
+                app: "ztcYinXiao",
+                target: obj
+            },
+            success: function(o) {
+                if (o.info.code == "S001") {
+                    var mount = $("." + obj).html();
+                    $("." + obj).html(parseInt(mount) + 1);
+                } else {
+                    alert("\u60a8\u5df2\u7ecf\u70b9\u8fc7\u8d5e\u5566\uff01");
+                }
+            }
+        })
+    }
+</script>
