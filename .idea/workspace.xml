@@ -5,31 +5,334 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ca481ac-8c64-43a1-9f1e-66bcfad2f013" name="Default" comment="重入锁">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_0_M1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_0_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/com/fc/aspectj/CompactDiscAspect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/fc/controller/IndexController.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_xmlgraphics_1_7.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/webapp_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/webapp_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/smartfox/common_info.xml" afterPath="$PROJECT_DIR$/.idea/smartfox/common_info.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/dao.iml" afterPath="$PROJECT_DIR$/dao/dao.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/resources/spring-mybatis.xml" afterPath="$PROJECT_DIR$/dao/src/main/resources/spring-mybatis.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maven_demo.iml" afterPath="$PROJECT_DIR$/maven_demo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/module.iml" afterPath="$PROJECT_DIR$/module/module.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/service.iml" afterPath="$PROJECT_DIR$/service/service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/fc/service/imp/SgtPapers.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/fc/service/imp/SgtPapers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/resources/spring-bz.xml" afterPath="$PROJECT_DIR$/service/src/main/resources/spring-bz.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/pom.xml" afterPath="$PROJECT_DIR$/test/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/src/main/java/junittest/CdPlayerTest.java" afterPath="$PROJECT_DIR$/test/src/main/java/junittest/CdPlayerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.iml" afterPath="$PROJECT_DIR$/test/test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/tools.iml" afterPath="$PROJECT_DIR$/tools/tools.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/resources/spring-application.xml" afterPath="$PROJECT_DIR$/webapp/src/main/resources/spring-application.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/resources/spring-mvc.xml" afterPath="$PROJECT_DIR$/webapp/src/main/resources/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/webapp.iml" afterPath="$PROJECT_DIR$/webapp/webapp.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/src/main/webapp/jsp/login.html" afterPath="$PROJECT_DIR$/webapp/src/main/webapp/jsp/register.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dao/target/classes/com.fc.mapper/test-sqlmap.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dao/target/classes/com/fc/dao/UserDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dao/target/classes/jdbc.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dao/target/classes/spring-mybatis.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dao/target/classes/sqlmap-alias.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module/target/classes/com/fc/bean/FileDO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module/target/classes/com/fc/bean/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module/target/classes/com/fc/common/AjaxResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module/target/classes/com/fc/constant/NormalNumberConstant.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module/target/classes/com/fc/enums/Gender.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/aspectj/CompactDiscAspect.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/provider/TestProvider$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/provider/TestProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/provider/ThreadFactoryConsumer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/rmi/UserServiceRmi.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/rmi/client/UserServiceClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/rmi/imp/UserServiceRmiImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/service/CompactDisc.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/service/FileUploadManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/service/RegistryServiceConsumer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/service/TestSetBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/service/UserService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/service/imp/CdPlayerConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/service/imp/FileUploadManagerImp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/service/imp/RegistryServiceConsumerImp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/service/imp/SgtPapers.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/service/imp/TestSetBeanImp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/com/fc/service/imp/UserServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/dubbo-consumer.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/spring-bz.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/spring-hsf-cosumer.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/common/ArithUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/common/Asserts.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/common/DateUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/common/EncryptUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/common/FileUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/common/JsonUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/common/RegexUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/common/ThreadPoolDemo$MyTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/common/ThreadPoolDemo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/ehcache/MyCacheManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/enums/ErrorCodeEnum.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/exception/IllegalArgumentException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/file/DownImage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/file/FileEncoder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/file/ImageAndBase64Transfer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/file/MulFileUpload.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/file/PropertiesUtil$EnumerationAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/file/PropertiesUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/resolver/DeepJacksonArgumentResolver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/resolver/ErrorHandlerExceptionResolver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/com/fc/resolver/JsonParam.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/target/classes/learning/git使用.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/controller/DubboConsumerController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/controller/FileController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/controller/IndexController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/controller/TestController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/Person.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/CglibHelloService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/HelloService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/HelloServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/HelloServiceMain.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/demo/reflect/HelloServiceProxy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/ehcache/MethodCacheInterceptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/interceptor/MyInterceptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/rand/RandomDemo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/rand/RandomValueValidate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/Count.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/CountThreadMain.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/Counter$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/Counter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/MultiThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/TestNotifyAndWait$NotifyThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/TestNotifyAndWait$WaitThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/TestNotifyAndWait.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/ThreadA.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/ThreadImpCallable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/ThreadImpCallableMain.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/productconsumer/Consumer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/productconsumer/Producer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/productconsumer/Storage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/com/fc/thread/productconsumer/TestConsumerAndProducer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/ehcache.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/spring-aop.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/spring-application.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/spring-ehcache.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/spring-mvc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/classes/test.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/controller/DubboConsumerController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/controller/FileController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/controller/IndexController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/controller/TestController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/Person.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/CglibHelloService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/HelloService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/HelloServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/HelloServiceMain.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/demo/reflect/HelloServiceProxy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/ehcache/MethodCacheInterceptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/interceptor/MyInterceptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/rand/RandomDemo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/rand/RandomValueValidate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/Count.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/CountThreadMain.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/Counter$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/Counter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/MultiThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/TestNotifyAndWait$NotifyThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/TestNotifyAndWait$WaitThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/TestNotifyAndWait.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/ThreadA.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/ThreadImpCallable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/ThreadImpCallableMain.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/productconsumer/Consumer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/productconsumer/Producer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/productconsumer/Storage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/com/fc/thread/productconsumer/TestConsumerAndProducer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/ehcache.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/spring-aop.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/spring-application.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/spring-ehcache.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/spring-mvc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/classes/test.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/antlr-2.7.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/aspectjweaver-1.8.0.M1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/batik-css-1.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/batik-ext-1.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/batik-util-1.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-beanutils-1.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-beanutils-bean-collections-1.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-beanutils-core-1.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-chain-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-cli-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-codec-1.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-collections-3.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-configuration-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-dbcp-1.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-digester-1.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-discovery-20030211.213356.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-io-2.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-jelly-1.0-RC1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-lang-2.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-logging-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-logging-api-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-pool-1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-validator-1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/commons-vfs2-2.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/core-2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/dom4j-1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/dubbo-2.5.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/dubbo-api-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/eagleeye-core-1.4.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/ecs-1.4.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/ehcache-core-2.6.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/fastjson-1.2.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/fasttext-css-1.3.139.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/fasttext-psoriasis-1.3.139.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/fasttext-sec-1.3.139.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/fasttext-segment-1.3.139.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/fasttext-utils-1.3.139.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/fasttext.all-1.3-20171011.054222-142.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/forehead-1.0-beta-5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/groovy-all-1.1-rc-1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/gson-2.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/guava.hsf-18.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hessian-3.1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hessian-4.0.7.bugfix10.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hessian-lite-3.2.1-fixed-2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.app.api-2.1.1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.app.dubbo-2.1.1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.app.ndi-2.1.1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.app.spring-2.1.1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.common-2.1.1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.remoting-2.1.1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.remoting.dubbo-2.1.1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.remoting.netty-2.1.1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.service.address-2.1.1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.service.address.unit-2.1.1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.service.config-2.1.1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.service.dubbo-2.1.1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.service.monitor-2.1.1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.service.process-2.1.1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.service.remoting-2.1.1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/hsf.services-2.1.1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/htmlparser-1.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/httpclient-4.3.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/httpcore-4.3.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/isorelax-20020414.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jackson-core-asl-1.9.13.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jakarta.commons.lang-2.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jakarta.commons.logging-0.0.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jakarta.oro-0.0.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jaket-0.2.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/javase-2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/javassist-3.11.0.GA.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/javassist-3.15.0-GA.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jaxen-1.0-FCS.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jedis-2.0.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jline-0.9.94.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jna-3.4.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/json-2.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/jstl-1.0.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/junit-4.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/junrar-0.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/kryo-2.23.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/lang-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/logger.api-0.1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/maven-scm-api-1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/maven-scm-provider-svn-commons-1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/maven-scm-provider-svnexe-1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/media-core-1.0.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/mina-core-1.1.5.bugfix-20121029.093148-11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/minlog-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/module-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/msv-20020414.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/mybatis-3.2.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/mybatis-spring-1.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/mysql-connector-java-5.1.35.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/nekohtml-1.9.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/netty-3.2.5.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/netty-3.7.0.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/netty-all-4.0.23.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/network.core-1.3.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/objenesis-2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/ognl-3.0.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/oro-2.0.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/oshi-core-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/platform-3.4.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/plexus-utils-1.5.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/regexp-1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/relaxngDatatype-20020414.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/sac-1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/saxpath-1.0-FCS.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/security-3.0-20151026.074741-45.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/service-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/showcase-service-1.0.1-20170710.030251-6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/slf4j-api-1.7.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/slf4j-log4j12-1.7.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spas-sdk-autokey-0.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spas-sdk-client-1.1.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spas-sdk-common-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spas-sdk-service-1.2.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spas-sdk-svcbase-1.2.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-aop-4.0.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-aspects-4.0.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-beans-4.0.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-context-4.0.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-context-support-4.0.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-core-4.0.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-expression-4.0.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-jdbc-4.0.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-orm-4.0.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-tx-4.0.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-web-4.0.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/spring-webmvc-4.0.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/sslext-1.2-0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/struts-core-1.3.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/struts-taglib-1.3.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/struts-tiles-1.3.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/tfs-client-restful-1.2.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-common-configuration-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-common-expression-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-common-lang-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-common-logging-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-service-form-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-service-framework-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-service-pipeline-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-service-pull-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-service-rundata-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-service-threadcontext-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-webx-framework-2.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-webx-request-2.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/toolkit-webx-turbine-2.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/tools-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/unitrouter-1.0.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/velocity-1.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/velocity-tools-1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/webapp-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/xercesImpl-2.8.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/xml-apis-1.0.b2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/xml-apis-ext-1.3.04.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/xml-resolver-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/xml.nekohtml-1.9.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/xml.xerces-2.8.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/xml.xmlgraphics-1.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/zkclient-0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/lib/zookeeper-3.4.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/css/fileinput.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/html/listDemo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/html/openLayersDemo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/html/tianDituDemo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/images/404-error-page.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/babel.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/fileinput.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/fileinput_locale_zh.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/jquery.easyui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/jquery.uploadify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/jquery.uploadify.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/pnotify.custom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/react-dom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/react.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/self/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/js/uploadify.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/jsp/404.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/jsp/lottey.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/jsp/lottey1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/jsp/main.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/jsp/register.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/jsp/testInterface.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/jsp/uploadFile.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/react/common.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/react/hello.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/react/reactAPI.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/target/demo/template/blank-excel.xlsx" afterPath="" />
     </list>
     <ignored path="maven_demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -126,7 +429,7 @@
       <file leaf-file-name="OverLoad.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/src/main/java/com/jvm/dispatcher/OverLoad.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2919708">
+            <state vertical-scroll-proportion="1.4111922">
               <caret line="43" column="44" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
               <folding>
                 <element signature="e#998#999#0" expanded="true" />
@@ -150,9 +453,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="32" column="17" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#965#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -164,8 +465,6 @@
               <caret line="123" column="27" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#17782#17938#0" expanded="true" />
-                <element signature="e#17937#17938#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -186,9 +485,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="198" column="30" selection-start-line="198" selection-start-column="25" selection-end-line="198" selection-end-column="30" />
-              <folding>
-                <element signature="e#1845#1853#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -414,7 +711,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -425,6 +721,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -442,318 +739,6 @@
               <option name="myItemId" value="maven_demo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework:spring-webmvc:4.0.0.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-webmvc-4.0.0.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework:spring-webmvc:4.0.0.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-webmvc-4.0.0.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework:spring-webmvc:4.0.0.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-webmvc-4.0.0.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework:spring-test:4.0.0.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-test-4.0.0.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="springframework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework:spring-test:4.0.0.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-test-4.0.0.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="springframework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework:spring-test:4.0.0.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-test-4.0.0.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="springframework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework:spring-test:4.0.0.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-test-4.0.0.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="springframework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="setup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework:spring-test:4.0.0.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-test-4.0.0.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="springframework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mock" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework:spring-test:4.0.0.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-test-4.0.0.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="springframework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mock" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework:spring-test:4.0.0.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-test-4.0.0.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: javax.servlet:javax.servlet-api:3.1.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javax.servlet-api-3.1.0.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: javax.servlet:javax.servlet-api:3.1.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javax.servlet-api-3.1.0.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -762,902 +747,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ehcache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="junittest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jvm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jvm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dispatcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="work" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="improve" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aspectj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.fc.mapper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.fc.dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2580,6 +1669,7 @@
       <workItem from="1508138983940" duration="9741000" />
       <workItem from="1508397248592" duration="3384000" />
       <workItem from="1508723482042" duration="52954000" />
+      <workItem from="1509098996965" duration="20000" />
     </task>
     <task id="LOCAL-00001" summary="idea git 直接提交">
       <created>1496992485888</created>
@@ -2635,7 +1725,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="919944000" />
+    <option name="totallyTimeSpent" value="919964000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2653,19 +1743,17 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32635984" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27475592" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39191073" sideWeight="0.39138818" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22594142" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1818766" sideWeight="0.49082568" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33193862" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39191073" sideWeight="0.6086118" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38633195" sideWeight="0.68251926" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38633195" sideWeight="0.68251926" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24128312" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32775453" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23521851" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23521851" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2679,6 +1767,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27475592" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33193862" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1503856" sideWeight="0.5091743" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26359832" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -2791,7 +1881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2809,7 +1898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2833,7 +1921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.69859815">
           <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2841,7 +1928,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.093457945">
           <caret line="63" column="26" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2849,7 +1935,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2857,7 +1942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.881356">
           <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
@@ -2876,9 +1960,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.75">
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="e#1334#1335#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2886,10 +1967,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="4.3391523">
           <caret line="109" column="18" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="18" />
-          <folding>
-            <element signature="e#3750#3751#0" expanded="false" />
-            <element signature="e#3802#3803#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2897,7 +1974,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2905,7 +1981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2913,9 +1988,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2923,7 +1995,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2947,7 +2018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33146068">
           <caret line="620" column="0" selection-start-line="620" selection-start-column="0" selection-end-line="620" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2965,7 +2035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35849056">
           <caret line="236" column="8" selection-start-line="236" selection-start-column="8" selection-end-line="236" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2973,17 +2042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="25" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1043#1044#0" expanded="false" />
-            <element signature="e#1110#1111#0" expanded="false" />
-            <element signature="e#1138#1139#0" expanded="false" />
-            <element signature="e#1192#1193#0" expanded="false" />
-            <element signature="e#1222#1223#0" expanded="false" />
-            <element signature="e#1287#1288#0" expanded="false" />
-            <element signature="e#1321#1322#0" expanded="false" />
-            <element signature="e#1390#1391#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2999,7 +2057,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.285714">
           <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3007,9 +2064,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="98" column="57" selection-start-line="98" selection-start-column="34" selection-end-line="98" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3017,7 +2071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.8876405">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3025,7 +2078,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.8314607">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3033,7 +2085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2724719">
           <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3049,7 +2100,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.285714">
           <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4838,11 +3888,12 @@
               <point x="0.0" y="0.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.7505107832009079" x="-208.21778584392007" y="3443.78221415608" />
+          <settings layout="Hierarchic Group" zoom="0.7505107832009079" x="-208.0" y="3444.0" />
           <SelectedNodes>
             <node>com.taobao.security:security:jar:3.0-20151026.074741-45/commons-configuration:commons-configuration:jar:1.1</node>
           </SelectedNodes>
           <Categories />
+          <SCOPE>All</SCOPE>
           <VISIBILITY>All</VISIBILITY>
         </state>
       </provider>
@@ -4851,7 +3902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6772009">
           <caret line="249" column="41" selection-start-line="248" selection-start-column="6" selection-end-line="249" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4859,7 +3909,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38014528">
           <caret line="104" column="28" selection-start-line="104" selection-start-column="28" selection-end-line="104" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4867,7 +3916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33262712">
           <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4875,9 +3923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33262712">
           <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4885,7 +3930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="97" column="17" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4901,19 +3945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3153154">
           <caret line="416" column="86" selection-start-line="416" selection-start-column="78" selection-end-line="416" selection-end-column="86" />
-          <folding>
-            <element signature="e#5039#5055#0" expanded="false" />
-            <element signature="e#6145#6146#0" expanded="false" />
-            <element signature="e#6196#6197#0" expanded="false" />
-            <element signature="e#6465#6466#0" expanded="false" />
-            <element signature="e#6516#6517#0" expanded="false" />
-            <element signature="e#6635#6636#0" expanded="false" />
-            <element signature="e#6660#6661#0" expanded="false" />
-            <element signature="e#9056#9057#0" expanded="false" />
-            <element signature="e#9099#9100#0" expanded="false" />
-            <element signature="e#10208#10209#0" expanded="false" />
-            <element signature="e#10283#10284#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4921,26 +3952,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="59" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.9775281">
           <caret line="157" column="45" selection-start-line="157" selection-start-column="45" selection-end-line="157" selection-end-column="45" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/jsp/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.7586207">
           <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4980,9 +4009,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="17" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#965#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4990,9 +4017,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="198" column="30" selection-start-line="198" selection-start-column="25" selection-end-line="198" selection-end-column="30" />
-          <folding>
-            <element signature="e#1845#1853#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -5002,8 +4027,6 @@
           <caret line="123" column="27" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#17782#17938#0" expanded="true" />
-            <element signature="e#17937#17938#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -5034,7 +4057,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/src/main/java/com/jvm/dispatcher/OverLoad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2919708">
+        <state vertical-scroll-proportion="1.4111922">
           <caret line="43" column="44" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
           <folding>
             <element signature="e#998#999#0" expanded="true" />
