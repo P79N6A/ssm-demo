@@ -1,10 +1,43 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>用户注册</title>
+    <script type="text/javascript" src="../js/WdatePicker.js"></script>
 </head>
 <body>
-
+<div id="myBody">
+    <!-- http://www.my97.net/demo/resource/2.4.asp#m248 -->
+    <form id="myForm">
+        <label>默认时间:</label>
+        <input id="myDate" type="text" onclick="WdatePicker()"/><br>
+        <label>图标触发:</label>
+        <input id="d2" type="text"/>
+        <img src="../js/skin/datePicker.gif" width="16" height="22" align="middle"
+             onclick="WdatePicker({el:'d2'})"/><br>
+        <label>静态限制范围:</label>
+        <input id="d3" type="text" class="Wdate" onclick="WdatePicker({skin:'whyGreen',
+            minDate:'2017-10-01',maxDate:'2020-10-01'})"/><br>
+        <label>限制范围dateFormat:</label>
+        <input id="d4" type="text" class="Wdate" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',
+            minDate:'2017-11-01 00:10:10',maxDate:'2018-11-01 23:59:59',skin:'whyGreen'})"
+            value="2018-11-08 00:00:00"/><br>
+        <label>只能选择本月日期:</label>
+        <input id="d5" type="text" class="Wdate" onclick="WdatePicker({minDate:'%y-%M-01',
+            maxDate:'%y-%M-%ld'})"/><br>
+        <label>========脚本自定义限制日期示例========</label><br>
+        合同有效期从<input id="startDate" type="text" class="Wdate" onclick="WdatePicker({
+            maxDate:'#F{$dp.$D(\'endDate\')||\'2020-10-01\'}'
+        })">到
+        <input id="endDate" type="text" class="Wdate" onclick="WdatePicker({
+            minDate:'#F{$dp.$D(\'startDate\')}',maxDate:'2020-10-01'
+        })"/><br>
+        <label>设置无效日期[0-6]代表周日-周六:</label>
+        <input id="d6" type="text" class="Wdate" onclick="WdatePicker({
+            disabledDays:[0,6]
+        })"/>
+    </form>
+</div>
 </body>
 </html>

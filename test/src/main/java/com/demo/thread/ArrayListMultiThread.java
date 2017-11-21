@@ -13,25 +13,50 @@ public class ArrayListMultiThread {
 
     static Vector<Integer> vector = new Vector<>(10);
 
-    public static class AddThread implements Runnable {
+    /**
+     * 线程安全，可以得到预期结果
+     */
+    public static class VectorAddThread implements Runnable {
 
         @Override
         public void run() {
-            int loop = 100000;
+            int loop = 10000;
             for (int i = 0; i < loop; i++) {
                 vector.add(i);
-                //arrayList.add(i);
+            }
+        }
+    }
+
+    /**
+     * 非线程安全，可能会抛出数据越界异常
+     */
+    public static class ArrayListAddThread implements Runnable {
+
+        @Override
+        public void run() {
+            int loop = 10000;
+            for (int i = 0; i < loop; i++) {
+                arrayList.add(i);
             }
         }
     }
 
     public static void main(String[] args) throws InterruptedException{
-        Thread t1 = new Thread(new AddThread());
-        Thread t2 = new Thread(new AddThread());
+        VectorAddThread vectorAddThread = new VectorAddThread();
+        Thread t1 = new Thread(vectorAddThread);
+        Thread t2 = new Thread(vectorAddThread);
         t1.start();
         t2.start();
         t1.join();
         t2.join();
         System.out.println(vector.size());
+        ArrayListAddThread arrayListAddThread = new ArrayListAddThread();
+        Thread t4 = new Thread(arrayListAddThread);
+        Thread t5 = new Thread(arrayListAddThread);
+        t4.start();
+        t5.start();
+        t4.join();
+        t5.join();
+        System.out.println(arrayList.size());
     }
 }

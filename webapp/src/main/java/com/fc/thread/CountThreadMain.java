@@ -3,22 +3,37 @@ package com.fc.thread;
 /**
  * @author fangcong on 2017/4/1.
  */
-public class CountThreadMain {
+public class CountThreadMain implements Runnable{
 
-    public static void main(String[] args) {
-        Count count = new Count();
-        int loop = 5;
-        for (int i = 0; i < loop; i++) {
-            ThreadA task = new ThreadA(count);
-            task.start();
-        }
+    int num = 100;
 
+    public synchronized void m1() throws InterruptedException {
+        num = 1000;
+        Thread.sleep(500);
+        System.out.println("m1 num = " + num);
+    }
+
+    public synchronized void m2() throws InterruptedException {
+        Thread.sleep(250);
+        num = 2000;
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+        CountThreadMain threadMain = new CountThreadMain();
+        Thread t = new Thread(threadMain);
+        t.start();
+
+        threadMain.m2();
+
+        System.out.println("final num = " + threadMain.num);
+    }
+
+    @Override
+    public void run() {
         try {
-            Thread.sleep(100L);
+            m1();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("final num = " + count.num);
-        System.out.println("final sum = " + count.sum);
     }
 }

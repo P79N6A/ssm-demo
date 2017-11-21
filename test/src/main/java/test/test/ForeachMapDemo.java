@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import com.fc.bean.TestBean;
 import com.fc.constant.NormalNumberConstant;
@@ -45,7 +46,7 @@ public class ForeachMapDemo {
 	public static long forEntrtSet(Map<Long,Integer> map){
 		List<TestBean> list = new ArrayList<TestBean>();
 		long startTime = Calendar.getInstance().getTimeInMillis();
-		for (Map.Entry<Long, Integer> entry : map.entrySet()){
+		for (Entry<Long, Integer> entry : map.entrySet()){
 			TestBean bean = new TestBean();
 			bean.setStartId(entry.getKey());
 			bean.setId(entry.getValue());

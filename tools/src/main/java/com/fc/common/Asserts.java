@@ -3,10 +3,10 @@ package com.fc.common;
 import java.util.Collection;
 
 import com.fc.exception.IllegalArgumentException;
-import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.util.CollectionUtils;
 
 /**
  * 校验参数
@@ -79,7 +79,7 @@ public class Asserts {
                         break;
                     }
                 }else if (obj instanceof Collection){
-                    if (CollectionUtils.isNotEmpty((Collection)obj)){
+                    if (!CollectionUtils.isEmpty((Collection)obj)){
                         hasNotNull = true;
                         break;
                     }

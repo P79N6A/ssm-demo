@@ -51,9 +51,8 @@
 
     <properties>
         <!-- spring版本 -->
-        <spring-version>4.0.0.RELEASE</spring-version>
+        <spring-version>4.1.0.RELEASE</spring-version>
         <!-- 日志管理包版本 -->
-        <log4j-version>1.2.17</log4j-version>
         <slf4j-version>1.7.7</slf4j-version>
     </properties>
 
@@ -153,22 +152,6 @@
             <artifactId>ehcache-core</artifactId>
             <version>2.6.6</version>
         </dependency>
-        <dependency>
-            <groupId>com.taobao.security</groupId>
-            <artifactId>security</artifactId>
-            <version>3.0-SNAPSHOT</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>fastjson</artifactId>
-                    <groupId>com.alibaba</groupId>
-                </exclusion>
-                <exclusion>
-                    <groupId>servletapi</groupId>
-                    <artifactId>servletapi</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <!-- redis缓存 -->
         <!-- zip文件需要的jar包 -->
         <dependency>
             <groupId>com.github.junrar</groupId>

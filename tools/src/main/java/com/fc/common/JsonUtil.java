@@ -7,7 +7,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.alibaba.fastjson.JSON;
 
-import com.taobao.security.util.SecurityUtil;
 import org.apache.commons.lang.StringUtils;
 
 /**
@@ -27,7 +26,7 @@ public class JsonUtil {
             securityStr = securityStr.replaceAll("\t", " ");
         }
         if (jsonpCallBack != null) {
-            jsonpCallBack = SecurityUtil.escapeHtml(jsonpCallBack);
+            //jsonpCallBack = SecurityUtil.escapeHtml(jsonpCallBack);
             StringBuilder sb = new StringBuilder(jsonpCallBack).append("(").append(securityStr).append(")");
             securityStr = sb.toString();
         }

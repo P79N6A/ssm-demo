@@ -48,11 +48,13 @@
     function test() {
         var url = "//showcase.display.taobao.com/mentholatum/upload.json";
         $.ajax({
-            url : url,
-            type : "get",
-            dataType : "jsonp",
-            data : {
-                app : "menthLottey"
+            type: "GET",
+            url: "https://showcase.display.taobao.com/admin/test/testLottery.json",
+            dataType: "jsonp",
+            data: {
+                app: 'mysteryLottery',
+                asac: '1A17920JISMAQMSFDRBJO3',
+                ua: c.getUA()
             },
             success : function(data){
                 if (data.info.ok){
@@ -66,15 +68,13 @@
     }
 
     function lottey() {
-        var url = "//showcase.display.taobao.com/double11/randompz.json";
         $.ajax({
-            url: url,
-            type: "get",
+            type: "GET",
+            url: "https://showcase.simba.taobao.com/double11/test/testLottery.json",
             dataType: "jsonp",
             data: {
                 app: 'phaseOne',
-                target: 'box',
-                asac: '1A17920DGULBQM3WKW9A0K',
+                asac: '1A179205OAUAQMIUOFEC3Z',
                 ua: c.getUA()
             },
             success: function (data) {

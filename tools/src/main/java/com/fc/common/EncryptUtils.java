@@ -3,6 +3,7 @@ package com.fc.common;
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
+import org.apache.commons.codec.binary.Hex;
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
 
@@ -24,15 +25,24 @@ public class EncryptUtils {
      * @return 加密后的字符串
      * @throws Exception
      */
-    public static String aesEncrypt(String str, String key) throws Exception {
+    public static byte[] aesEncrypt(String str, String key) throws Exception {
         if (str == null || key == null) {
             return null;
         }
         Cipher cipher = Cipher.getInstance("AES");
         cipher.init(Cipher.ENCRYPT_MODE, new SecretKeySpec(key.getBytes(CHARSET), "AES"));
         byte[] bytes = cipher.doFinal(str.getBytes(CHARSET));
-        String encryptStr = parseBytes2Hex(bytes);
-        return encryptStr;
+        return bytes;
+    }
+
+    /**
+     * 加密得到16进制字符串
+     * @param data
+     * @param password
+     * @return
+     */
+    public static String encryptToHexString(String data, String password) throws Exception{
+        return new String(toHex(aesEncrypt(data, password)));
     }
 
     /**
@@ -49,13 +59,14 @@ public class EncryptUtils {
         }
         Cipher cipher = Cipher.getInstance("AES");
         cipher.init(Cipher.DECRYPT_MODE, new SecretKeySpec(key.getBytes(CHARSET), "AES"));
-        byte[] strBytes = parseHexStr2bytes(str);
+        //byte[] strBytes = parseHexStr2bytes(str);
+        byte[] strBytes = hexStr2ByteArr(str);
         byte[] bytes = cipher.doFinal(strBytes);
         return new String(bytes, CHARSET);
     }
 
     /**
-     * 将二进制转成16进制，加密时用
+     * 将二进制转成16进制，加密时用(方式之一)
      *
      * @param bytes 加密得到的二进制字节数组
      * @return
@@ -73,7 +84,20 @@ public class EncryptUtils {
     }
 
     /**
-     * 将16进制串转成二进制数组，用于解密
+     * 将二进制转为16进制字符串,StringBuilder单线程安全,效率高(推荐)
+     * @param bytes
+     * @return
+     */
+    public static String toHex(byte[] bytes) {
+        StringBuilder sb = new StringBuilder();
+        for (byte b : bytes) {
+            sb.append(String.format("%02X", b));
+        }
+        return sb.toString();
+    }
+
+    /**
+     * 将16进制串转成二进制数组，用于解密(方式1)
      *
      * @param hexStr
      * @return
@@ -92,31 +116,7 @@ public class EncryptUtils {
     }
 
     /**
-     * 将二进制字节数组转成16进制
-     *
-     * @param bytes
-     * @return
-     */
-    public static String byteArr2HexStr(byte[] bytes) {
-        int length = bytes.length;
-        StringBuffer sb = new StringBuffer();
-        for (int i = 0; i < length; i++) {
-            int tmp = bytes[i];
-            //负数转为整数
-            while (tmp < 0) {
-                tmp = tmp + 256;
-            }
-            //小于0F，高位补0
-            if (tmp < 16) {
-                sb.append("0");
-            }
-            sb.append(Integer.toString(tmp, 16));
-        }
-        return sb.toString();
-    }
-
-    /**
-     * 将16进制字符串转为二进制数据
+     * 将16进制字符串转为二进制数据(方式2)
      *
      * @param strIn
      * @return
@@ -132,6 +132,13 @@ public class EncryptUtils {
             outs[i / 2] = (byte)Integer.parseInt(tmp, 16);
         }
         return outs;
+    }
+
+    /**
+     * 16进制加密串转二进制数据(方式3)-推荐
+     */
+    public static byte[] decodeHex(String encryptedHexString) throws Exception{
+        return Hex.decodeHex(encryptedHexString.toCharArray());
     }
 
     /**
@@ -162,11 +169,35 @@ public class EncryptUtils {
         return new String(bytes, CHARSET);
     }
 
+    public static void printBytes(byte[] bytes) {
+        StringBuilder sb = new StringBuilder();
+        for (byte b : bytes) {
+            sb.append(b);
+        }
+        System.out.println(sb.toString());
+    }
+
     public static void main(String[] args) throws Exception {
+        //base64加解密
         String base64EncryptStr = base64Encrypt("张三");
         System.out.println(base64EncryptStr);
         String base64DecryptStr = base64Decrypt(base64EncryptStr);
         System.out.println(base64DecryptStr);
+
+        //AES加密,转16进制测试
+        byte[] bytes = aesEncrypt("zhangsan", "*(&^!#$^#@2f%&9$");
+        String hexStr1 = parseBytes2Hex(bytes);
+        System.out.println(hexStr1);
+        String hexStr2 = toHex(bytes);
+        System.out.println(hexStr2);
+        //AES解密
+        String decryptStr = aesDecrypt(hexStr1, "*(&^!#$^#@2f%&9$");
+        System.out.println(decryptStr);
+
+        //16进制转2进制测试
+        printBytes(parseHexStr2bytes(hexStr1));
+        printBytes(hexStr2ByteArr(hexStr1));
+        printBytes(decodeHex(hexStr1));
     }
 
 }

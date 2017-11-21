@@ -35,4 +35,21 @@ public class Count {
         sum.getAndIncrement();
         System.out.println(Thread.currentThread().getName() + "*" + sum);
     }
+
+    public static void main(String[] args) {
+        Count count = new Count();
+        int loop = 5;
+        for (int i = 0; i < loop; i++) {
+            ThreadA task = new ThreadA(count);
+            task.start();
+        }
+
+        try {
+            Thread.sleep(100L);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("final num = " + count.num);
+        System.out.println("final sum = " + count.sum);
+    }
 }

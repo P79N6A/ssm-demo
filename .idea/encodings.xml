@@ -28,7 +28,11 @@
     <file url="jar://$MAVEN_REPOSITORY$/com/tmall/latour/latour-client/1.5.5.6/latour-client-1.5.5.6-sources.jar!/com/tmall/latour/client/domain/benefitplatform/CampaignQuery.java" charset="GBK" />
     <file url="jar://$MAVEN_REPOSITORY$/com/tmall/latour/latour-client/1.5.5.6/latour-client-1.5.5.6-sources.jar!/com/tmall/latour/client/result/AwardQuantityDTO.java" charset="GBK" />
     <file url="jar://$MAVEN_REPOSITORY$/com/tmall/latour/latour-client/1.5.5.6/latour-client-1.5.5.6-sources.jar!/com/tmall/latour/client/result/CommonResult.java" charset="GBK" />
+    <file url="jar://$MAVEN_REPOSITORY$/com/tmall/latour/latour-client/1.5.5.6/latour-client-1.5.5.6-sources.jar!/com/tmall/latour/client/service/ApplyAwardResultService.java" charset="GBK" />
     <file url="jar://$MAVEN_REPOSITORY$/com/tmall/latour/latour-client/1.5.5.6/latour-client-1.5.5.6-sources.jar!/com/tmall/latour/client/service/BenefitPlatformService.java" charset="GBK" />
+    <file url="jar://$MAVEN_REPOSITORY$/com/tmall/latour/latour-client/1.6.2.4/latour-client-1.6.2.4-sources.jar!/com/tmall/latour/client/benefit/domain/response/BenefitLotteryResponse.java" charset="GBK" />
+    <file url="jar://$MAVEN_REPOSITORY$/com/tmall/latour/latour-client/1.6.2.4/latour-client-1.6.2.4-sources.jar!/com/tmall/latour/client/result/ResultDO.java" charset="GBK" />
+    <file url="jar://$MAVEN_REPOSITORY$/com/tmall/latour/latour-client/1.6.2.4/latour-client-1.6.2.4-sources.jar!/com/tmall/latour/client/service/BenefitPlatformService.java" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
