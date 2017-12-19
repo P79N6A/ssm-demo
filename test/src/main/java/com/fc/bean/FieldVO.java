@@ -20,6 +20,8 @@ public class FieldVO implements Serializable{
     String field7;
     Integer field8;
 
+    public FieldVO() {}
+
     public void method1() {
         System.out.println("no parameterType");
     }
