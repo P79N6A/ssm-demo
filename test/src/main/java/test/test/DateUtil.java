@@ -36,9 +36,26 @@ public class DateUtil {
 
     public static void main(String[] args) throws Exception {
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        Date date1 = format.parse("2016-08-25 00:00:01");
+        Date date1 = format.parse("2018-01-16 00:00:00");
+        System.out.println(date1.getTime());
+        System.out.println(new Date().getTime());
         Date date2 = format.parse("2016-08-24 00:00:02");
         int flag = date1.compareTo(date2);
         System.out.println(flag);
+        int curYear = Calendar.getInstance().get(Calendar.YEAR);
+        System.out.println(curYear);
+
+        SimpleDateFormat sdf = new SimpleDateFormat("MM月dd日");
+        String begin = "1月3日";
+        String end = "1月21日";
+        Date endDate = sdf.parse(end);
+        Date curDate = sdf.parse("01月15日");
+        if (curDate.before(sdf.parse(begin))) {
+            System.out.println("not start");
+        }
+        if (curDate.after(endDate)) {
+            System.out.println("end");
+        }
+        System.out.println(Runtime.getRuntime().availableProcessors());
     }
 }

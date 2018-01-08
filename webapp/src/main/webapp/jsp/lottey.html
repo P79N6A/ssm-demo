@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <!-- saved from url=(0055)http://localhost:63343/Demo01/showcase/Demo/lottey.html -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -30,6 +29,7 @@
 
     </script>
     <a href="javascript:lottey()">抽奖</a>
+    <a href="javascript:test()">接口测试</a>
     <!--<a href="javascript:test()">生成分数</a>
     <a href="javascript:lottey1()">POP2抽奖</a>
     <span class="score"></span>
@@ -46,15 +46,14 @@
 <script type="text/javascript">
 
     function test() {
-        var url = "//showcase.display.taobao.com/mentholatum/upload.json";
+        var url = "https://showcase.display.taobao.com/common/addlog4.json";
         $.ajax({
             type: "GET",
-            url: "https://showcase.display.taobao.com/admin/test/testLottery.json",
+            url: url,
             dataType: "jsonp",
             data: {
-                app: 'mysteryLottery',
-                asac: '1A17920JISMAQMSFDRBJO3',
-                ua: c.getUA()
+                app: 'applyLog',
+                targetId : 'theme0'
             },
             success : function(data){
                 if (data.info.ok){

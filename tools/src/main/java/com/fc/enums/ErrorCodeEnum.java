@@ -31,7 +31,7 @@ public enum ErrorCodeEnum {
      */
     private boolean isShow;
 
-    private ErrorCodeEnum(int errorCode, Class<?> clazz, String message, boolean isShow) {
+    ErrorCodeEnum(int errorCode, Class<?> clazz, String message, boolean isShow) {
         this.errorCode = errorCode;
         this.isShow = isShow;
         this.message = message;

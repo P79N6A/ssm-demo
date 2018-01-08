@@ -12,11 +12,6 @@ public class AppConfigBean {
 
     @Bean
     public TestSetBean testSetBean() {
-        return new TestSetBean() {
-            @Override
-            public void getback() {
-                System.out.println("configuration generate bean ...");
-            }
-        };
+        return ()-> System.out.println("configuration generate bean ...");
     }
 }
