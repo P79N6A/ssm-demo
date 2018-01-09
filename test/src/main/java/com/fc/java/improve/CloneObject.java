@@ -1,7 +1,6 @@
 package com.fc.java.improve;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
@@ -12,7 +11,6 @@ import com.fc.bean.Person;
  *
  * @author fangcong
  */
-@SuppressWarnings({"rawtypes", "unchecked"})
 public class CloneObject {
 
     private static Person person = new Person();
@@ -29,7 +27,6 @@ public class CloneObject {
     /**
      * hashSet实现list集合去重
      *
-     * @param <E>
      * @param list
      */
     public static void removeDuplicate(List list) {
@@ -44,6 +41,7 @@ public class CloneObject {
      * @param list
      */
     public static void printList(List list) {
+        System.out.println("size : " + list.size());
         for (Object object : list) {
             System.out.print(object + "\t");
         }
@@ -56,7 +54,18 @@ public class CloneObject {
      * @param args
      */
     public static void main(String[] args) {
-        List list = new ArrayList(Arrays.asList("aa", "bb", "cc", "dd", "cc", "ee", "aa"));
+        Person p1 = new Person("zhang", "san", false, 24);
+        Person p2 = new Person("zhang", "san", false, 24);
+        Person p3 = new Person("li", "si", true, 25);
+        Person p4 = new Person("wang", "wu", true, 23);
+        List<Person> list = new ArrayList<>();
+        list.add(p1);
+        list.add(p2);
+        list.add(p3);
+        list.add(p4);
+        /*List<Person> list1 = new ArrayList<>();
+        list1.add(p1);
+        list.removeAll(list1);*/
         printList(list);
         removeDuplicate(list);
         printList(list);

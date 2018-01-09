@@ -54,6 +54,23 @@ public class Person implements Serializable,Cloneable{
 		return age;
 	}
 
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (null == obj || getClass() != obj.getClass()) {
+			return false;
+		}
+		Person person = (Person)obj;
+		return firstname.equals(person.getFirstName()) && lastname.equals(person.getLastName());
+	}
+
+	@Override
+	public int hashCode() {
+		return firstname.concat(lastname).hashCode();
+	}
+
 	// 为了输入方便，重写了toString()
 	@Override
 	public String toString() {

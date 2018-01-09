@@ -41,7 +41,7 @@ public class ThreadPoolDemo {
             .setNameFormat("demo-pool-%d").build();
         ExecutorService executorService = new ThreadPoolExecutor(5, 10,
             0L, TimeUnit.MILLISECONDS,
-            new LinkedBlockingDeque<Runnable>(1024), namedThreadFactory, new ThreadPoolExecutor.AbortPolicy());
+            new LinkedBlockingDeque<>(1024), namedThreadFactory, new ThreadPoolExecutor.AbortPolicy());
         for (int i = 0; i < NormalNumberConstant.INT_10; i++) {
             executorService.execute(myTask);
         }

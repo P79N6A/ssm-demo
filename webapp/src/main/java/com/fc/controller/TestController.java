@@ -41,7 +41,7 @@ public class TestController {
     @Resource
     private UserService userService;
     @Resource
-    private ThreadPoolTaskExecutor taskExecutor;
+    private ThreadPoolTaskExecutor userThreadPool;
 
     private TestSetBean testSetBean;
 
@@ -192,9 +192,9 @@ public class TestController {
     public AjaxResult getThreadName() {
         MyTask myTask = new MyTask();
         for (int i = 0; i < NormalNumberConstant.INT_10; i++) {
-            taskExecutor.execute(myTask);
+            userThreadPool.execute(myTask);
         }
-        taskExecutor.shutdown();
+        userThreadPool.shutdown();
         return AjaxResult.getSuccessResult();
     }
 

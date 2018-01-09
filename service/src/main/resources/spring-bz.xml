@@ -10,9 +10,9 @@
 
     <!-- 启用aspectj自动代理 -->
     <aop:aspectj-autoproxy/>
+
     <!-- 切面bean -->
     <bean id="compactDiscAspect" class="com.fc.aspectj.CompactDiscAspect"/>
-
     <!-- xml方式声明切面 -->
     <aop:config>
         <aop:aspect ref="compactDiscAspect">
@@ -31,6 +31,13 @@
             <aop:around method="watchPaly" pointcut-ref="aroundPlay"/>
         </aop:aspect>
     </aop:config>-->
+
+    <!-- advisor通知器配置切入点 -->
+    <bean id="compactDiscAdvisor" class="com.fc.aspectj.CompactDiscAdvisor"/>
+    <aop:config>
+        <aop:pointcut id="playAdvisor" expression="execution(* com.fc.service.CompactDisc.play(..))"/>
+        <aop:advisor advice-ref="compactDiscAdvisor" pointcut-ref="playAdvisor"/>
+    </aop:config>
 
     <bean class="com.fc.provider.TestProvider" init-method="initMethod">
     </bean>

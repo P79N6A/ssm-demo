@@ -3,6 +3,8 @@ package com.fc.java.improve;
 import java.io.*;
 
 /**
+ * 自定义类加载器，继承ClassLoader
+ *
  * @author fangcong on 2017/4/13.
  */
 public class CladdReloader extends ClassLoader {
