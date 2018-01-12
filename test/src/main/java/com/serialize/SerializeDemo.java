@@ -78,19 +78,27 @@ public class SerializeDemo {
 
     public static void main(String[] args) throws Exception{
         FieldVO fieldVO = new FieldVO();
-        long startTime = System.nanoTime();
+        fieldVO.setField1("public str");
+        fieldVO.setField2(2);
+        fieldVO.setField3("private str");
+        fieldVO.setField4(4);
+        fieldVO.setField5("protected str");
+        fieldVO.setField6(6);
+        fieldVO.setField7("default str");
+        fieldVO.setField8(8);
+        long startTime = System.currentTimeMillis();
         byte[] bytes1 = hessianSerialize(fieldVO);
         System.out.println(bytes1);
         FieldVO object1 = (FieldVO) hessianDeserialize(bytes1);
         System.out.println(object1.toString());
-        long costTime = System.nanoTime() - startTime;
+        long costTime = System.currentTimeMillis() - startTime;
         System.out.println("hessian cost : " + costTime);
-        long startTime1 = System.nanoTime();
+        startTime = System.currentTimeMillis();
         byte[] bytes2 = javaSerialize(fieldVO);
         System.out.println(bytes2);
         FieldVO object2 = (FieldVO)javaDeserialize(bytes2);
         System.out.println(object2.toString());
-        long costTime1 = System.nanoTime() - startTime1;
+        long costTime1 = System.currentTimeMillis() - startTime;
         System.out.println("java cost : " + costTime1);
     }
 }

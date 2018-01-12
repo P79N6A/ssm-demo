@@ -36,10 +36,10 @@ public class DateUtil {
 
     public static void main(String[] args) throws Exception {
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        Date date1 = format.parse("2018-01-16 00:00:00");
+        Date date1 = format.parse("2018-02-27 00:00:00");
         System.out.println(date1.getTime());
         System.out.println(new Date().getTime());
-        Date date2 = format.parse("2016-08-24 00:00:02");
+        Date date2 = format.parse("2018-03-16 00:00:00");
         int flag = date1.compareTo(date2);
         System.out.println(flag);
         int curYear = Calendar.getInstance().get(Calendar.YEAR);

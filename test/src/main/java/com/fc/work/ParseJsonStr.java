@@ -5,7 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 
 import com.fc.bean.CouponVO;
 import com.fc.bean.FormInfo;
@@ -15,20 +17,46 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 /**
+ * fastJson常用api测试
+ *
  * @author fangcong on 2017/1/16.
  */
 public class ParseJsonStr {
 
+    /**
+     * json数组，可转成List<?>
+     */
+    private static final String JSON_ARRAY_OBJ_STR = "[{\"sellerId\":\"123333\",\"activityId\":\"1111\"},{\"sellerId\":\"1112\",\"activityId\":\"sdaas1\"}]";
+
+    /**
+     * json串，可转map
+     */
+    private static final String JSON_NORMAL_STR = "{\"name\":\"zhangsan\",\"beginDate\":\"2018-01-01\",\"phone\":\"18752143266\"}";
+
+    /**
+     * json串，可转bean
+     */
+    private static final String JSON_BEAN_STR = "{\"sellerId\":\"123456\",\"activityId\":\"adns45222sa\"}";
+
     public static void main(String[] args){
-        String jsonStr = "[{\"sellerId\":\"123333\",\"activityId\":\"1111\"},{\"sellerId\":\"1112\",\"activityId\":\"sdaas1\"}]";
-        List<CouponVO> list = JSONArray.parseArray(jsonStr, CouponVO.class);
+        List<CouponVO> list = JSONArray.parseArray(JSON_ARRAY_OBJ_STR, CouponVO.class);
         for (CouponVO couponVO : list) {
             System.out.println(couponVO.getSellerId() + "--" + couponVO.getActivityId());
         }
-        String jsonStr1 = "{\"name\":\"zhangsan\",\"address\":\"hangzhou\",\"phone\":\"18752143266\"}";
+        System.out.println("--------------------------");
+
+        JSONObject jsonObject = JSON.parseObject(JSON_NORMAL_STR);
+        for (String key : jsonObject.keySet()) {
+            System.out.println(key + " : " + jsonObject.getObject(key, String.class));
+        }
+        System.out.println("--------------------------");
+
+        CouponVO couponVO = JSON.parseObject(JSON_BEAN_STR, CouponVO.class);
+        System.out.println(couponVO.toString());
+        System.out.println("--------------------------");
+
         Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd").create();
-        Map<String, Object> map = gson.fromJson(jsonStr,new TypeToken<Map<String, Object>>(){}
-                .getType());
+        Map<String, Object> map = gson.fromJson(JSON_NORMAL_STR, new TypeToken<Map<String, Object>>(){}.getType());
         for (String key : map.keySet()){
             String value = (String)map.get(key);
             System.out.println(key + " : " + value);
