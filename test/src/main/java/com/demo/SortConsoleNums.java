@@ -3,7 +3,6 @@ package com.demo;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Comparator;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
@@ -22,12 +21,7 @@ public class SortConsoleNums {
 		try {
 			String str = reader.readLine();
 			//比较器构造方法，按指定顺序排序
-			Set<Integer> set = new TreeSet<>(new Comparator() {
-				@Override
-				public int compare(Object o1, Object o2) {
-					return (Integer) o1 > (Integer) o2 ? -1 : 1;
-				}
-			});
+			Set<Integer> set = new TreeSet<>((o1, o2) -> o1 > o2 ? -1 : 1);
 			String[] strs = str.split(",");
 			for (String t : strs) {
 				set.add(Integer.parseInt(t));

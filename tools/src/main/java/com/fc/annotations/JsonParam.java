@@ -1,4 +1,4 @@
-package com.fc.resolver;
+package com.fc.annotations;
 
 import java.lang.annotation.*;
 

@@ -10,12 +10,12 @@ import java.util.Map;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
+import com.fc.annotations.JsonParam;
 import com.fc.bean.User;
 import com.fc.common.AjaxResult;
 import com.fc.common.Asserts;
 import com.fc.common.ThreadPoolDemo.MyTask;
 import com.fc.constant.NormalNumberConstant;
-import com.fc.resolver.JsonParam;
 import com.fc.service.TestSetBean;
 import com.fc.service.UserService;
 import org.slf4j.Logger;

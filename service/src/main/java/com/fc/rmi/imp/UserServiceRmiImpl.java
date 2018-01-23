@@ -20,8 +20,7 @@ public class UserServiceRmiImpl extends UnicastRemoteObject implements UserServi
     @Resource
     private UserDao userDao;
 
-    public UserServiceRmiImpl() throws RemoteException {
-        super();
+    protected UserServiceRmiImpl() throws RemoteException {
     }
 
     @Override

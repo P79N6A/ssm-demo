@@ -28,7 +28,7 @@ public class TestProvider {
      * 创建线程或线程池时需指定有意义的线程名称，方便出错时回溯
      */
     private ExecutorService executorService = new ThreadPoolExecutor(4, 4, 0L, TimeUnit.MILLISECONDS,
-        new ArrayBlockingQueue<Runnable>(20), new ThreadFactoryBuilder().setNameFormat("demo-pool-%d").build(),
+        new ArrayBlockingQueue<>(20), new ThreadFactoryBuilder().setNameFormat("demo-pool-%d").build(),
         new ThreadPoolExecutor.AbortPolicy()
     );
 
@@ -40,13 +40,7 @@ public class TestProvider {
      */
     public void initMethod() {
         registerRMIService();
-        executorService.execute(new Runnable() {
-            @Override
-            public void run() {
-                logger.debug("init begin...");
-            }
-        });
-
+        executorService.execute(() -> logger.debug("init begin..."));
     }
 
     @PostConstruct
