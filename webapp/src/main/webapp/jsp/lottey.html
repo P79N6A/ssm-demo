@@ -40,10 +40,24 @@
                   content="data_pages" required></textarea>
     </div>
     <p class="super_banner">提交</p>-->
+    <a href="javascript:testJson()">校验</a>
 </div>
 
 
 <script type="text/javascript">
+
+    function testJson() {
+        var data = {
+            "info": {
+                "ok": true,
+                "code": "S001",
+                "message": "调用成功"
+            },
+            "data": {
+                "result": []
+            }
+        }
+    }
 
     function test() {
         var url = "https://showcase.display.taobao.com/common/addlog4.json";
@@ -53,14 +67,14 @@
             dataType: "jsonp",
             data: {
                 app: 'applyLog',
-                targetId : 'theme0'
+                targetId: 'theme0'
             },
-            success : function(data){
-                if (data.info.ok){
+            success: function (data) {
+                if (data.info.ok) {
                     $(".score").text(data.data.score);
                 }
             },
-            error : function(){
+            error: function () {
                 $(".errorMsg").text("失败");
             }
         });
@@ -69,15 +83,17 @@
     function lottey() {
         $.ajax({
             type: "GET",
-            url: "https://showcase.simba.taobao.com/double11/test/testLottery.json",
+            url: "//showcase.simba.taobao.com/queen/openBox.json",
             dataType: "jsonp",
             data: {
-                app: 'phaseOne',
+                sellerId : 3596436333,
+                target : 'qiongDing',
                 asac: '1A179205OAUAQMIUOFEC3Z',
                 ua: c.getUA()
             },
             success: function (data) {
                 if (data.info.code == "S001") {
+                    alert('success');
                 }
             },
             error: function (data) {
@@ -112,7 +128,7 @@
         })
     }
 
-    $(".super_banner").click(function() {
+    $(".super_banner").click(function () {
         var content = $(".liuyan").val();
         if ("" == content.trim() || "undefined" == content) {
             alert("不能为空");

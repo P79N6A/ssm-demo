@@ -7,9 +7,10 @@ import lombok.experimental.Accessors;
 /**
  * @author SYSTEM on 2017/11/9.
  */
-@Getter@Setter
+@Getter
+@Setter
 public class TestLombookBean {
-    
+
     @Accessors(prefix = {"first"}, fluent = true, chain = false)
     private String firstName;
 

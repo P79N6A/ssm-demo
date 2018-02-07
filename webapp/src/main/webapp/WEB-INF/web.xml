@@ -67,7 +67,7 @@
     </filter>
     <filter-mapping>
         <filter-name>loginFilter</filter-name>
-        <url-pattern>login.json</url-pattern>
+        <url-pattern>/login.json</url-pattern>
     </filter-mapping>
 
 </web-app>
