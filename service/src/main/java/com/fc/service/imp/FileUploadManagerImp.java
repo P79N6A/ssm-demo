@@ -1,5 +1,8 @@
 package com.fc.service.imp;
 
+import java.util.List;
+import java.util.Set;
+
 import com.fc.bean.FileDO;
 import com.fc.dao.UserDao;
 import com.fc.service.FileUploadManager;
@@ -41,5 +44,10 @@ public class FileUploadManagerImp implements FileUploadManager {
     @Override
     public boolean insertInfo(FileDO fileDO) {
         return userDao.insertFileInfo(fileDO) > 0;
+    }
+
+    @Override
+    public List<FileDO> testForEach(List<Set<String>> list) {
+        return userDao.testForEach(list);
     }
 }

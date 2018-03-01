@@ -48,4 +48,29 @@
         VALUES
         (#{tfsName}, #{fileName}, #{size}, #{type})
     </insert>
+
+    <select id="testForEach" resultType="com.fc.bean.FileDO">
+        SELECT
+            id,
+            tfsName,
+            fileName,
+            size,
+            ext as type
+        from TEMP_FILE_INFO
+        where ext = 'doc'
+        AND
+        <choose>
+            <when test="list != null and list.size > 0 and list.get(0).size > 0">
+                <foreach collection="list" item="set" separator="or">
+                    tfsName in
+                    <foreach collection="set" item="tfsName" open="(" separator="," close=")">
+                        #{tfsName}
+                    </foreach>
+                </foreach>
+            </when>
+            <otherwise>
+                tfsName in (null)
+            </otherwise>
+        </choose>
+    </select>
 </mapper>

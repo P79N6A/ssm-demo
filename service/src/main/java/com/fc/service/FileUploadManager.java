@@ -1,5 +1,8 @@
 package com.fc.service;
 
+import java.util.List;
+import java.util.Set;
+
 import com.fc.bean.FileDO;
 
 /**
@@ -23,4 +26,11 @@ public interface FileUploadManager {
      * @return
      */
     boolean insertInfo(FileDO fileDO);
+
+    /**
+     * 批量查询,in查询超过1000条时先拆分
+     *
+     * @return
+     */
+    List<FileDO> testForEach(List<Set<String>> list);
 }

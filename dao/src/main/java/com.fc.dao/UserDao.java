@@ -1,6 +1,7 @@
 package com.fc.dao;
 
 import java.util.List;
+import java.util.Set;
 
 import com.fc.bean.FileDO;
 import com.fc.bean.User;
@@ -43,4 +44,6 @@ public interface UserDao {
      * @return
      */
     Integer insertFileInfo(FileDO fileDO);
+
+    List<FileDO> testForEach(List<Set<String>> list);
 }
