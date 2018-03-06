@@ -60,19 +60,17 @@
     }
 
     function test() {
-        var url = "https://showcase.display.taobao.com/common/addlog4.json";
+        var url = "//my.daily.taobao.net:8080/wangTang/checkChance.json";
+        var param = {isLogin:"1",isGuanzhu:"0",isStore:"0",isTen:"0",isTwenty:"0"};
         $.ajax({
             type: "GET",
             url: url,
             dataType: "jsonp",
             data: {
-                app: 'applyLog',
-                targetId: 'theme0'
+                param : JSON.stringify(param)
             },
             success: function (data) {
-                if (data.info.ok) {
-                    $(".score").text(data.data.score);
-                }
+
             },
             error: function () {
                 $(".errorMsg").text("失败");

@@ -9,9 +9,11 @@ import java.util.Vector;
  */
 public class ArrayListMultiThread {
 
-    static ArrayList<Integer> arrayList = new ArrayList<>(10);
+    private static final int LOOP = 10000;
 
-    static Vector<Integer> vector = new Vector<>(10);
+    static ArrayList<Integer> arrayList = new ArrayList<>(LOOP);
+
+    static Vector<Integer> vector = new Vector<>(LOOP);
 
     /**
      * 线程安全，可以得到预期结果
@@ -20,8 +22,7 @@ public class ArrayListMultiThread {
 
         @Override
         public void run() {
-            int loop = 10000;
-            for (int i = 0; i < loop; i++) {
+            for (int i = 0; i < LOOP; i++) {
                 vector.add(i);
             }
         }
@@ -34,8 +35,7 @@ public class ArrayListMultiThread {
 
         @Override
         public void run() {
-            int loop = 10000;
-            for (int i = 0; i < loop; i++) {
+            for (int i = 0; i < LOOP; i++) {
                 arrayList.add(i);
             }
         }
@@ -58,5 +58,11 @@ public class ArrayListMultiThread {
         t4.join();
         t5.join();
         System.out.println(arrayList.size());
+
+        ArrayList<Integer> arrayList1 = new ArrayList<>(10);
+        for (int i = 0; i < 20; i++) {
+            arrayList1.add(i);
+        }
+        System.out.println(arrayList1.size());
     }
 }
