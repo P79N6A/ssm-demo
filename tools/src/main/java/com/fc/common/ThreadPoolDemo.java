@@ -33,15 +33,24 @@ public class ThreadPoolDemo {
     }
 
     /**
-     * @param args
+     * 获取线程池
+     * @return
      */
-    public static void main(String[] args) {
-        MyTask myTask = new MyTask();
+    public static ExecutorService getThreadFactoryPool() {
         ThreadFactory namedThreadFactory = new ThreadFactoryBuilder()
             .setNameFormat("demo-pool-%d").build();
         ExecutorService executorService = new ThreadPoolExecutor(5, 10,
             0L, TimeUnit.MILLISECONDS,
             new LinkedBlockingDeque<>(1024), namedThreadFactory, new ThreadPoolExecutor.AbortPolicy());
+        return executorService;
+    }
+
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+        MyTask myTask = new MyTask();
+        ExecutorService executorService = getThreadFactoryPool();
         for (int i = 0; i < NormalNumberConstant.INT_10; i++) {
             executorService.execute(myTask);
         }

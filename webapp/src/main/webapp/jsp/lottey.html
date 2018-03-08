@@ -61,12 +61,13 @@
 
     function test() {
         var url = "//my.daily.taobao.net:8080/wangTang/checkChance.json";
-        var param = {isLogin:"1",isGuanzhu:"0",isStore:"0",isTen:"0",isTwenty:"0"};
+        var param = {"finish10DaysLogin":0,"finish10Course":0,"finish1DayLogin":1,"finish20Course":0,"finish3Follows":0};
         $.ajax({
             type: "GET",
             url: url,
             dataType: "jsonp",
             data: {
+                $Test : '$$',
                 param : JSON.stringify(param)
             },
             success: function (data) {
@@ -81,12 +82,10 @@
     function lottey() {
         $.ajax({
             type: "GET",
-            url: "//showcase.simba.taobao.com/queen/openBox.json",
+            url: "//showcase.simba.taobao.com/test/security.json",
             dataType: "jsonp",
             data: {
-                sellerId : 2214966584,
-                target : 'yaoYiYao',
-                asac: '1A18205GXVW2HPE0I4UN4I',
+                asac: '1A18307H399J2QE73PQ1DE',
                 ua: c.getUA()
             },
             success: function (data) {
