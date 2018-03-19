@@ -30,9 +30,32 @@ public class PropertiesUtil extends Properties {
 	}
 
 	/**
-	 * 从指定路径加载信息到Properties
+	 * 按resources路径加载指定Properties
+	 *
+	 * @param clazz
 	 * @param path
 	 */
+	public PropertiesUtil(Class<?> clazz, String path) {
+		try {
+			InputStream is;
+			if (null == clazz) {
+				is = new FileInputStream(path);
+			} else {
+				is = clazz.getResourceAsStream(path);
+			}
+			this.load(is);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			throw new RuntimeException("指定文件不存在！");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * 从指定路径加载信息到Properties
+	 * @param path
+     */
 	public PropertiesUtil(String path) {
 		try {
 			InputStream is = new FileInputStream(path);

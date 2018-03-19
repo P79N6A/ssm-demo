@@ -45,7 +45,7 @@ public class CountDownLatchDemo {
             .setNameFormat("worker-pool-%d").build();
         //coolPoolSize分配
         ExecutorService pool = new ThreadPoolExecutor(5, 20, 0L,
-            TimeUnit.MILLISECONDS, new LinkedBlockingDeque<Runnable>(1024),
+            TimeUnit.MILLISECONDS, new LinkedBlockingDeque<>(1024),
             namedThreadFactory, new ThreadPoolExecutor.AbortPolicy());
         //分配线程
         for (Worker worker : workers) {
@@ -59,7 +59,7 @@ public class CountDownLatchDemo {
         System.out.println("均完成后的时间：" + getFormat(new Date()));
     }
 
-    private static class Worker extends Thread {
+    private static class Worker implements Runnable {
         private String workName;
         private CountDownLatch selfLatch;
         private CountDownLatch latch;

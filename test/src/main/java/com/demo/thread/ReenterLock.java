@@ -20,8 +20,30 @@ public class ReenterLock implements Runnable{
 
     @Override
     public void run() {
+        rentrantIncr();
+        //syncIncr();
+    }
+
+    /**
+     * 同步方法自增
+     */
+    public static void syncIncr() {
         for (int j = 0; j < NormalNumberConstant.INT_10000; j++) {
             increase();
+        }
+    }
+
+    /**
+     * 加重入锁自增
+     */
+    public static void rentrantIncr() {
+        for (int j = 0; j < NormalNumberConstant.INT_10000; j++) {
+            lock.lock();
+            try {
+                i++;
+            } finally {
+                lock.unlock();
+            }
         }
     }
 
