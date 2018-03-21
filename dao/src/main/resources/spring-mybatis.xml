@@ -55,4 +55,44 @@
         <aop:advisor advice-ref="txAdvice" pointcut-ref="txInterceptor"/>
     </aop:config>
 
+    <!-- 基于事务拦截器声明式事务 -->
+    <!--<bean id="transactionInterceptor" class="org.springframework.transaction.interceptor.TransactionInterceptor">
+        <property name="transactionManager" ref="transactionManager"/>
+        <property name="transactionAttributes">
+            <props>
+                <prop key="insert*">PROPAGATION_REQUIRED</prop>
+                <prop key="update*">PROPAGATION_REQUIRED</prop>
+                <prop key="query*">PROPAGATION_NOT_REQUIRED</prop>
+                <prop key="delete*">PROPAGATION_REQUIRED</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="userServiceImpl" class="com.fc.service.imp.UserServiceImpl"/>
+
+    <bean id="userService" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="target" ref="userServiceImpl"/>
+        <property name="interceptorNames">
+            <list>
+                <idref bean="transactionInterceptor"/>
+            </list>
+        </property>
+    </bean>-->
+
+    <!-- 基于TransactionProxyFactoryBean -->
+    <!--<bean id="userServiceImpl" class="com.fc.service.imp.UserServiceImpl"/>
+    
+    <bean id="userService" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <property name="transactionManager" ref="transactionManager"/>
+        <property name="target" ref="userServiceImpl"/>
+        <property name="transactionAttributes">
+            <props>
+                <prop key="insert*">PROPAGATION_REQUIRED</prop>
+                <prop key="update*">PROPAGATION_REQUIRED</prop>
+                <prop key="query*">PROPAGATION_NOT_REQUIRED</prop>
+                <prop key="delete*">PROPAGATION_REQUIRED</prop>
+            </props>
+        </property>
+    </bean>-->
+
 </beans>
