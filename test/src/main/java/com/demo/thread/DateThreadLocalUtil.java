@@ -51,4 +51,25 @@ public class DateThreadLocalUtil {
     public static void remove() {
         dateFormatThreadLocal.remove();
     }
+
+    public static void main(String[] args) {
+        testInheritableThreadLocal();
+    }
+
+    private static void testInheritableThreadLocal() {
+        final ThreadLocal<String> inheritableThreadLocal = new InheritableThreadLocal<>();
+        final ThreadLocal<String> threadLocal = new ThreadLocal<>();
+        threadLocal.set("alibaba.com");
+        inheritableThreadLocal.set("droidyue.com");
+        Thread t = new Thread() {
+            @Override
+            public void run() {
+                super.run();
+                System.out.println("testInheritableThreadLocal = " + inheritableThreadLocal.get());
+                System.out.println("threadLocal = " + threadLocal.get());
+            }
+        };
+        t.start();
+    }
+
 }

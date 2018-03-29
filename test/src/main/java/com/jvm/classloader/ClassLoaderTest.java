@@ -80,6 +80,13 @@ public class ClassLoaderTest {
                 }
             }
         };
+        System.out.println(myClassLoader.toString());
+        ClassLoader cl_app = myClassLoader.getParent();
+        ClassLoader cl_ext = cl_app.getParent();
+        ClassLoader cl_boot = cl_ext.getParent();
+        System.out.println(cl_app.toString());
+        System.out.println(cl_ext.toString());
+        System.out.println(cl_boot);
         //根据类的全限定类名加载类
         Object obj = myClassLoader.loadClass("com.jvm.classloader.ClassLoaderTest").newInstance();
         System.out.println(obj.getClass());
