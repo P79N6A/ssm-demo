@@ -16,7 +16,9 @@ public class Singleton4 {
     /**
      * 私有的无参构造方法
      */
-    private Singleton4(){}
+    private Singleton4(){
+        System.out.println("instance4 init...");
+    }
 
     /**
      * 共有方法获取单例对象

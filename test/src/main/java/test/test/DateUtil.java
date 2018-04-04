@@ -36,6 +36,9 @@ public class DateUtil {
 
     public static void main(String[] args) throws Exception {
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String s = "Dec 16,2017 3:42:22 PM";
+        Date d = new Date(s);
+        System.out.println(format.format(d));
         Date date1 = format.parse("2018-01-23 00:00:00");
         System.out.println(date1.getTime());
         Date date2 = format.parse("2018-01-25 00:00:00");

@@ -1,6 +1,7 @@
 package test.test;
 
-import java.text.NumberFormat;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.ArrayBlockingQueue;
 
 import com.fc.bean.User;
@@ -13,7 +14,11 @@ public class NumberFormatDemo {
     private static ArrayBlockingQueue<User> users = new ArrayBlockingQueue<>(10);
 
     public static void main(String[] args) {
-        double val = Double.parseDouble("339.81");
+
+        Map<String, Object> map = new HashMap<>(4);
+        map.put("key1", 1);
+        System.out.println(map.size());
+        /*double val = Double.parseDouble("339.81");
         long total = 5000;
         NumberFormat format = NumberFormat.getPercentInstance();
         format.setMinimumFractionDigits(1);
@@ -21,7 +26,7 @@ public class NumberFormatDemo {
         System.out.println(rate);
 
         int a = 5 / 4;
-        System.out.println(a);
+        System.out.println(a);*/
         /*for (int i = 1; i <= 15; i++) {
             User user = new User();
             user.setRealName("zhang" + i);

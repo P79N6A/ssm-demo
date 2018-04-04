@@ -1,10 +1,11 @@
 package com.fc.designs.singleton;
 
 /**
+ * 单例模式延迟加载
+ *
  * @author fangcong on 2017/1/23.
- * 单例模式
  */
-public class Singleton{
+public class Singleton {
 
     /**
      * ************************************************
@@ -24,12 +25,12 @@ public class Singleton{
     private static Singleton singleton = null;
     private static Object obj = new Object();
 
-    private Singleton(){}
+    private Singleton() {}
 
-    public static Singleton getInstance(){
-        if (singleton == null){
-            synchronized (obj){
-                if (singleton == null){
+    public static Singleton getInstance() {
+        if (singleton == null) {
+            synchronized (obj) {
+                if (singleton == null) {
                     singleton = new Singleton();
                 }
             }
