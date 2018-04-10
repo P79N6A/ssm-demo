@@ -15,20 +15,22 @@ public class AccountingAyscDemo implements Runnable{
 
     @Override
     public void run() {
-        int loop = 10000;
+        /*int loop = 10000;
         for (int i = 0; i < loop; i++) {
             increase();
-        }
+        }*/
+        System.out.println(Thread.currentThread().getName() + " running...");
     }
 
     public static void main(String[] args) throws InterruptedException {
-        //保证两个线程指向同一个实例，即关注的是同一个对象锁，保证线程安全
-        Thread a = new Thread(instance);
-        Thread b = new Thread(instance);
-        a.start();
-        b.start();
-        a.join();
-        b.join();
+        for (int i = 0; i < 4; i++) {
+            Thread t = new Thread(instance, "t" + i);
+            t.start();
+            t.join();
+        }
+        Thread e = new Thread(instance, "t5");
+        e.start();
+        e.join();
         System.out.println(i);
     }
 }

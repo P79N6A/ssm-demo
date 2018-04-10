@@ -21,15 +21,21 @@ import lombok.Setter;
 public class DisruptorPCDemo {
 
     public static void main(String[] args) throws InterruptedException {
-        ExecutorService service = ThreadPoolDemo.getThreadFactoryPool();
+        ExecutorService service = ThreadPoolDemo.getThreadFactoryPool(3);
         PCDataFactory factory = new PCDataFactory();
         int bufferSize = 1024;
 
+        //corePoolSize数量消费者消费
         Disruptor<PCData> disruptor = new Disruptor<>(factory, bufferSize, service,
             ProducerType.MULTI,
             new BlockingWaitStrategy());
 
-        disruptor.handleEventsWithWorkerPool(new Consumer(), new Consumer(), new Consumer(), new Consumer());
+        disruptor.handleEventsWithWorkerPool(
+            new Consumer(),
+            new Consumer(),
+            new Consumer(),
+            new Consumer(),
+            new Consumer());
         disruptor.start();
 
         RingBuffer<PCData> ringBuffer = disruptor.getRingBuffer();
@@ -87,9 +93,11 @@ class Producer {
 
     public void pushData(ByteBuffer byteBuffer) {
         long sequence = buffer.next();
-        PCData data = buffer.get(sequence);
-        data.setValue(byteBuffer.getLong(0));
-
-        buffer.publish(sequence);
+        try {
+            PCData data = buffer.get(sequence);
+            data.setValue(byteBuffer.getLong(0));
+        } finally {
+            buffer.publish(sequence);
+        }
     }
 }

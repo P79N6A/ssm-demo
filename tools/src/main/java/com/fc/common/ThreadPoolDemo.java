@@ -36,10 +36,10 @@ public class ThreadPoolDemo {
      * 获取线程池
      * @return
      */
-    public static ExecutorService getThreadFactoryPool() {
+    public static ExecutorService getThreadFactoryPool(int corePoolSize) {
         ThreadFactory namedThreadFactory = new ThreadFactoryBuilder()
             .setNameFormat("demo-pool-%d").build();
-        ExecutorService executorService = new ThreadPoolExecutor(5, 10,
+        ExecutorService executorService = new ThreadPoolExecutor(corePoolSize, 10,
             0L, TimeUnit.MILLISECONDS,
             new LinkedBlockingDeque<>(1024), namedThreadFactory, new ThreadPoolExecutor.AbortPolicy());
         return executorService;
@@ -50,7 +50,7 @@ public class ThreadPoolDemo {
      */
     public static void main(String[] args) {
         MyTask myTask = new MyTask();
-        ExecutorService executorService = getThreadFactoryPool();
+        ExecutorService executorService = getThreadFactoryPool(5);
         for (int i = 0; i < NormalNumberConstant.INT_10; i++) {
             executorService.execute(myTask);
         }
