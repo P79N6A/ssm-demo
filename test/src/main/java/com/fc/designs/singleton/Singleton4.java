@@ -6,6 +6,8 @@ package com.fc.designs.singleton;
  */
 public class Singleton4 {
 
+    public static Integer STATUS = 4;
+
     /**
      * 静态内部类用来定义单例对象
      */

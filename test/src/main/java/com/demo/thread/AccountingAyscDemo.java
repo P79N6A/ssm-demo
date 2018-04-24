@@ -9,16 +9,16 @@ public class AccountingAyscDemo implements Runnable{
 
     static int i = 0;
 
-    public synchronized void increase() {
+    public /*synchronized*/ void increase() {
         i++;
     }
 
     @Override
     public void run() {
-        /*int loop = 10000;
+        int loop = 1000000;
         for (int i = 0; i < loop; i++) {
             increase();
-        }*/
+        }
         System.out.println(Thread.currentThread().getName() + " running...");
     }
 
@@ -31,6 +31,7 @@ public class AccountingAyscDemo implements Runnable{
         Thread e = new Thread(instance, "t5");
         e.start();
         e.join();
+        //Thread.sleep(5000);
         System.out.println(i);
     }
 }

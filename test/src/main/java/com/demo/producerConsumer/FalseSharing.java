@@ -53,9 +53,12 @@ public final class FalseSharing implements Runnable {
         System.out.println("cost:" + (System.currentTimeMillis() - start));
     }
 
+    /**
+     * 解决伪共享问题注解，不需要再声明padding变量
+     */
+    @sun.misc.Contended
     public static final class VolatileLong {
         public volatile long value = 0;
-        public long p1, p2, p3, p4, p5, p6, p7;
     }
 }
 
