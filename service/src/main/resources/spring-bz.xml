@@ -42,6 +42,26 @@
     <bean class="com.fc.provider.TestProvider" init-method="initMethod">
     </bean>
 
+    <bean id="timeUnit" class="org.springframework.beans.factory.config.FieldRetrievingFactoryBean">
+        <property name="staticField" value="java.util.concurrent.TimeUnit.SECONDS" />
+    </bean>
+
+    <bean id="linkedBlockingQueue" class="java.util.concurrent.LinkedBlockingQueue">
+        <constructor-arg value="10"/>
+    </bean>
+
+    <bean id="threadPoolExecutorDef" class="com.fc.provider.ThreadPoolExecutorDef">
+        <constructor-arg value="5"/>
+        <constructor-arg value="50"/>
+        <constructor-arg value="3000"/>
+        <constructor-arg ref="timeUnit"/>
+        <constructor-arg ref="linkedBlockingQueue"/>
+        <constructor-arg ref="threadFactoryNew"/>
+        <constructor-arg>
+            <bean class="java.util.concurrent.ThreadPoolExecutor$CallerRunsPolicy"/>
+        </constructor-arg>
+    </bean>
+
     <!-- 添加默认实现 -->
     <bean id="threadFactory" class="java.util.concurrent.Executors$DefaultThreadFactory"/>
     <!-- 添加自定义实现 -->

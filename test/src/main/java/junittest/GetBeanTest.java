@@ -1,6 +1,11 @@
 package junittest;
 
+import javax.annotation.Resource;
+
 import com.fc.bean.TestLombookBean;
+import com.fc.common.ThreadPoolDemo.MyTask;
+import com.fc.constant.NormalNumberConstant;
+import com.fc.provider.ThreadPoolExecutorDef;
 import com.fc.service.TestSetBean;
 import org.junit.Assert;
 import org.junit.Test;
@@ -11,7 +16,19 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 /**
  * @author SYSTEM on 2017/11/9.
  */
-public class GetBeanTest {
+public class GetBeanTest extends BaseManagerTest {
+
+    @Resource
+    private ThreadPoolExecutorDef threadPoolExecutorDef;
+
+    @Test
+    public void testRunTask() {
+        MyTask myTask = new MyTask();
+        for (int i = 0; i < NormalNumberConstant.INT_10; i++) {
+            threadPoolExecutorDef.execute(myTask);
+        }
+        threadPoolExecutorDef.shutdown();
+    }
 
     /**
      * xml方式配置bean,读取的xml文件必须能扫描所有bean，否则会抛出不能创建bean异常<br>
