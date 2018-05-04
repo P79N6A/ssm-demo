@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fc.dao.RoleDao">
+
+    <select id="getRole" parameterType="java.lang.Long" resultType="com.fc.bean.Role">
+        SELECT
+            id as id,
+            role_name as roleName,
+            role_type as roleType
+        FROM
+            temp_role
+        WHERE id = #{id}
+    </select>
+
+    <insert id="insertRole" parameterType="role" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO temp_role(role_name, role_type)
+        VALUE (#{roleName}, #{roleType})
+    </insert>
+
+</mapper>

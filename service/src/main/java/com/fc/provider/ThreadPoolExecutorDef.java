@@ -38,8 +38,7 @@ public class ThreadPoolExecutorDef extends ThreadPoolExecutor {
     @Override
     protected void beforeExecute(Thread t, Runnable r) {
         super.beforeExecute(t, r);
-        System.out.println("run task thread : " + t.getName());
-        System.out.println("the task : " + r.toString());
+        System.out.println(t.getName() + " run task thread : " + r.toString());
     }
 
     @Override
@@ -60,5 +59,11 @@ public class ThreadPoolExecutorDef extends ThreadPoolExecutor {
         if (t != null) {
             System.out.println(t);
         }
+    }
+
+    @Override
+    protected void terminated() {
+        super.terminated();
+        System.out.println("terminated...");
     }
 }

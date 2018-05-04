@@ -20,7 +20,7 @@ public class JdbcExample {
             Class.forName("com.mysql.jdbc.Driver");
             String url = "jdbc:mysql://127.0.0.1:3306/test";
             String userName = "root";
-            String password = "";
+            String password = "123456";
             connection = DriverManager.getConnection(url, userName, password);
         } catch (Exception e) {
             e.printStackTrace();
@@ -35,7 +35,7 @@ public class JdbcExample {
         try {
             String sql = "SELECT * FROM temp_user WHERE login_name = ?";
             ps = conn.prepareStatement(sql);
-            ps.setString(1, "zhaoliu");
+            ps.setString(1, loginName);
             rs = ps.executeQuery();
             while (rs.next()) {
                 User user = new User();
@@ -51,7 +51,7 @@ public class JdbcExample {
 
     public static void main(String[] args) {
         JdbcExample jdbcExample = new JdbcExample();
-        User user = jdbcExample.getUserByLoginName("wangwu");
+        User user = jdbcExample.getUserByLoginName("zhangsan");
         if (user != null) {
             System.out.println(user.getRealName() + " : " + user.getAge());
         } else {

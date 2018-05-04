@@ -1,5 +1,7 @@
 package junittest;
 
+import java.util.concurrent.LinkedBlockingQueue;
+
 import javax.annotation.Resource;
 
 import com.fc.bean.TestLombookBean;
@@ -22,11 +24,16 @@ public class GetBeanTest extends BaseManagerTest {
     private ThreadPoolExecutorDef threadPoolExecutorDef;
 
     @Test
-    public void testRunTask() {
+    public void testRunTask() throws InterruptedException {
         MyTask myTask = new MyTask();
         for (int i = 0; i < NormalNumberConstant.INT_10; i++) {
             threadPoolExecutorDef.execute(myTask);
         }
+        Thread.sleep(2000);
+        System.out.println("lastest pool size : " + threadPoolExecutorDef.getLargestPoolSize());
+        System.out.println("pool size : " + threadPoolExecutorDef.getPoolSize());
+        LinkedBlockingQueue<Runnable> queue = (LinkedBlockingQueue)threadPoolExecutorDef.getQueue();
+        queue.forEach(System.out::println);
         threadPoolExecutorDef.shutdown();
     }
 
