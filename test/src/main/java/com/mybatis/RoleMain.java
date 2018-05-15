@@ -15,7 +15,7 @@ public class RoleMain {
             sqlSession = SqlSessionFactoryUtil.getSqlSession();
             RoleDao roleDao = sqlSession.getMapper(RoleDao.class);
             Role role = new Role();
-            role.setRoleName("部门管理员");
+            role.setRoleName("部门管理员2");
             role.setRoleType("dept");
             roleDao.insertRole(role);
             sqlSession.commit();
@@ -26,6 +26,7 @@ public class RoleMain {
             }
         } finally {
             if (null != sqlSession) {
+                sqlSession.rollback();
                 sqlSession.close();
             }
         }

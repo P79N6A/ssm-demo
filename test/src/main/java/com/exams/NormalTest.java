@@ -11,6 +11,8 @@ import java.util.concurrent.atomic.LongAdder;
  */
 public class NormalTest {
 
+    private static final Student STUDENT = new Student("ez", 60);
+
     private static final int MAX_THREAD = 3;
 
     private static final int TASK_COUNT = 2;
@@ -173,9 +175,14 @@ public class NormalTest {
         //normalTest.testAtomic();
         //normalTest.testAdder();
 
-        int a = 132547698;
+        /*int a = 132547698;
         char[] c = String.valueOf(a).toCharArray();
-        System.out.println(niXuStr(c));
+        System.out.println(niXuStr(c));*/
+
+        System.out.println(STUDENT);
+        Student stu = STUDENT;
+        System.out.println(stu);
+        System.out.println(stu.equals(STUDENT));
     }
 
     private static String niXuStr(char[] c) {

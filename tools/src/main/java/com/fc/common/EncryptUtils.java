@@ -42,7 +42,7 @@ public class EncryptUtils {
      * @return
      */
     public static String encryptToHexString(String data, String password) throws Exception{
-        return new String(toHex(aesEncrypt(data, password)));
+        return toHex(aesEncrypt(data, password));
     }
 
     /**

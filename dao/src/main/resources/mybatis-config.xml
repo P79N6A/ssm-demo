@@ -2,6 +2,63 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+    <!-- 属性配置,property子元素方式 -->
+    <properties>
+        <property name="driver" value="com.mysql.jdbc.Driver"/>
+        <property name="mysqlUrl" value="jdbc:mysql://127.0.0.1:3306/test"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+    </properties>
+
+    <!-- properties文件引入方式 -->
+    <!--<properties resource="jdbc.properties"/>-->
+
+    <!-- settings设置 -->
+    <settings>
+        <!-- 映射器缓存全局开关，默认true -->
+        <setting name="cacheEnabled" value="true"/>
+        <!-- 延迟加载的全局开关,默认false -->
+        <setting name="lazyLoadingEnabled" value="false"/>
+        <!-- 是带有延迟加载属性的对象完整加载，默认true -->
+        <setting name="aggressiveLazyLoading" value="true"/>
+        <!-- 是否允许单一语句返回多结果集，默认true -->
+        <setting name="multipleResultSetsEnabled" value="true"/>
+        <!-- 列标签代替列名，默认true -->
+        <setting name="useColumnLabel" value="true"/>
+        <!-- 允许jdbc支持自动生成主键,默认false -->
+        <setting name="useGeneratedKeys" value="false"/>
+        <!-- 指定 MyBatis 应如何自动映射列到字段或属性。
+            NONE 表示取消自动映射；PARTIAL 只会自动映射没有定义嵌套结果集映射的结果集。
+            FULL 会自动映射任意复杂的结果集（无论是否嵌套） -->
+        <setting name="autoMappingBehavior" value="PARTIAL"/>
+        <!-- 指定发现自动映射目标未知列的行为，默认NONE -->
+        <setting name="autoMappingUnknownColumnBehavior" value="NONE"/>
+        <!-- 指定默认执行器，SIMPLE/REUSE/BATCH -->
+        <setting name="defaultExecutorType" value="SIMPLE"/>
+        <!-- 设置超时时间，默认不设置 -->
+        <setting name="defaultStatementTimeout" value="3000"/>
+        <!-- 为驱动的结果集获取数量（fetchSize）设置一个提示值,默认不设置 -->
+        <setting name="defaultFetchSize" value="1000"/>
+        <!-- 嵌套语句中采用分页,默认false表示开启 -->
+        <setting name="safeRowBoundsEnabled" value="false"/>
+        <!-- 驼峰规则，默认false -->
+        <setting name="mapUnderscoreToCamelCase" value="false"/>
+        <!-- 会话开启本地缓存查询机制,其它值STATEMENT用于语句执行上 -->
+        <setting name="localCacheScope" value="SESSION"/>
+        <!-- 没有为参数指定jdbc类型时,为空值指定jdbc类型 -->
+        <setting name="jdbcTypeForNull" value="OTHER"/>
+        <!-- 指定对象的方法触发一次延迟加载 -->
+        <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
+        <!-- 指定动态SQL生成的默认语言 -->
+        <setting name="defaultScriptingLanguage" value="org.apache.ibatis.scripting.xmltags.XMLLanguageDriver"/>
+        <!-- 指定当结果集中值为null的时候是否调用映射对象的setter（map 对象时为 put） -->
+        <setting name="callSettersOnNulls" value="false"/>
+        <!-- 指定mybatis增加到日志名称的前缀，默认不设置 -->
+        <setting name="logPrefix" value="xxx_"/>
+        <!-- 指定Mybatis创建具有延迟加载能力的对象所用到的代理工具,3.3或以上JAVASSIST -->
+        <setting name="proxyFactory" value="CGLIB"/>
+    </settings>
+
     <typeAliases>
         <typeAlias type="com.fc.bean.Role" alias="role"/>
     </typeAliases>
@@ -11,10 +68,10 @@
         <environment id="development">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
-                <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://127.0.0.1:3306/test"/>
-                <property name="username" value="root"/>
-                <property name="password" value="123456"/>
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${mysqlUrl}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
             </dataSource>
         </environment>
     </environments>

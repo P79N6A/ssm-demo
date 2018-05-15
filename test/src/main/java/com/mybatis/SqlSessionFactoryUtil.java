@@ -25,13 +25,23 @@ public class SqlSessionFactoryUtil {
         InputStream inputStream = null;
         try {
             inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+            synchronized (OBJECT_LOCK) {
+                if (sqlSessionFactory == null) {
+                    sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+                } else {
+                    System.out.println("sqlSessionFactory has been init");
+                }
+            }
         } catch (IOException e) {
             Logger.getLogger(SqlSessionFactoryUtil.class.getName()).log(Level.ERROR
                 , null, e);
-        }
-        synchronized (OBJECT_LOCK) {
-            if (sqlSessionFactory == null) {
-                sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+        } finally {
+            try {
+                if (null != inputStream) {
+                    inputStream.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
         return sqlSessionFactory;
