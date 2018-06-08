@@ -4,6 +4,8 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+import org.apache.commons.lang.time.DateUtils;
+
 /**
  * 获取当前日期，前一天，后一天
  *
@@ -41,10 +43,12 @@ public class DateUtil {
         System.out.println(format.format(d));
         Date date1 = format.parse("2018-01-23 00:00:00");
         System.out.println(date1.getTime());
-        Date date2 = format.parse("2018-01-25 00:00:00");
+        Date date2 = format.parse("2018-06-05 17:49:00");
+        boolean flag = DateUtils.isSameDay(date2, new Date());
+        System.out.println("is current day : " + flag);
         System.out.println(date2.getTime());
-        int flag = date1.compareTo(date2);
-        System.out.println(flag);
+        int flag1 = date1.compareTo(date2);
+        System.out.println(flag1);
         int curYear = Calendar.getInstance().get(Calendar.YEAR);
         System.out.println(curYear);
 
@@ -59,7 +63,7 @@ public class DateUtil {
         if (curDate.after(endDate)) {
             System.out.println("end");
         }
-        System.out.println(Runtime.getRuntime().availableProcessors());
+        //System.out.println(Runtime.getRuntime().availableProcessors());
 
     }
 }

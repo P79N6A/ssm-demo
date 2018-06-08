@@ -179,10 +179,7 @@ public class NormalTest {
         char[] c = String.valueOf(a).toCharArray();
         System.out.println(niXuStr(c));*/
 
-        System.out.println(STUDENT);
-        Student stu = STUDENT;
-        System.out.println(stu);
-        System.out.println(stu.equals(STUDENT));
+
     }
 
     private static String niXuStr(char[] c) {

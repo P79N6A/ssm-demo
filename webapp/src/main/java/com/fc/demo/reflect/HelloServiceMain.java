@@ -17,6 +17,8 @@ public class HelloServiceMain {
         helloService.sayHello("normal : hello world!");
         //2.反射
         Object service = Class.forName(HelloServiceImpl.class.getName()).newInstance();
+        HelloService helloService1 = (HelloService)service;
+        helloService1.sayHello("123");
         Method method = service.getClass().getMethod("sayHello", String.class);
         method.invoke(service, "reflect : hello world!");
         //3.JDK动态代理
