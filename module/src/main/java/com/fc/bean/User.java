@@ -1,7 +1,6 @@
 package com.fc.bean;
 
 import java.io.Serializable;
-import java.util.Date;
 
 /**
  * @author fangcong on 2016/11/30.
@@ -17,15 +16,7 @@ public class User implements Serializable {
     private Integer age;
     private String loginName;
     private String loginPassword;
-    private Date joinDate;
-
-    public Date getJoinDate() {
-        return joinDate;
-    }
-
-    public void setJoinDate(Date joinDate) {
-        this.joinDate = joinDate;
-    }
+    private String role;
 
     public User() {
 
@@ -84,6 +75,14 @@ public class User implements Serializable {
         this.loginPassword = loginPassword;
     }
 
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -93,7 +92,7 @@ public class User implements Serializable {
             ", age=" + age +
             ", loginName='" + loginName + '\'' +
             ", loginPassword='" + loginPassword + '\'' +
-            ", joinDate=" + joinDate +
+            ", role=" + role +
             '}';
     }
 }

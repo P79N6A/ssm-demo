@@ -1,5 +1,6 @@
 package com.exams;
 
+import java.util.ArrayList;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -167,9 +168,6 @@ public class NormalTest {
         Function<Integer, Integer> function = (from) -> from * num;
         System.out.println(function.apply(3));
 
-        List<Double> nums = Arrays.asList(12d, 14d, 17d, 22d);
-        nums.stream().map((d) -> d.toString()).forEach(System.out::print);*/
-
         //NormalTest normalTest = new NormalTest();
         //normalTest.testSync();
         //normalTest.testAtomic();
@@ -179,7 +177,17 @@ public class NormalTest {
         char[] c = String.valueOf(a).toCharArray();
         System.out.println(niXuStr(c));*/
 
+        /*Double[] nums = {12d, 14d, 17d, 22d};
+        Stream.of(nums).forEach(System.out::print);*/
+        int i = 100000000;
+        System.out.println(i);
 
+        //List<Double> nums = Arrays.asList(12d, 14d, 17d, 22d);
+        //nums.stream().map((d) -> d.toString()).forEach(System.out::print);
+
+        Class c1 = new ArrayList<String>().getClass();
+        Class c2 = new ArrayList<Integer>().getClass();
+        System.out.println(c1 == c2);
     }
 
     private static String niXuStr(char[] c) {
@@ -191,6 +199,7 @@ public class NormalTest {
             return s1 + niXuStr(c2.toCharArray());
         }
     }
+
 }
 
 

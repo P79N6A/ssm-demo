@@ -28,7 +28,7 @@ public class FileManagerTest extends BaseManagerTest {
         list.add("ccc");
         List<Set<String>> param = SqlUtils.split(list);
         List<FileDO> result = fileUploadManager.testForEach(param);
-        Assert.assertEquals(3, result.size());
+        Assert.assertEquals(2, result.size());
         Assert.assertEquals("doc", result.get(0).getType());
     }
 }

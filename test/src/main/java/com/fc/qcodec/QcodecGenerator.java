@@ -118,7 +118,7 @@ public class QcodecGenerator {
     }
 
     public static void main(String[] args) throws Exception {
-        QcodecGenerator.zxingCodeCreate("方聪", 200, 200, "F:/test/fc.jpg", "jpg");
+        QcodecGenerator.zxingCodeCreate("方聪", 300, 300, "F:/test/fc.jpg", "jpg");
 
         Thread.sleep(5000);
 

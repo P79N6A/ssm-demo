@@ -10,7 +10,19 @@
 
     <!-- 别名 -->
     <typeAliases>
-        <typeAlias alias="USER" type="com.fc.bean.User" />
+        <typeAlias alias="USER" type="com.fc.bean.User"/>
     </typeAliases>
+
+    <!-- 自定义对象工厂 -->
+    <objectFactory type="com.fc.mybatis.MyObjectFactory">
+        <property name="name" value="MyObjectFactory"/>
+    </objectFactory>
+
+    <!-- 自定义拦截器插件 -->
+    <plugins>
+        <plugin interceptor="com.fc.mybatis.MyExecutorInterceptorPlugin">
+            <property name="dbType" value="mysql"/>
+        </plugin>
+    </plugins>
 
 </configuration>
