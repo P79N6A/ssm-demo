@@ -33,6 +33,8 @@
                              </list>
                       </property>
                </bean>
+               <!-- 返避免回日期格式为时间戳 -->
+               <bean class="com.fc.resolver.MappingHttpMessageConverter"/>
            </mvc:message-converters>
        </mvc:annotation-driven>
        <mvc:default-servlet-handler/>

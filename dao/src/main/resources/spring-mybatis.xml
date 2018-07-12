@@ -26,7 +26,14 @@
         <property name="configLocation" value="classpath:sqlmap-alias.xml"/>
     </bean>
 
-    <!-- DAO接口所在包名，Spring会自动查找其下的类 -->
+    <!-- SqlSessionTemplate,会覆盖SqlSessionFactory,一般不需要使用，因为可以用映射器擦除 -->
+    <!--<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+        &lt;!&ndash; 可选，有REUSE,BATCH和SIMPLE三种取值，默认SIMPLE &ndash;&gt;
+        <constructor-arg index="1" value="SIMPLE"/>
+    </bean>-->
+
+    <!-- DAO接口所在包名，Spring会自动逐层查找其下的类 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.fc.dao"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>

@@ -1,6 +1,7 @@
 package com.fc.bean;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * @author fangcong on 2016/11/30.
@@ -17,6 +18,8 @@ public class User implements Serializable {
     private String loginName;
     private String loginPassword;
     private String role;
+    private Date createTime;
+    private Date updateTime;
 
     public User() {
 
@@ -81,6 +84,22 @@ public class User implements Serializable {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
     }
 
     @Override

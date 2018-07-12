@@ -23,6 +23,11 @@
         <plugin interceptor="com.fc.mybatis.MyExecutorInterceptorPlugin">
             <property name="dbType" value="mysql"/>
         </plugin>
+
+        <plugin interceptor="com.fc.mybatis.MyStatementHandlerPlugin">
+            <property name="limit" value="50"/>
+            <property name="dbType" value="mysql"/>
+        </plugin>
     </plugins>
 
 </configuration>
