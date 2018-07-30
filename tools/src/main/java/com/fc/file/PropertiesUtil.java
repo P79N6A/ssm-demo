@@ -19,8 +19,7 @@ import java.util.Properties;
  * @author fangcong
  *
  */
-public class
-PropertiesUtil extends Properties {
+public class PropertiesUtil extends Properties {
 
 	private static final long serialVersionUID = -1361017659249941526L;
 

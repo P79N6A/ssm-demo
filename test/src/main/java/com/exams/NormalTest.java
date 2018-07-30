@@ -1,6 +1,7 @@
 package com.exams;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -69,7 +70,7 @@ public class NormalTest {
                 v = normalTest.incr();
             }
             long endTime = System.currentTimeMillis();
-            System.out.println("long cost:" + (endTime -startTime) + "ms v:" + v);
+            System.out.println("long cost:" + (endTime - startTime) + "ms v:" + v);
             cdlSync.countDown();
         }
     }
@@ -91,7 +92,7 @@ public class NormalTest {
                 v = acount.incrementAndGet();
             }
             long endTime = System.currentTimeMillis();
-            System.out.println("AtomicLong cost:" + (endTime -startTime) + "ms v:" + v);
+            System.out.println("AtomicLong cost:" + (endTime - startTime) + "ms v:" + v);
             cdlAtomic.countDown();
         }
     }
@@ -109,10 +110,10 @@ public class NormalTest {
             long v = lacount.sum();
             while (v < TASK_TARGET) {
                 lacount.increment();
-                v= lacount.sum();
+                v = lacount.sum();
             }
             long endTime = System.currentTimeMillis();
-            System.out.println("AdderLong cost:" + (endTime -startTime) + "ms v:" + v);
+            System.out.println("AdderLong cost:" + (endTime - startTime) + "ms v:" + v);
             cdlAdder.countDown();
         }
     }
@@ -188,6 +189,45 @@ public class NormalTest {
         Class c1 = new ArrayList<String>().getClass();
         Class c2 = new ArrayList<Integer>().getClass();
         System.out.println(c1 == c2);
+
+        //1、根据所在城市查店铺列表，无店铺直接返回
+        List<ShopLocation> list = new ArrayList<>();
+        ShopLocation location2 = new ShopLocation("hangzhou", "120.021957", "30.275341");
+        ShopLocation location1 = new ShopLocation("hangzhou", "120.020776", "30.27467");
+        ShopLocation location3 = new ShopLocation("hangzhou", "120.026208", "30.279212");
+        ShopLocation location4 = new ShopLocation("hangzhou", "120.090935", "30.286972");
+        list.add(location1);
+        list.add(location2);
+        list.add(location3);
+        list.add(location4);
+        //2、根据经纬度流式计算距离并排序并返回结果
+        double destLongitude = 120.017113;
+        double destLatitude = 30.279192;
+        List<ShopLocation> result = new ArrayList<>();
+        list.stream().sorted((a, b) -> {
+            int distanceA = (int)getDistance(destLongitude, destLatitude,
+                Double.parseDouble(a.getLongitude()), Double.parseDouble(a.getLatitude())
+            );
+            int distanceB = (int)getDistance(destLongitude, destLatitude,
+                Double.parseDouble(b.getLongitude()), Double.parseDouble(b.getLatitude())
+            );
+            return distanceA < distanceB ? -1 : 1;
+        }).filter(shopLocation -> {
+            int distance = (int)getDistance(destLongitude, destLatitude,
+                    Double.parseDouble(shopLocation.getLongitude()), Double.parseDouble(shopLocation.getLatitude()));
+                return distance <= 2000;
+            }
+        ).forEach(result::add);
+        result.forEach(System.out::println);
+
+        list.forEach(shopLocation -> {
+            int distance = (int)getDistance(destLongitude, destLatitude,
+                Double.parseDouble(shopLocation.getLongitude()), Double.parseDouble(shopLocation.getLatitude()));
+            System.out.println(shopLocation.toString() + " " + distance);
+        });
+
+        int distance = (int)getDistance(120.017113, 30.279192, 120.090935, 30.286972);
+        System.out.println(distance);
     }
 
     private static String niXuStr(char[] c) {
@@ -200,6 +240,110 @@ public class NormalTest {
         }
     }
 
+    private static double EARTH_RADIUS = 6378.137;
+
+    private static double rad(double d) {
+        return d * Math.PI / 180.0;
+    }
+
+    public static double getDistance(double lat1, double lng1, double lat2,
+                                     double lng2) {
+        double radLat1 = rad(lat1);
+        double radLat2 = rad(lat2);
+        double a = radLat1 - radLat2;
+        double b = rad(lng1) - rad(lng2);
+        double s = 2 * Math.asin(Math.sqrt(Math.pow(Math.sin(a / 2), 2)
+            + Math.cos(radLat1) * Math.cos(radLat2)
+            * Math.pow(Math.sin(b / 2), 2)));
+        s = s * EARTH_RADIUS;
+        s = Math.round(s * 10000d) / 10000d;
+        s = s * 1000;
+        return s;
+    }
+
+}
+
+class ShopLocation {
+
+    /**
+     * 城市
+     */
+    private String city;
+
+    /**
+     * 经度
+     */
+    private String longitude;
+
+    /**
+     * 维度
+     */
+    private String latitude;
+
+    /**
+     * 店铺名
+     */
+    private String shopName;
+
+    /**
+     * 店铺地址
+     */
+    private String address;
+
+    public ShopLocation(String city, String longitude, String latitude) {
+        this.city = city;
+        this.longitude = longitude;
+        this.latitude = latitude;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(String longitude) {
+        this.longitude = longitude;
+    }
+
+    public String getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(String latitude) {
+        this.latitude = latitude;
+    }
+
+    public String getShopName() {
+        return shopName;
+    }
+
+    public void setShopName(String shopName) {
+        this.shopName = shopName;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "ShopLocation{" +
+            "city='" + city + '\'' +
+            ", longitude='" + longitude + '\'' +
+            ", latitude='" + latitude + '\'' +
+            '}';
+    }
 }
 
 

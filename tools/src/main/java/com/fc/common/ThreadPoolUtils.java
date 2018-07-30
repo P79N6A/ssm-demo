@@ -13,7 +13,7 @@ import com.fc.constant.NormalNumberConstant;
  * @author fangcong on 2017/6/16.
  * 创建线程池的简单示例
  */
-public class ThreadPoolDemo {
+public class ThreadPoolUtils {
 
     /**
      * 定义静态内部线程类
@@ -37,6 +37,7 @@ public class ThreadPoolDemo {
      * @return
      */
     public static ExecutorService getThreadFactoryPool(int corePoolSize) {
+        corePoolSize = corePoolSize > 10 ? 10 : corePoolSize;
         ThreadFactory namedThreadFactory = new ThreadFactoryBuilder()
             .setNameFormat("demo-pool-%d").build();
         ExecutorService executorService = new ThreadPoolExecutor(corePoolSize, 10,

@@ -3,7 +3,8 @@ package com.demo.thread;
 import java.util.Random;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+
+import com.fc.common.ThreadPoolUtils;
 
 /**
  * @author fangcong on 2018/3/19.
@@ -26,7 +27,7 @@ public class CountDownLatchDemo2 implements Runnable {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        ExecutorService service = Executors.newFixedThreadPool(10);
+        ExecutorService service = ThreadPoolUtils.getThreadFactoryPool(10);
         for (int i = 0; i < 10; i++) {
             service.submit(DEMO_2);
         }

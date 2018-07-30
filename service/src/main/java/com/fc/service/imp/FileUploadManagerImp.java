@@ -7,6 +7,7 @@ import com.fc.bean.FileDO;
 import com.fc.dao.UserDao;
 import com.fc.service.FileUploadManager;
 import com.taobao.common.tfs.TfsManager;
+import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -30,7 +31,7 @@ public class FileUploadManagerImp implements FileUploadManager {
 
     @Override
     public String[] uploadFile(byte[] bytes, String tfsName) {
-        String imageName = null;
+        String imageName;
         try {
             imageName = tfsManager.saveFile(bytes, tfsName, null);
             return new String[]{imageName};
@@ -38,6 +39,14 @@ public class FileUploadManagerImp implements FileUploadManager {
             logger.error("tfsManager.saveFile", e);
         }
         return null;
+    }
+
+    @Override
+    public String uploadImage(byte[] bytes, String ext) {
+        if (StringUtils.isBlank(ext)) {
+            ext = "jpg";
+        }
+        return tfsManager.saveFile(bytes, null, ext);
     }
 
     @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)

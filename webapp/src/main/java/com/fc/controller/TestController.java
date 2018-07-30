@@ -14,7 +14,7 @@ import com.fc.annotations.JsonParam;
 import com.fc.bean.User;
 import com.fc.common.AjaxResult;
 import com.fc.common.Asserts;
-import com.fc.common.ThreadPoolDemo.MyTask;
+import com.fc.common.ThreadPoolUtils.MyTask;
 import com.fc.constant.NormalNumberConstant;
 import com.fc.service.TestSetBean;
 import com.fc.service.UserService;

@@ -41,6 +41,7 @@ public class DateUtil {
         String s = "Dec 16,2017 3:42:22 PM";
         Date d = new Date(s);
         System.out.println(format.format(d));
+
         Date date1 = format.parse("2018-01-23 00:00:00");
         System.out.println(date1.getTime());
         Date date2 = format.parse("2018-06-05 17:49:00");

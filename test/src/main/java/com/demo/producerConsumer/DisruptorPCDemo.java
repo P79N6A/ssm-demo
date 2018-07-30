@@ -3,7 +3,7 @@ package com.demo.producerConsumer;
 import java.nio.ByteBuffer;
 import java.util.concurrent.ExecutorService;
 
-import com.fc.common.ThreadPoolDemo;
+import com.fc.common.ThreadPoolUtils;
 import com.lmax.disruptor.BlockingWaitStrategy;
 import com.lmax.disruptor.EventFactory;
 import com.lmax.disruptor.RingBuffer;
@@ -21,7 +21,7 @@ import lombok.Setter;
 public class DisruptorPCDemo {
 
     public static void main(String[] args) throws InterruptedException {
-        ExecutorService service = ThreadPoolDemo.getThreadFactoryPool(3);
+        ExecutorService service = ThreadPoolUtils.getThreadFactoryPool(3);
         PCDataFactory factory = new PCDataFactory();
         int bufferSize = 1024;
 

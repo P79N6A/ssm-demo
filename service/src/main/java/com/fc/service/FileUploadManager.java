@@ -20,6 +20,15 @@ public interface FileUploadManager {
     String[] uploadFile(byte[] bytes, String tfsName);
 
     /**
+     * 上传图片得到tfsName
+     *
+     * @param bytes
+     * @param ext
+     * @return
+     */
+    String uploadImage(byte[] bytes, String ext);
+
+    /**
      * 记录文件信息
      *
      * @param fileDO

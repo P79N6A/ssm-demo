@@ -72,6 +72,7 @@ public class QcodecGenerator {
                     image.setRGB(i, j, encode.get(i, j) ? BLACK : WHITE);
                 }
             }
+            // 4、生成二维码到本地存储
             File outPutImage = new File(outPutPath);
             //如果图片不存在创建图片
             if (!outPutImage.exists()) {

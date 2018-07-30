@@ -5,7 +5,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 import javax.annotation.Resource;
 
 import com.fc.bean.TestLombookBean;
-import com.fc.common.ThreadPoolDemo.MyTask;
+import com.fc.common.ThreadPoolUtils.MyTask;
 import com.fc.constant.NormalNumberConstant;
 import com.fc.provider.ThreadPoolExecutorDef;
 import com.fc.service.TestSetBean;

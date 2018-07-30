@@ -40,8 +40,8 @@ public class MappingHttpMessageConverter extends AbstractHttpMessageConverter<Ob
     /**
      * 避免返回时间时变成时间戳格式，java.util.Date默认会返回时间戳，java.sql.Date返回日期格式
      */
-    private static final Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").disableHtmlEscaping()
-        .create();
+    private static final Gson GSON = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss")
+        .disableHtmlEscaping().create();
 
     public MappingHttpMessageConverter() {
         super(new MediaType("application", "json", UTF8), new MediaType("application", "*+json", UTF8));
@@ -77,32 +77,27 @@ public class MappingHttpMessageConverter extends AbstractHttpMessageConverter<Ob
     }
 
     @Override
-    protected Object readInternal(Class<? extends Object> clazz,
-                                  HttpInputMessage inputMessage) throws IOException,
-        HttpMessageNotReadableException {
-
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+    protected Object readInternal(Class<? extends Object> clazz, HttpInputMessage inputMessage)
+        throws IOException, HttpMessageNotReadableException {
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 
         InputStream in = inputMessage.getBody();
-
         byte[] buf = new byte[1024];
         for (; ; ) {
             int len = in.read(buf);
             if (len == -1) {
                 break;
             }
-
             if (len > 0) {
-                baos.write(buf, 0, len);
+                byteArrayOutputStream.write(buf, 0, len);
             }
         }
 
-        byte[] bytes = baos.toByteArray();
+        byte[] bytes = byteArrayOutputStream.toByteArray();
         if (charset == UTF8) {
             return JSON.parseObject(bytes, clazz);
         } else {
-            return JSON.parseObject(bytes, 0, bytes.length,
-                charset.newDecoder(), clazz);
+            return JSON.parseObject(bytes, 0, bytes.length, charset.newDecoder(), clazz);
         }
     }
 
@@ -124,7 +119,7 @@ public class MappingHttpMessageConverter extends AbstractHttpMessageConverter<Ob
             jsonpCallback = ((ServletRequestAttributes)reqAttrs).getRequest().getParameter(callback);
         }
 
-        String securityStr = gson.toJson(obj);
+        String securityStr = GSON.toJson(obj);
 
         if (StringUtils.isNotBlank(securityStr)) {
             securityStr = securityStr.replaceAll("\t", " ");
