@@ -20,9 +20,10 @@ public class CountDownLatchDemo2 implements Runnable {
         try {
             Thread.sleep(new Random().nextInt(10) * 1000);
             System.out.println("check complete");
-            LATCH.countDown();
         } catch (InterruptedException e) {
             e.printStackTrace();
+        } finally {
+            LATCH.countDown();
         }
     }
 

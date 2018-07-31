@@ -58,7 +58,7 @@ public class ClassLoaderTest {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
-        //子类引入父类的静态字段，只会触发父类的初始化
+        // 子类引入父类的静态字段，只会触发父类的初始化
         System.out.println(SubClass.value);
         System.out.println(ConstantClass.HELLO_WORLD);
         //自定义类加载器
@@ -81,12 +81,13 @@ public class ClassLoaderTest {
             }
         };
         System.out.println(myClassLoader.toString());
-        ClassLoader cl_app = myClassLoader.getParent();
-        ClassLoader cl_ext = cl_app.getParent();
-        ClassLoader cl_boot = cl_ext.getParent();
-        System.out.println(cl_app.toString());
-        System.out.println(cl_ext.toString());
-        System.out.println(cl_boot);
+        // 类加载器层级结构：自定义-应用类-扩展类-启动类
+        ClassLoader appClassLoader = myClassLoader.getParent();
+        ClassLoader extensionClassLoader = appClassLoader.getParent();
+        ClassLoader bootStrapClassLoader = extensionClassLoader.getParent();
+        System.out.println(appClassLoader.toString());
+        System.out.println(extensionClassLoader.toString());
+        System.out.println(bootStrapClassLoader);
         //根据类的全限定类名加载类
         Object obj = myClassLoader.loadClass("com.jvm.classloader.ClassLoaderTest").newInstance();
         System.out.println(obj.getClass());

@@ -3,6 +3,7 @@ package test.test;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 import org.apache.commons.lang.time.DateUtils;
 
@@ -39,8 +40,9 @@ public class DateUtil {
     public static void main(String[] args) throws Exception {
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String s = "Dec 16,2017 3:42:22 PM";
-        Date d = new Date(s);
-        System.out.println(format.format(d));
+        // Date d = new Date(s);
+        SimpleDateFormat d = new SimpleDateFormat("MMM d,yyyy K:m:s a",Locale.ENGLISH);
+        System.out.println(format.format(d.parse(s)));
 
         Date date1 = format.parse("2018-01-23 00:00:00");
         System.out.println(date1.getTime());

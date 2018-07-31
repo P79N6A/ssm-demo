@@ -5,21 +5,21 @@ package com.exams;
  */
 public class GuPiaoTrade {
 
-    private static final int[] data = {25, 10, 22, 5, 75, 65, 80};
+    private static final int[] DATA = {25, 10, 22, 5, 75, 65, 80};
 
     public static void main(String[] args) {
         int p = 0;
         int w1, w2;
-        for (int i = 0; i < data.length; i++) {
-            for (int j = i + 1; j < data.length; j++) {
+        for (int i = 0; i < DATA.length; i++) {
+            for (int j = i + 1; j < DATA.length; j++) {
                 //第一次交易能产生的利润
-                if (data[j] > data[i]) {
-                    w1 = data[j] - data[i];
-                    for (int m = j; m < data.length; m++) {
-                        for (int n = m + 1; n < data.length; n++) {
+                if (DATA[j] > DATA[i]) {
+                    w1 = DATA[j] - DATA[i];
+                    for (int m = j; m < DATA.length; m++) {
+                        for (int n = m + 1; n < DATA.length; n++) {
                             //第二次交易能产生的利润
-                            if (data[n] > data[m]) {
-                                w2 = data[n] - data[m];
+                            if (DATA[n] > DATA[m]) {
+                                w2 = DATA[n] - DATA[m];
                                 //预期最大总收益
                                 if (w1 + w2 > p) {
                                     p = w1 + w2;

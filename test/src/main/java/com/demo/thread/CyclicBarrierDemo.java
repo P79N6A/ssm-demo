@@ -71,14 +71,14 @@ public class CyclicBarrierDemo {
     }
 
     public static void main(String[] args) {
-        final int N = 10;
-        Thread[] threads = new Thread[N];
+        final int n = 10;
+        Thread[] threads = new Thread[n];
         boolean flag = false;
 
-        CyclicBarrier cyclicBarrier = new CyclicBarrier(N, new BarrierRun(flag, N));
+        CyclicBarrier cyclicBarrier = new CyclicBarrier(n, new BarrierRun(flag, n));
         System.out.println("集合完毕！");
 
-        for (int i = 0; i < N; i++) {
+        for (int i = 0; i < n; i++) {
             System.out.println("士兵" + i + "报道!");
             threads[i] = new Thread(new Soldier(cyclicBarrier, "士兵" + i));
             threads[i].start();

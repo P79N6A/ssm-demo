@@ -70,6 +70,7 @@ public class DateThreadLocalUtil {
             }
         };
         t.start();
+        threadLocal.remove();
     }
 
 }

@@ -16,13 +16,13 @@ public class SemaphoreDemo {
     /**
      * 线程池最大允许30个线程同时执行
      */
-    private static final ExecutorService service = Executors.newFixedThreadPool(MAX_THREAD);
+    private static final ExecutorService EXECUTOR_SERVICE = Executors.newFixedThreadPool(MAX_THREAD);
 
     public static void main(String[] args) {
         //控制同时最多10个线程执行
         Semaphore semaphore = new Semaphore(10);
         for (int i = 0; i < MAX_THREAD; i++) {
-            service.execute(() -> {
+            EXECUTOR_SERVICE.execute(() -> {
                 try {
                     semaphore.acquire();
                     System.out.println("work : " + Thread.currentThread().getId() + " at time : "
@@ -33,6 +33,6 @@ public class SemaphoreDemo {
                 }
             });
         }
-        service.shutdown();
+        EXECUTOR_SERVICE.shutdown();
     }
 }
