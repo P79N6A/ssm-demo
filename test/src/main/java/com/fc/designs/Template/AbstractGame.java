@@ -7,10 +7,19 @@ package com.fc.designs.template;
  */
 public abstract class AbstractGame {
 
+    /**
+     * 初始化
+     */
     abstract void initilization();
 
+    /**
+     * 开始游戏
+     */
     abstract void startPlay();
 
+    /**
+     * 结束游戏
+     */
     abstract void endPlay();
 
     public final void paly() {

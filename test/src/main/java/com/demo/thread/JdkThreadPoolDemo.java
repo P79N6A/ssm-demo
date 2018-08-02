@@ -13,7 +13,7 @@ public class JdkThreadPoolDemo {
 
     public static void main(String[] args) throws InterruptedException {
         MyTask task = new MyTask();
-        //ExecutorService service = Executors.newFixedThreadPool(5);
+        // ExecutorService service = Executors.newFixedThreadPool(5);
         ExecutorService service = Executors.newCachedThreadPool();
         for (int i = 0; i < 10; i++) {
             service.submit(task);

@@ -178,8 +178,6 @@ public class NormalTest {
         char[] c = String.valueOf(a).toCharArray();
         System.out.println(niXuStr(c));*/
 
-        /*Double[] nums = {12d, 14d, 17d, 22d};
-        Stream.of(nums).forEach(System.out::print);*/
         int i = 100000000;
         System.out.println(i);
 

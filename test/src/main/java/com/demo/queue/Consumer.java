@@ -4,6 +4,8 @@ import java.util.concurrent.BlockingQueue;
 
 /**
  * 消费者线程
+ *
+ * @author fangcong
  */
 public class Consumer implements Runnable {
 

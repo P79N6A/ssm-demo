@@ -53,7 +53,7 @@ public class QcodecGenerator {
      * @param imageType  二维码生成格式
      */
     public static void zxingCodeCreate(String text, int width, int height, String outPutPath, String imageType) {
-        Map<EncodeHintType, String> his = new HashMap<>();
+        Map<EncodeHintType, String> his = new HashMap<>(16);
         //设置编码字符集
         his.put(EncodeHintType.CHARACTER_SET, CHARSET);
         try {
@@ -109,7 +109,7 @@ public class QcodecGenerator {
             LuminanceSource source = new BufferedImageLuminanceSource(image);
             Binarizer binarizer = new HybridBinarizer(source);
             BinaryBitmap binaryBitmap = new BinaryBitmap(binarizer);
-            Map hints = new HashMap();
+            Map hints = new HashMap(16);
             hints.put(EncodeHintType.CHARACTER_SET, CHARSET);
             result = formatReader.decode(binaryBitmap, hints);
         } catch (NotFoundException e) {

@@ -1,4 +1,4 @@
-package com.demo.producerConsumer;
+package com.demo.producer2consumer;
 
 import java.nio.ByteBuffer;
 import java.util.concurrent.ExecutorService;
@@ -18,15 +18,15 @@ import lombok.Setter;
  *
  * @author fangcong on 2018/4/4.
  */
-public class DisruptorPCDemo {
+public class DisruptorPcDemo {
 
     public static void main(String[] args) throws InterruptedException {
         ExecutorService service = ThreadPoolUtils.getThreadFactoryPool(3);
-        PCDataFactory factory = new PCDataFactory();
+        PcDataFactory factory = new PcDataFactory();
         int bufferSize = 1024;
 
         //corePoolSize数量消费者消费
-        Disruptor<PCData> disruptor = new Disruptor<>(factory, bufferSize, service,
+        Disruptor<PcData> disruptor = new Disruptor<>(factory, bufferSize, service,
             ProducerType.MULTI,
             new BlockingWaitStrategy());
 
@@ -38,7 +38,7 @@ public class DisruptorPCDemo {
             new Consumer());
         disruptor.start();
 
-        RingBuffer<PCData> ringBuffer = disruptor.getRingBuffer();
+        RingBuffer<PcData> ringBuffer = disruptor.getRingBuffer();
         Producer producer = new Producer(ringBuffer);
         ByteBuffer byteBuffer = ByteBuffer.allocate(8);
 
@@ -53,17 +53,17 @@ public class DisruptorPCDemo {
 
 @Setter
 @Getter
-class PCData {
+class PcData {
     private Long value;
 }
 
 /**
  * 消费者
  */
-class Consumer implements WorkHandler<PCData> {
+class Consumer implements WorkHandler<PcData> {
 
     @Override
-    public void onEvent(PCData pcData) throws Exception {
+    public void onEvent(PcData pcData) throws Exception {
         System.out.println(Thread.currentThread().getId()
             + ":Event:--" + pcData.getValue() * pcData.getValue() + "--");
     }
@@ -72,11 +72,11 @@ class Consumer implements WorkHandler<PCData> {
 /**
  * PCData生产工厂
  */
-class PCDataFactory implements EventFactory<PCData> {
+class PcDataFactory implements EventFactory<PcData> {
 
     @Override
-    public PCData newInstance() {
-        return new PCData();
+    public PcData newInstance() {
+        return new PcData();
     }
 }
 
@@ -85,16 +85,16 @@ class PCDataFactory implements EventFactory<PCData> {
  */
 class Producer {
 
-    private final RingBuffer<PCData> buffer;
+    private final RingBuffer<PcData> buffer;
 
-    public Producer(RingBuffer<PCData> buffer) {
+    public Producer(RingBuffer<PcData> buffer) {
         this.buffer = buffer;
     }
 
     public void pushData(ByteBuffer byteBuffer) {
         long sequence = buffer.next();
         try {
-            PCData data = buffer.get(sequence);
+            PcData data = buffer.get(sequence);
             data.setValue(byteBuffer.getLong(0));
         } finally {
             buffer.publish(sequence);

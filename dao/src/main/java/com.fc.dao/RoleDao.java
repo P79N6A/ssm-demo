@@ -15,5 +15,11 @@ public interface RoleDao {
      */
     Role getRole(Long id);
 
+    /**
+     * 添加角色
+     *
+     * @param role
+     * @return
+     */
     Integer insertRole(Role role);
 }

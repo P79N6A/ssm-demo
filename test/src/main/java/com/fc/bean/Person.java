@@ -71,7 +71,9 @@ public class Person implements Serializable,Cloneable{
 		return firstname.concat(lastname).hashCode();
 	}
 
-	// 为了输入方便，重写了toString()
+	/**
+	 * 为了输入方便，重写了toString()
+	 */
 	@Override
 	public String toString() {
 		return firstname + " " + lastname + " "

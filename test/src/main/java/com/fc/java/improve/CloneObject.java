@@ -63,9 +63,6 @@ public class CloneObject {
         list.add(p2);
         list.add(p3);
         list.add(p4);
-        /*List<Person> list1 = new ArrayList<>();
-        list1.add(p1);
-        list.removeAll(list1);*/
         printList(list);
         removeDuplicate(list);
         printList(list);

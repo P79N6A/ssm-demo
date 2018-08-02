@@ -9,8 +9,20 @@ import org.apache.commons.lang.StringUtils;
  */
 public abstract class AbstractFactory {
 
+    /**
+     * 获取Shape类
+     *
+     * @param shape
+     * @return
+     */
     abstract Shape getShape(String shape);
 
+    /**
+     * 获取Color类
+     *
+     * @param color
+     * @return
+     */
     abstract Color getColor(String color);
 }
 

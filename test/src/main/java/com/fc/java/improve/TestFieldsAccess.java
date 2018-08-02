@@ -6,8 +6,13 @@ import java.lang.reflect.Method;
 import com.fc.bean.FieldVO;
 
 /**
- * @author fangcong on 2017/8/11.
  * 测试4种访问修饰符修饰的属性字段访问
+ * public——field1,field2
+ * private——field3,field4
+ * protected——field5,field6
+ * default——field7,field8
+ *
+ * @author fangcong on 2017/8/11.
  */
 public class TestFieldsAccess {
 
@@ -36,7 +41,7 @@ public class TestFieldsAccess {
                 System.out.println(fieldValue.toString());
             }
 
-            /*//获取指定名称属性，访问限制和获取所有一致
+            // 获取指定名称属性，访问限制和获取所有一致
             Field field1 = clazz.getField("field1");
             System.out.println("getField : " + field1.getName());
             Field field2 = clazz.getDeclaredField("field5");
@@ -46,7 +51,7 @@ public class TestFieldsAccess {
             Method method = clazz.getDeclaredMethod("method1");
             method.invoke(clazz.newInstance());
             Method method1 = clazz.getDeclaredMethod("method1", String.class, Integer.class);
-            method1.invoke(clazz.newInstance(), "field2", 11);*/
+            method1.invoke(clazz.newInstance(), "field2", 11);
         } catch (Exception e) {
             e.printStackTrace();
         }

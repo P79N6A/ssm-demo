@@ -4,6 +4,8 @@ import java.util.concurrent.BlockingQueue;
 
 /**
  * 生产者线程
+ *
+ * @author fangcong
  */
 public class Producer implements Runnable {
 

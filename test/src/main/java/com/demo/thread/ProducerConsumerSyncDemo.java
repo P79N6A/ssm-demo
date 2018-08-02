@@ -213,7 +213,14 @@ class ProductFactoryLock implements ProductFactory {
 
 interface ProductFactory {
 
+    /**
+     * 生产方法
+     * @param product
+     */
     void produce(String product);
 
+    /**
+     * 消费方法
+     */
     void consume();
 }

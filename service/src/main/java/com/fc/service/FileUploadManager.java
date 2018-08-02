@@ -39,6 +39,7 @@ public interface FileUploadManager {
     /**
      * 批量查询,in查询超过1000条时先拆分
      *
+     * @param list
      * @return
      */
     List<FileDO> testForEach(List<Set<String>> list);

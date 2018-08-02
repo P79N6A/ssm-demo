@@ -1,4 +1,4 @@
-package com.demo.producerConsumer;
+package com.demo.producer2consumer;
 
 /**
  * @author fangcong on 2018/4/4.

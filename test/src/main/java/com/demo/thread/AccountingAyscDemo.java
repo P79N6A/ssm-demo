@@ -31,7 +31,7 @@ public class AccountingAyscDemo implements Runnable{
         Thread e = new Thread(instance, "t5");
         e.start();
         e.join();
-        //Thread.sleep(5000);
+        Thread.sleep(5000);
         System.out.println(i);
     }
 }

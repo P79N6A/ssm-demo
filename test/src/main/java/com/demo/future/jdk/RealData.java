@@ -1,4 +1,4 @@
-package com.demo.future.jdkFuture;
+package com.demo.future.jdk;
 
 import java.util.concurrent.Callable;
 

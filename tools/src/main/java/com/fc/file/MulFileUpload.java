@@ -26,7 +26,14 @@ import org.apache.commons.lang.StringUtils;
 public class MulFileUpload extends HttpServlet {
     private static final String CONTENT_TYPE = "text/html; charset=GB2312";
 
-    // Process the HTTP Post request
+    /**
+     * servlet请求处理
+     *
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     @SuppressWarnings({"rawtypes"})
     public void doPost(HttpServletRequest request, HttpServletResponse response)

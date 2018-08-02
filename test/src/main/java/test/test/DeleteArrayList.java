@@ -84,7 +84,7 @@ public class DeleteArrayList {
          deleteElement2(list);
          deleteElement3(list);
          printList(list);*/
-        Map<String, Object> map = new HashMap<>();
+        Map<String, Object> map = new HashMap<>(16);
         long sellerId = 117255663;
         int level = 5;
         map.put("level", 5);

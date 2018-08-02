@@ -2,6 +2,7 @@ package com.fc.designs.chain;
 
 /**
  * 抽象日志类，定义不同日志级别
+ *
  * @author fangcong on 2018/4/10.
  */
 public abstract class AbstractLogger {
@@ -28,6 +29,7 @@ public abstract class AbstractLogger {
 
     /**
      * 日志记录
+     *
      * @param level
      * @param message
      */
@@ -40,5 +42,10 @@ public abstract class AbstractLogger {
         }
     }
 
+    /**
+     * 写消息
+     *
+     * @param message
+     */
     abstract protected void write(String message);
 }

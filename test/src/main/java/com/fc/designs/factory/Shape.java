@@ -5,6 +5,9 @@ package com.fc.designs.factory;
  */
 public interface Shape {
 
+    /**
+     * 定义工厂方法
+     */
     void draw();
 }
 

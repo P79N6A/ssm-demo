@@ -11,6 +11,9 @@ public abstract class AbstractShape implements Cloneable {
 
     protected String type;
 
+    /**
+     * 定义行为区分
+     */
     abstract void draw();
 
     public Integer getId() {

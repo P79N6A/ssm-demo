@@ -14,6 +14,10 @@ public class TestNormalFactoryDesign {
 }
 
 interface Fruit {
+
+    /**
+     * 定义接口行为方法
+     */
     void eat();
 }
 

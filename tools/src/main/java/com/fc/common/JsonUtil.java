@@ -26,7 +26,6 @@ public class JsonUtil {
             securityStr = securityStr.replaceAll("\t", " ");
         }
         if (jsonpCallBack != null) {
-            //jsonpCallBack = SecurityUtil.escapeHtml(jsonpCallBack);
             StringBuilder sb = new StringBuilder(jsonpCallBack).append("(").append(securityStr).append(")");
             securityStr = sb.toString();
         }

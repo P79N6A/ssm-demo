@@ -7,5 +7,12 @@ package com.fc.designs.strategy;
  */
 public interface Strategy {
 
-    public int doOperation(int num1, int num2);
+    /**
+     * 定义策略方法
+     *
+     * @param num1
+     * @param num2
+     * @return
+     */
+    int doOperation(int num1, int num2);
 }

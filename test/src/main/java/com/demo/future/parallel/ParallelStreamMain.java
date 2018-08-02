@@ -1,9 +1,11 @@
 package com.demo.future.parallel;
 
 /**
+ * 并行流处理
+ *
  * @author fangcong on 2018/4/8.
  */
-public class PStreamMain {
+public class ParallelStreamMain {
 
     public static void main(String[] args) {
         new Thread(new Plus()).start();

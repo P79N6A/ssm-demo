@@ -10,7 +10,7 @@ import java.util.concurrent.locks.Lock;
  *
  * @author fc on 2018/4/24.
  */
-public class MutexAQS implements Lock {
+public class MutexAqs implements Lock {
 
     /**
      * 静态内部类，继承同步器并实现独占式获取和释放同步状态

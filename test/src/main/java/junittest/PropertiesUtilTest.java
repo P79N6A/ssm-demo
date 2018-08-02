@@ -9,7 +9,7 @@ import org.junit.Test;
 /**
  * @author fangcong on 2018/3/9.
  */
-public class TestPropertiesUtil {
+public class PropertiesUtilTest {
 
     /**
      * 1、name前要带上“/”
@@ -18,7 +18,7 @@ public class TestPropertiesUtil {
      */
     @Test
     public void testConstructor() {
-        PropertiesUtil propertiesUtil = new PropertiesUtil(TestPropertiesUtil.class, "/test.properties");
+        PropertiesUtil propertiesUtil = new PropertiesUtil(PropertiesUtilTest.class, "/test.properties");
         Assert.assertNotNull(propertiesUtil);
         List<Object> list = propertiesUtil.getKeyList();
         Assert.assertNotNull(list);

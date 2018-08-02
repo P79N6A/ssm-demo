@@ -12,7 +12,7 @@ import com.fc.bean.User;
  *
  * @author fangcong on 2018/7/18.
  */
-public class ObjectInputStreamRW {
+public class ObjectInputStreamRw {
 
     public static void main(String[] args) throws Exception {
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("user.dat"));

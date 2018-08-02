@@ -23,7 +23,7 @@ public class AtomicStampedReferenceDemo {
                                 break;
                             }
                         } else {
-                            //System.out.println("余额大于20元，无需充值！");
+                            System.out.println("余额大于20元，无需充值！");
                             break;
                         }
                     }
@@ -44,7 +44,7 @@ public class AtomicStampedReferenceDemo {
                             break;
                         }
                     } else {
-                        //System.out.println("余额不足");
+                        System.out.println("余额不足");
                         break;
                     }
                 }

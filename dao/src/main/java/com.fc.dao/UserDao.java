@@ -45,5 +45,11 @@ public interface UserDao {
      */
     Integer insertFileInfo(FileDO fileDO);
 
+    /**
+     * 分批次批量查询
+     *
+     * @param list
+     * @return
+     */
     List<FileDO> testForEach(List<Set<String>> list);
 }

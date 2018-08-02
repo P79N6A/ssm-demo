@@ -24,7 +24,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * @author SYSTEM on 2017/11/16.
  */
-public class TestControllerByMock {
+public class MockControllerTest {
 
     @InjectMocks
     private TestController testController;

@@ -10,10 +10,12 @@ public class TimeLock implements Runnable {
 
     private static ReentrantLock reentrantLock = new ReentrantLock();
 
+    private static final Integer LOCK_TIME = 5;
+
     @Override
     public void run() {
         try {
-            if (reentrantLock.tryLock(5, TimeUnit.SECONDS)) {
+            if (reentrantLock.tryLock(LOCK_TIME, TimeUnit.SECONDS)) {
                 Thread.sleep(6000);
             } else {
                 System.out.println("get lock failed");
