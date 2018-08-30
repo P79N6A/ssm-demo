@@ -60,21 +60,22 @@
     }
 
     function test() {
-        var url = "//my.daily.taobao.net:8080/wangTang/checkChance.json";
-        var param = {"finish10DaysLogin":0,"finish10Course":0,"finish1DayLogin":1,"finish20Course":0,"finish3Follows":0};
         $.ajax({
+            url: "http://my.daily.taobao.net:8080/common/route.json",
             type: "GET",
-            url: url,
-            dataType: "jsonp",
             data: {
-                $Test : '$$',
-                param : JSON.stringify(param)
+                "dataId": "collectshop",
+                "args": {
+                    "shopId": "111481369"
+                }
             },
+            dataType: "jsonp", //指定服务器返回的数据类型
             success: function (data) {
-
+                var result = JSON.stringify(data); //json对象转成字符串
+                $("#test").text(result);
             },
             error: function () {
-                $(".errorMsg").text("失败");
+                alert("关注失败！");
             }
         });
     }
@@ -82,11 +83,16 @@
     function lottey() {
         $.ajax({
             type: "GET",
-            url: "//showcase.simba.taobao.com/test/security.json",
+            url: "//showcase.simba.taobao.com/common/route.json",
             dataType: "jsonp",
             data: {
-                asac: '1A18531Y6S85RR78UFL42L',
-                ua: c.getUA()
+                dataId : 'bearXLottery',
+                $Test: '$$',
+                asac: '1A18821RJE5QDT4ISXKGC2',
+                ua: c.getUA(),
+                args : {
+                    target: '7AC9D6416168A97E'
+                }
             },
             success: function (data) {
                 if (data.info.code == "S001") {

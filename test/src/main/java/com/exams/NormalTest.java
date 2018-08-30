@@ -1,12 +1,16 @@
 package com.exams;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.atomic.LongAdder;
+
+import com.fc.bean.User;
+import org.apache.commons.lang.time.DateUtils;
 
 /**
  * @author fangcong on 2018/4/10.
@@ -152,13 +156,16 @@ public class NormalTest {
     }
 
     public static void main(String[] args) throws Exception {
-        /*long start = System.nanoTime();
+        /*long start = System.nanoTime();*/
         List<User> list = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
             User user = new User("name" + i, i % 2 == 0 ? 'M' : 'F', 20 + i);
             list.add(user);
         }
-        List<User> subList = list.subList(0, 10);*/
+        list.forEach(user -> user.setLoginName(user.getRealName()));
+        for (User user : list) {
+            System.out.println(user);
+        }
         /*List<User> subList = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             subList.add(list.get(i));
@@ -178,7 +185,7 @@ public class NormalTest {
         char[] c = String.valueOf(a).toCharArray();
         System.out.println(niXuStr(c));*/
 
-        int i = 100000000;
+        int i = (int)(129600 - DateUtils.getFragmentInSeconds(Calendar.getInstance(), Calendar.DATE));
         System.out.println(i);
 
         //List<Double> nums = Arrays.asList(12d, 14d, 17d, 22d);
@@ -189,7 +196,7 @@ public class NormalTest {
         System.out.println(c1 == c2);
 
         //1、根据所在城市查店铺列表，无店铺直接返回
-        List<ShopLocation> list = new ArrayList<>();
+        /*List<ShopLocation> list = new ArrayList<>();
         ShopLocation location2 = new ShopLocation("hangzhou", "120.021957", "30.275341");
         ShopLocation location1 = new ShopLocation("hangzhou", "120.020776", "30.27467");
         ShopLocation location3 = new ShopLocation("hangzhou", "120.026208", "30.279212");
@@ -225,7 +232,7 @@ public class NormalTest {
         });
 
         int distance = (int)getDistance(120.017113, 30.279192, 120.090935, 30.286972);
-        System.out.println(distance);
+        System.out.println(distance);*/
     }
 
     private static String niXuStr(char[] c) {

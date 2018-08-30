@@ -38,6 +38,12 @@ public class ParseJsonStr {
      */
     private static final String JSON_BEAN_STR = "{\"sellerId\":\"123456\",\"activityId\":\"adns45222sa\"}";
 
+    private static final String JSON_TEST_STR = "{reportTime: \"1532596707397\", "
+        + "reportType: 1, handledText: { deviceMac: \"AC-B5-7D-9C-77-71\", "
+        + "deviceType: \"GATEWAY\", deviceGatewayMac: \"AC-B5-7D-9C-77-71\", "
+        + "deviceName: \"家里的网关\", nodeNum: 1 }, permission: "
+        + "\"e10adc3949ba59abbe56e057f20f883e\"}";
+
     public static void main(String[] args){
         List<CouponVO> list = JSONArray.parseArray(JSON_ARRAY_OBJ_STR, CouponVO.class);
         for (CouponVO couponVO : list) {
@@ -47,7 +53,13 @@ public class ParseJsonStr {
 
         JSONObject jsonObject = JSON.parseObject(JSON_NORMAL_STR);
         for (String key : jsonObject.keySet()) {
-            System.out.println(key + " : " + jsonObject.getObject(key, String.class));
+            System.out.println(key + " : " + jsonObject.getString(key));
+        }
+        System.out.println("--------------------------");
+
+        JSONObject jsonObject1 = JSON.parseObject(JSON_TEST_STR);
+        for (String key : jsonObject1.keySet()) {
+            System.out.println(key + " : " + jsonObject1.getString(key));
         }
         System.out.println("--------------------------");
 
@@ -56,9 +68,9 @@ public class ParseJsonStr {
         System.out.println("--------------------------");
 
         Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd").create();
-        Map<String, Object> map = gson.fromJson(JSON_NORMAL_STR, new TypeToken<Map<String, Object>>(){}.getType());
+        Map<String, Object> map = gson.fromJson(JSON_TEST_STR, new TypeToken<Map<String, Object>>(){}.getType());
         for (String key : map.keySet()){
-            String value = (String)map.get(key);
+            Object value = map.get(key);
             System.out.println(key + " : " + value);
         }
 
