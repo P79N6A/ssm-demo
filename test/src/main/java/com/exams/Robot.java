@@ -26,7 +26,7 @@ public class Robot {
 
     private static final String DUOWAN_PIC = "(http[s]?:)(\\S)*(.jpg)";
 
-    private static final String BAIDU_PIC = "(https://ss0\\.bdstatic\\.com/.*\\.jpg)";
+    private static final String BAIDU_PIC = "(https://ss\\d\\.bdstatic\\.com/.*\\.jpg)";
 
     /**
      * 定义URL匹配规则
@@ -58,7 +58,7 @@ public class Robot {
                     printWriter2.println(buf);
                     Matcher matcher = URL_PATTERN.matcher(buf);
                     if (matcher.find()) {
-                        printWriter.println(matcher.group(1));
+                        printWriter.println(matcher.group());
                     }
                 }
             }

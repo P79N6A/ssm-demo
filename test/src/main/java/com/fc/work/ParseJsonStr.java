@@ -23,6 +23,8 @@ import com.google.gson.reflect.TypeToken;
  */
 public class ParseJsonStr {
 
+    private static final String JSON_STR = "[{\"sellerId\":\"1235655\"}]";
+
     /**
      * json数组，可转成List<?>
      */

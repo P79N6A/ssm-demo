@@ -2,6 +2,7 @@ package com.exams;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
@@ -156,6 +157,13 @@ public class NormalTest {
     }
 
     public static void main(String[] args) throws Exception {
+        Date date = com.fc.common.DateUtils.getFormatDate("2018-08-31 14:09:00", "yyyy-MM-dd HH:mm:ss");
+        System.out.println(date.getTime() + 3600000);
+        Date date1 = new Date();
+        Date date2 = new Date(date1.getTime() + 3600000);
+        System.out.println(com.fc.common.DateUtils.getFormatDateTime(date1));
+        System.out.println(com.fc.common.DateUtils.getFormatDateTime(date2));
+
         /*long start = System.nanoTime();*/
         List<User> list = new ArrayList<>();
         for (int i = 0; i < 100; i++) {

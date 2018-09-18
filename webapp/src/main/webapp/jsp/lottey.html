@@ -29,6 +29,7 @@
 
     </script>
     <a href="javascript:lottey()">抽奖</a>
+    <a href="javascript:getAward()">我的奖品</a>
     <a href="javascript:test()">接口测试</a>
     <!--<a href="javascript:test()">生成分数</a>
     <a href="javascript:lottey1()">POP2抽奖</a>
@@ -59,6 +60,29 @@
         }
     }
 
+    function getAward() {
+        $.ajax({
+            type: "GET",
+            url: "//showcase.display.taobao.com/common/route.json",
+            dataType: "jsonp",
+            data: {
+                dataId : 'bearX.myAward',
+                $Test: '$$',
+                args : {
+                    //target : 'lingQu'
+                }
+            },
+            success: function (data) {
+                if (data.info.code == "S001") {
+                    alert('success');
+                }
+            },
+            error: function (data) {
+                $(".errorMsg").text("失败");
+            }
+        })
+    }
+
     function test() {
         $.ajax({
             url: "http://my.daily.taobao.net:8080/common/route.json",
@@ -86,12 +110,12 @@
             url: "//showcase.simba.taobao.com/common/route.json",
             dataType: "jsonp",
             data: {
-                dataId : 'bearXLottery',
+                dataId : 'bearXLottery2',
                 $Test: '$$',
                 asac: '1A18821RJE5QDT4ISXKGC2',
                 ua: c.getUA(),
                 args : {
-                    target: '7AC9D6416168A97E'
+                    //target: '7AC9D6416168A97E'
                 }
             },
             success: function (data) {
