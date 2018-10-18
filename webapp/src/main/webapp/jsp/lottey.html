@@ -41,23 +41,30 @@
                   content="data_pages" required></textarea>
     </div>
     <p class="super_banner">提交</p>-->
-    <a href="javascript:testJson()">校验</a>
+    <a href="javascript:testJson()">安全码测试</a>
 </div>
 
 
 <script type="text/javascript">
 
     function testJson() {
-        var data = {
-            "info": {
-                "ok": true,
-                "code": "S001",
-                "message": "调用成功"
+        $.ajax({
+            type: "GET",
+            url: "//showcase.display.taobao.com/test/security.json",
+            dataType: "jsonp",
+            data: {
+                asac: '1A189041293QNTR9W5EUIF',
+                ua: c.getUA()
             },
-            "data": {
-                "result": []
+            success: function (data) {
+                if (data.info.code == "S001") {
+                    alert('success');
+                }
+            },
+            error: function (data) {
+                $(".errorMsg").text("失败");
             }
-        }
+        })
     }
 
     function getAward() {

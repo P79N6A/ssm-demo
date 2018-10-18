@@ -4,17 +4,25 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
+ * 演示被动加载示例
+ * 类加载器与instanceof关键字演示
+ *
  * @author fangcong on 2017/5/10.
- *         类加载器与instanceof关键字演示
  */
 public class ClassLoaderTest {
 
+    /**
+     * 定义父类，只包含引用时会执行的静态块
+     */
     public static class SsClass {
         static {
             System.out.println("SsClass init.");
         }
     }
 
+    /**
+     * 子类：定义静态变量以及默认的构造函数
+     */
     public static class SuperClass extends SsClass {
         static {
             System.out.println("SuperClass init.");

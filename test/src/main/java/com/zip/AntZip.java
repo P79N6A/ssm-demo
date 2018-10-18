@@ -1,16 +1,16 @@
 package com.zip;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Enumeration;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 import java.util.zip.ZipOutputStream;
 
+import com.aliyun.oss.OSSClient;
 import com.github.junrar.Archive;
 import com.github.junrar.rarfile.FileHeader;
 
@@ -73,20 +73,25 @@ public class AntZip {
 				} else {
 					fileOut = new File(destDir, entry.getName());
 					if (!fileOut.exists()) {
+						String key = entry.getName();
+						uploadOss(key, zf.getInputStream(entry));
+						/*System.out.println("parent-dir:" + fileOut.getParent());
 						(new File(fileOut.getParent())).mkdirs();
+						BufferedInputStream bis = new BufferedInputStream(
+								zf.getInputStream(entry));
+						FileOutputStream out = new FileOutputStream(fileOut);
+						BufferedOutputStream bos = new BufferedOutputStream(out);
+						int b;
+						while ((b = bis.read()) != -1) {
+							bos.write(b);
+						}
+						bis.close();
+						bos.close();
+						out.close();
+						System.out.println(fileOut + "文件解压成功");*/
+					} else {
+						System.out.println("文件已存在");
 					}
-					BufferedInputStream bis = new BufferedInputStream(
-							zf.getInputStream(entry));
-					FileOutputStream out = new FileOutputStream(fileOut);
-					BufferedOutputStream bos = new BufferedOutputStream(out);
-					int b;
-					while ((b = bis.read()) != -1) {
-						bos.write(b);
-					}
-					bis.close();
-					bos.close();
-					out.close();
-					System.out.println(fileOut + "文件解压成功");
 				}
 			}
 			zf.close();
@@ -152,6 +157,26 @@ public class AntZip {
 	}
 	
 	public static void main(String[] args) {
-		unRarFile("F://test//testRar.rar", "F://test//beifen");
+		// unRarFile("F://test//testRar.rar", "F://test//beifen");
+		File file = new File("D://youku/cover.zip");
+		unZipFiles(file, "F://test/youku");
+	}
+
+	private static final String END_POINT = "oss-cn-hangzhou-zmf.aliyuncs.com";
+
+	private static final String ACCESS_KEY_ID = "ICYCX3MfGfDBiag7";
+
+	private static final String ACCESS_SECRET = "8Nygyi7GGOdDSowSpXYz7Kg8AVFleR";
+
+	private static final String BUCKET_NAME = "ss-site-simba-test";
+
+	private static final String URL_PREFIX = "http://oss-cn-hangzhou-zmf.aliyuncs.com/ss-site-simba-test/";
+
+	public static void uploadOss(String key, InputStream is) {
+		OSSClient ossClient = new OSSClient(END_POINT, ACCESS_KEY_ID, ACCESS_SECRET);
+
+		ossClient.putObject(BUCKET_NAME, key, is);
+
+		System.out.println("生成oss访问地址：" + URL_PREFIX + key);
 	}
 }
