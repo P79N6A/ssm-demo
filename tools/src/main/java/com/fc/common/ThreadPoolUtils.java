@@ -6,8 +6,8 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-import com.ali.com.google.common.util.concurrent.ThreadFactoryBuilder;
 import com.fc.constant.NormalNumberConstant;
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
 
 /**
  * @author fangcong on 2017/6/16.

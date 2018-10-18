@@ -25,29 +25,7 @@ public class FileUploadManagerImp implements FileUploadManager {
     private static final Logger logger = LoggerFactory.getLogger(FileUploadManagerImp.class);
 
     @Resource
-    private TfsManager tfsManager;
-    @Resource
     private UserDao userDao;
-
-    @Override
-    public String[] uploadFile(byte[] bytes, String tfsName) {
-        String imageName;
-        try {
-            imageName = tfsManager.saveFile(bytes, tfsName, null);
-            return new String[]{imageName};
-        }catch (Exception e) {
-            logger.error("tfsManager.saveFile", e);
-        }
-        return null;
-    }
-
-    @Override
-    public String uploadImage(byte[] bytes, String ext) {
-        if (StringUtils.isBlank(ext)) {
-            ext = "jpg";
-        }
-        return tfsManager.saveFile(bytes, null, ext);
-    }
 
     @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
     @Override

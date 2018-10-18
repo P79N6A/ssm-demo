@@ -10,8 +10,8 @@ import java.util.concurrent.TimeUnit;
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 
-import com.ali.com.google.common.util.concurrent.ThreadFactoryBuilder;
 import com.fc.rmi.UserServiceRmi;
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

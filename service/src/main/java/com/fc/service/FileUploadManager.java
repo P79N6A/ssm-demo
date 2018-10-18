@@ -11,24 +11,6 @@ import com.fc.bean.FileDO;
 public interface FileUploadManager {
 
     /**
-     * 上传文件到tfs
-     *
-     * @param bytes
-     * @param tfsName
-     * @return
-     */
-    String[] uploadFile(byte[] bytes, String tfsName);
-
-    /**
-     * 上传图片得到tfsName
-     *
-     * @param bytes
-     * @param ext
-     * @return
-     */
-    String uploadImage(byte[] bytes, String ext);
-
-    /**
      * 记录文件信息
      *
      * @param fileDO

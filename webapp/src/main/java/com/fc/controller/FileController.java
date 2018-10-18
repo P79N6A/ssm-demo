@@ -39,7 +39,7 @@ public class FileController {
             if (!fileName.endsWith(ext)) {
                 return AjaxResult.getFailResult("E002", "文件格式错误");
             }
-            String[] result = fileUploadManager.uploadFile(file.getBytes(), tfsName);
+            String[] result = {"xxxx"};
             map.put("tfsName", result[0]);
             FileDO info = new FileDO();
             info.setFileName(fileName);
