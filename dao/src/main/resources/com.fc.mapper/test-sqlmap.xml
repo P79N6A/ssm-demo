@@ -73,4 +73,15 @@
             </otherwise>
         </choose>
     </select>
+
+    <select id="queryAllFiles" resultType="com.fc.bean.FileDO">
+        SELECT
+            id,
+            tfsName,
+            fileName,
+            size,
+            ext as type
+        FROM
+            TEMP_FILE_INFO
+    </select>
 </mapper>

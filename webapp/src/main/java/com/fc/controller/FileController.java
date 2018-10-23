@@ -2,9 +2,11 @@ package com.fc.controller;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletResponse;
 
 import com.fc.bean.FileDO;
 import com.fc.common.AjaxResult;
@@ -35,7 +37,7 @@ public class FileController {
         long size = file.getSize();
         try {
             String fileName = file.getOriginalFilename();
-            String ext = FileUtils.getFileType(file.getInputStream(), fileName);
+            String ext = FileUtils.getFileType(file.getInputStream());
             if (!fileName.endsWith(ext)) {
                 return AjaxResult.getFailResult("E002", "文件格式错误");
             }
@@ -60,5 +62,29 @@ public class FileController {
         String path = "D:/project/maven_demo/test/target/classes/test.png";
         String base64Str = ImageAndBase64Transfer.imageToBase64(path);
         return AjaxResult.getSuccessResult(base64Str);
+    }
+
+    /**
+     * 导出数据测试
+     *
+     * @param response
+     */
+    @RequestMapping(value = "/file/download.json", method = RequestMethod.GET)
+    public void downloadFile(HttpServletResponse response) {
+        List<FileDO> list = fileUploadManager.queryAllFiles();
+        StringBuilder sb = new StringBuilder();
+        sb.append("id,tfsName,fileName,type,size").append("\r\n");
+        list.forEach(fileDO -> {
+            sb.append(fileDO.getId()).append(",");
+            sb.append(fileDO.getTfsName()).append(",");
+            sb.append(fileDO.getFileName()).append(",");
+            sb.append(fileDO.getType()).append(",");
+            sb.append(fileDO.getSize()).append("\r\n");
+        });
+        try {
+            FileUtils.download(response, sb.toString().getBytes(), "导出数据.csv");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

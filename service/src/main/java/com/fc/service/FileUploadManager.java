@@ -25,4 +25,11 @@ public interface FileUploadManager {
      * @return
      */
     List<FileDO> testForEach(List<Set<String>> list);
+
+    /**
+     * 查询所有文件
+     *
+     * @return
+     */
+    List<FileDO> queryAllFiles();
 }

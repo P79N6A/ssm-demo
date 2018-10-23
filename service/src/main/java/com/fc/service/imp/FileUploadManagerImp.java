@@ -6,8 +6,6 @@ import java.util.Set;
 import com.fc.bean.FileDO;
 import com.fc.dao.UserDao;
 import com.fc.service.FileUploadManager;
-import com.taobao.common.tfs.TfsManager;
-import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -36,5 +34,10 @@ public class FileUploadManagerImp implements FileUploadManager {
     @Override
     public List<FileDO> testForEach(List<Set<String>> list) {
         return userDao.testForEach(list);
+    }
+
+    @Override
+    public List<FileDO> queryAllFiles() {
+        return userDao.queryAllFiles();
     }
 }

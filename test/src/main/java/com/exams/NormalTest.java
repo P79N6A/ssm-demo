@@ -3,7 +3,9 @@ package com.exams;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -174,6 +176,10 @@ public class NormalTest {
         for (User user : list) {
             System.out.println(user);
         }
+
+        Map<String, Object> map = new HashMap<>();
+        map.put("key", null);
+        System.out.println("value=" + map.get("key").toString());
         /*List<User> subList = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             subList.add(list.get(i));

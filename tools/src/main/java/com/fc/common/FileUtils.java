@@ -5,6 +5,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author fangcong
  */
 public class FileUtils {
-    public static Map<String, String> mFileTypes = new HashMap<String, String>();
+    public static Map<String, String> mFileTypes = new HashMap<>();
 
     static {
         mFileTypes.put("FFD8FFE0", ".jpg");
@@ -33,7 +34,13 @@ public class FileUtils {
         mFileTypes.put("504B0304", ".xlsx");
     }
 
-    public static String getFileType(InputStream is, String fileName) {
+    /**
+     * 读取文件获取文件类型
+     *
+     * @param is
+     * @return
+     */
+    public static String getFileType(InputStream is) {
         byte[] b = new byte[4];
         if (is != null) {
             try {
@@ -52,37 +59,20 @@ public class FileUtils {
     }
 
     public static String getFileHeader(byte[] src) {
-        /*return bytesToHexString(b);*/
         StringBuilder builder = new StringBuilder();
         if (src == null || src.length <= 0) {
             return null;
         }
-        String hv;
+        // String hv; 转16进制方式替换
         for (int i = 0; i < src.length; i++) {
-            hv = Integer.toHexString(src[i] & 0xFF).toUpperCase();
+            /*hv = Integer.toHexString(src[i] & 0xFF).toUpperCase();
             if (hv.length() < 2) {
                 builder.append(0);
-            }
-            builder.append(hv);
+            }*/
+            builder.append(String.format("%02X", src[i]));
         }
         return builder.toString();
     }
-
-    /*private static String bytesToHexString(byte[] src) {
-        StringBuilder builder = new StringBuilder();
-        if (src == null || src.length <= 0) {
-            return null;
-        }
-        String hv;
-        for (int i = 0; i < src.length; i++) {
-            hv = Integer.toHexString(src[i] & 0xFF).toUpperCase();
-            if (hv.length() < 2) {
-                builder.append(0);
-            }
-            builder.append(hv);
-        }
-        return builder.toString();
-    }*/
 
     /**
      * 获取图片字节数组
@@ -112,12 +102,22 @@ public class FileUtils {
         return null;
     }
 
-    public static void download(HttpServletResponse response, byte[] bytes, String suffixName, String fileName) throws IOException {
+    /**
+     * 下载文件
+     *
+     * @param response   响应
+     * @param bytes      文件字节流
+     * @param fileName   导出名称
+     * @throws IOException
+     */
+    public static void download(HttpServletResponse response, byte[] bytes, String fileName)
+        throws IOException {
+        // 清空header缓充区数据
         response.reset();
-        response.setContentType("application/" + suffixName);
-        String name = fileName + "." + suffixName;
-        name = new String(name.getBytes("GBK"), "ISO8859_1");
-        response.setHeader("Content-Disposition", "attachment;" + "filename=" + name);
+        // 二进制流，不知道文件格式时使用
+        response.setContentType("application/octet-stream");
+        fileName = URLEncoder.encode(fileName, "utf-8");
+        response.setHeader("Content-Disposition", "attachment;" + "filename=" + fileName);
 
         OutputStream output = response.getOutputStream();
         output.write(bytes);

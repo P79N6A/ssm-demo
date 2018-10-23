@@ -22,9 +22,9 @@ public class UploadVedioToOss {
 
 
     public static void main(String[] args) {
-        String file = "F:/test/vedio/对象OSS存储简介.mp4";
-        String suffix = ".mp4";
-        String fileName = file.substring(file.lastIndexOf("/") + 1, file.length() - 4);
+        String file = "F:/test/vedio/v-1-1.ts";
+        String suffix = ".ts";
+        String fileName = file.substring(file.lastIndexOf("/") + 1, file.length() - 3);
         System.out.println("fileName : " + fileName);
         String key = DigestUtils.md5DigestAsHex(fileName.getBytes());
 
