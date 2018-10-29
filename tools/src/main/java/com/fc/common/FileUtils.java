@@ -7,10 +7,16 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URLEncoder;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletResponse;
+
+import com.fc.bean.FileDO;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 /**
  * @author fangcong
@@ -105,9 +111,9 @@ public class FileUtils {
     /**
      * 下载文件
      *
-     * @param response   响应
-     * @param bytes      文件字节流
-     * @param fileName   导出名称
+     * @param response 响应
+     * @param bytes    文件字节流
+     * @param fileName 导出名称
      * @throws IOException
      */
     public static void download(HttpServletResponse response, byte[] bytes, String fileName)
@@ -117,7 +123,7 @@ public class FileUtils {
         // 二进制流，不知道文件格式时使用
         response.setContentType("application/octet-stream");
         fileName = URLEncoder.encode(fileName, "utf-8");
-        response.setHeader("Content-Disposition", "attachment;" + "filename=" + fileName);
+        response.setHeader("Content-Disposition", "attachment;filename=" + fileName);
 
         OutputStream output = response.getOutputStream();
         output.write(bytes);
@@ -125,5 +131,44 @@ public class FileUtils {
         output.flush();
         output.close();
         response.flushBuffer();
+    }
+
+    /**
+     * 导出xlsx文件
+     *
+     * @param response
+     * @param list
+     * @param fileName
+     */
+    public static void exportData(HttpServletResponse response, String[] cols, List<FileDO> list, String fileName)
+        throws Exception {
+        response.reset();
+        response.setContentType("application/msexcel");
+        fileName = URLEncoder.encode(fileName, "utf-8");
+        response.setHeader("Content-Disposition", "attachment;fileName=" + fileName);
+
+        OutputStream os = response.getOutputStream();
+        XSSFWorkbook workbook = new XSSFWorkbook();
+        XSSFSheet sheet = workbook.createSheet("导出数据");
+        // 1、设置表头
+        XSSFRow row = sheet.createRow(0);
+        for (int i = 0; i < cols.length; i++) {
+            row.createCell(i).setCellValue(cols[i]);
+        }
+
+        for (int rowIdx = 1; rowIdx <= list.size(); rowIdx++) {
+            FileDO fileDO = list.get(rowIdx - 1);
+            int colIdx = 0;
+            row = sheet.createRow(rowIdx);
+            row.createCell(colIdx++).setCellValue(fileDO.getId());
+            row.createCell(colIdx++).setCellValue(fileDO.getFileName());
+            row.createCell(colIdx++).setCellValue(fileDO.getTfsName());
+            row.createCell(colIdx++).setCellValue(fileDO.getType());
+            row.createCell(colIdx).setCellValue(fileDO.getSize());
+        }
+
+        workbook.write(os);
+        workbook.close();
+        os.close();
     }
 }

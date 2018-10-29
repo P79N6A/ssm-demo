@@ -6,7 +6,7 @@
        default-autowire="byName">
 
     <!--加载biz bean 通过xml启动组件扫描 -->
-    <context:component-scan base-package="com.fc"/>
+    <context:component-scan base-package="com.fc.service.imp,com.fc.rmi.imp"/>
 
     <!-- 启用aspectj自动代理 -->
     <aop:aspectj-autoproxy/>
