@@ -6,4 +6,5 @@
     <import resource="classpath*:spring-aop.xml"/>
     <import resource="classpath*:spring-bz.xml"/>
     <import resource="classpath*:spring-mybatis.xml"/>
+    <import resource="classpath*:spring-task-schedule.xml"/>
 </beans>

@@ -2,6 +2,7 @@ package com.fc.common;
 
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -9,6 +10,7 @@ import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Stream;
 
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletResponse;
@@ -170,5 +172,18 @@ public class FileUtils {
         workbook.write(os);
         workbook.close();
         os.close();
+    }
+
+    public static void main(String[] args) {
+        File file = new File("F:/test/vedio");
+        if (file.exists() && file.isDirectory()) {
+            File[] files = file.listFiles(pathname -> {
+                return pathname.getName().endsWith(".mp4");
+            });
+            Stream.of(files).forEach(file1 -> {
+                System.out.println(file1.getName());
+                System.out.println(file1.getPath());
+            });
+        }
     }
 }
