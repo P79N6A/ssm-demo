@@ -47,12 +47,12 @@ public class PalyVideo {
         //testUploadVideo("audio_10", "F:/test/vedio/audio_10.mp4");
         // 2.合成视频或者合成音频
         //heChengVideos(1, VodUtils.FC_CLIENT, "65b5303cef644d38a95c27e618046397", "04ee35dc0dfd41c3be4ccba1ba95f1e4");
-        heChengVideos(2, VodUtils.FC_CLIENT, "815878ac3a8241bb9969260d6c22d065", "a80c651d1ec04ed6b100961aee3bf90e");
+        //heChengVideos(2, VodUtils.FC_CLIENT, "815878ac3a8241bb9969260d6c22d065", "a80c651d1ec04ed6b100961aee3bf90e");
         // 3.音视频混合合成
         //videoAudioTracks("7c9c21445e8947419c822a60b6ab9380", "58534b24629540bbbb4ae349becd3314", "0bb3de9e306c4a48bd9a3b1ac801e034", VodUtils.FC_CLIENT);
         // 4.视频上加上合成图片
         // picTrack(IMG_01, IMG_02, IMG_03);
-        //getPlayInfo("97a37373c99d4b448e945a12465dc5fd", "m3u8");
+        getPlayInfo("b32d96d0fab040e59b639b714b9229b7", "m3u8", VodUtils.FC_CLIENT);
     }
 
     /**
@@ -96,10 +96,10 @@ public class PalyVideo {
         List<PlayInfo> list = response.getPlayInfoList();
         // 播放地址
         list.stream().forEach(playInfo -> {
-            System.out.println(playInfo.getFormat());
             System.out.println(playInfo.getPlayURL());
         });
         // base信息
+        System.out.println(response.getVideoBase().getCoverURL());
         System.out.println(response.getVideoBase().getTitle());
     }
 

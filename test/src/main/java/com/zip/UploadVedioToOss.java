@@ -45,22 +45,22 @@ public class UploadVedioToOss {
      * @param key
      * @param filePath
      */
-    public static void uploadImg(String key, String filePath, String imageExt) {
+    public static void uploadImg(String key, String filePath) {
         OSSClientBuilder ossClientBuilder = new OSSClientBuilder();
-        OSS client = ossClientBuilder.build(END_POINT, "LTAIeKQLOR3DmfNG", "I4OcW1KPyWxQjsRCyefc40lbwQuYie");
-        client.putObject(BUCKET_NAME, key + imageExt, new File(filePath));
+        OSS client = ossClientBuilder.build(END_POINT, ACCESS_KEY_ID, ACCESS_SECRET);
+        client.putObject(BUCKET_NAME, key, new File(filePath));
         System.out.println(key);
+        client.shutdown();
     }
 
     public static void picTrack() throws Exception {
-        String[] pics = {"8e20420342b829f723c8ff0f03398299.png",
-            "96a3be3cf272e017046d1b2674a52bd3.png",
-            "a2ef406e2c2351e0b9e80029c909242d.png",
-            "94da5fdf2dc2a2e41b4331bd83b38488.png"
+        String[] pics = {"11.png",
+            "15.png",
+            "14.png"
         };
         int i = 0;
         StringBuilder url = new StringBuilder();
-        url.append("http://mmsite.alicdn.com/166f1c810ac94b9b6cc49933af3e9173.jpg?x-oss-process=image/watermark,");
+        url.append("http://mmsite.alicdn.com/12.png?x-oss-process=image/watermark,");
         for (String pic : pics) {
             String base64Thumb = Base64.getEncoder().encodeToString(pic.getBytes("UTF-8"));
             base64Thumb = base64Thumb.replaceAll("\\+", "-").replaceAll("/", "_");
@@ -77,10 +77,10 @@ public class UploadVedioToOss {
         //picTrack();
         //一、视频文件上传
         //视频标题(必选)
-        String title = "1120";
+        String title = "11";
         String key = DigestUtils.md5DigestAsHex(title.getBytes());
-        String fileName = "F:/test/vedio/1120.mp4";
-        //uploadImg(key, fileName, ".jpg");
+        String fileName = "F:/test/vedio/11.png";
+        //uploadImg(title + ".jpg", fileName);
         //1.本地文件上传和文件流上传时，文件名称为上传文件绝对路径，如:/User/sample/文件名称.mp4 (必选)
         //2.网络流上传时，文件名称为源文件名，如文件名称.mp4(必选)。
         //3.流式上传时，文件名称为源文件名，如文件名称.mp4(必选)。
@@ -88,7 +88,7 @@ public class UploadVedioToOss {
         //testUploadImageLocalFile(title, fileName);
 
         //本地文件上传
-        testUploadVideo(VodUtils.fc_key, VodUtils.fc_key_secret, title, fileName, VodUtils.fc_template_id);
+        //testUploadVideo(VodUtils.fc_key, VodUtils.fc_key_secret, title, fileName, VodUtils.fc_template_id);
         //待上传视频的网络流地址
         //String url = "http://video.sample.com/sample.mp4";
         //2.网络流上传
