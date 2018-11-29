@@ -16,7 +16,7 @@ import org.apache.ibatis.reflection.SystemMetaObject;
  * @author fangcong on 2018/7/10.
  */
 @Intercepts({
-    @Signature(type = StatementHandler.class, method = "prepare", args = {Connection.class})
+    @Signature(type = StatementHandler.class, method = "prepare", args = {Connection.class, Integer.class})
 })
 public class MyStatementHandlerPlugin implements Interceptor {
 

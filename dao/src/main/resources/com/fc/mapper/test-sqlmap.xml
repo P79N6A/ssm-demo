@@ -4,9 +4,9 @@
 
     <insert id="addUser" parameterType="com.fc.bean.User" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO temp_user
-        (real_name,sex,age,create_time,update_time,login_name,login_password,role)
+        (real_name,sex,age,create_time,update_time,login_name,login_password)
         VALUES
-        (#{realName},#{sex},#{age},now(),now(),#{loginName},#{loginPassword},#{role})
+        (#{realName},#{sex},#{age},now(),now(),#{loginName},#{loginPassword})
     </insert>
 
     <!-- trim去掉多余的符号 -->

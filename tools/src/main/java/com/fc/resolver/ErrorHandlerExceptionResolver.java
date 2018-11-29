@@ -54,6 +54,8 @@ public class ErrorHandlerExceptionResolver extends AbstractHandlerExceptionResol
                 logger.warn("Catch Exception:" + uri, ex);
             }
 
+            ex.printStackTrace();
+
             String ajaxFlag = request.getHeader("X-Requested-With");
             ResponseBody responseBody = null;
             if (handler instanceof HandlerMethod) {

@@ -19,4 +19,5 @@ public class IndexController {
     public String register() {
         return "jsp/register";
     }
+
 }
