@@ -1,6 +1,6 @@
 package com.zip;
 
-import com.rsa.RSAUtil;
+//import com.rsa.RSAUtil;
 
 /**
  * @author fangcong on 2018/11/19.
@@ -23,8 +23,8 @@ public class RSAUtilTest {
             + "\"productType\": 1"
             + "}}";
 
-        String str = RSAUtil.encrypt("待加密的字符串", dataPublicKey);
-        System.out.println(RSAUtil.decrypt(str, signPrivateKey));
+        /*String str = RSAUtil.encrypt("待加密的字符串", dataPublicKey);
+        System.out.println(RSAUtil.decrypt(str, signPrivateKey));*/
     }
 
 }

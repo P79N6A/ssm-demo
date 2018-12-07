@@ -1,3 +1,4 @@
+/*
 package com.serialize;
 
 import java.io.ByteArrayInputStream;
@@ -9,16 +10,20 @@ import com.caucho.hessian.io.HessianSerializerInput;
 import com.caucho.hessian.io.HessianSerializerOutput;
 import com.fc.bean.FieldVO;
 
+*/
 /**
  * @author fangcong on 2017/8/21.
- */
+ *//*
+
 public class SerializeDemo {
 
-    /**
+    */
+/**
      * 纯hessian序列化
      * @param object  对象
      * @return byte[] 字节流
-     */
+     *//*
+
     public static byte[] hessianSerialize(Object object) throws Exception {
         if (object == null) {
             throw new NullPointerException();
@@ -29,12 +34,14 @@ public class SerializeDemo {
         return bos.toByteArray();
     }
 
-    /**
+    */
+/**
      * 纯hessian反序列化
      * @param bytes  字节流
      * @return Object 对象
      * @throws Exception
-     */
+     *//*
+
     public static Object hessianDeserialize(byte[] bytes) throws Exception {
         if (bytes == null) {
             throw new NullPointerException();
@@ -45,11 +52,13 @@ public class SerializeDemo {
         return object;
     }
 
-    /**
+    */
+/**
      * java序列化
      * @param object
      * @return
-     */
+     *//*
+
     public static byte[] javaSerialize(Object object) throws Exception {
         if (object == null) {
             throw new NullPointerException();
@@ -60,12 +69,14 @@ public class SerializeDemo {
         return bos.toByteArray();
     }
 
-    /**
+    */
+/**
      * java反序列化
      * @param bytes
      * @return
      * @throws Exception
-     */
+     *//*
+
     public static Object javaDeserialize(byte[] bytes) throws Exception {
         if (bytes == null) {
             throw new NullPointerException();
@@ -102,3 +113,4 @@ public class SerializeDemo {
         System.out.println("java cost : " + costTime1);
     }
 }
+*/

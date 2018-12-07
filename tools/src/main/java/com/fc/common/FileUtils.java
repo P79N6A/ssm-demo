@@ -175,13 +175,13 @@ public class FileUtils {
     }
 
     public static void main(String[] args) {
-        File file = new File("F:/test/vedio");
+        File file = new File("D:/test/vedio");
         if (file.exists() && file.isDirectory()) {
             File[] files = file.listFiles(pathname -> {
                 return pathname.getName().endsWith(".mp4");
             });
             Stream.of(files).forEach(file1 -> {
-                System.out.println(file1.getName());
+                System.out.println(file1.getName().substring(0, file1.getName().lastIndexOf(".")));
                 System.out.println(file1.getPath());
             });
         }

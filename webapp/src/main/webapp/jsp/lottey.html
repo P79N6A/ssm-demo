@@ -73,9 +73,9 @@
             url: "//showcase.display.taobao.com/common/route.json",
             dataType: "jsonp",
             data: {
-                dataId : 'bearX.myAward',
+                dataId: 'bearX.myAward',
                 $Test: '$$',
-                args : {
+                args: {
                     //target : 'lingQu'
                 }
             },
@@ -92,21 +92,29 @@
 
     function test() {
         $.ajax({
-            url: "http://my.daily.taobao.net:8080/common/route.json",
+            url: "https://minisites.youku.com/youku/common/route.json",
             type: "GET",
             data: {
-                "dataId": "collectshop",
+                "$test":"$$",
+                "dataId": "youku-add-form",
+                "app": "liuQiYkForm",
                 "args": {
-                    "shopId": "111481369"
+                    "car": "汽车",
+                    "province": "湖北",
+                    "city": "武汉",
+                    "supplier": "武汉峻风汽车销售有限公司",
+                    "name": "放葱",
+                    "gender": "男",
+                    "phone": "15010469660"
                 }
             },
             dataType: "jsonp", //指定服务器返回的数据类型
             success: function (data) {
                 var result = JSON.stringify(data); //json对象转成字符串
-                $("#test").text(result);
+                console.log(result);
             },
-            error: function () {
-                alert("关注失败！");
+            error: function (e) {
+                console.log("关注失败" + JSON.stringify(e));
             }
         });
     }
@@ -117,11 +125,11 @@
             url: "//showcase.simba.taobao.com/common/route.json",
             dataType: "jsonp",
             data: {
-                dataId : 'bearXLottery2',
+                dataId: 'bearXLottery2',
                 $Test: '$$',
                 asac: '1A18821RJE5QDT4ISXKGC2',
                 ua: c.getUA(),
-                args : {
+                args: {
                     //target: '7AC9D6416168A97E'
                 }
             },
