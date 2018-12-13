@@ -1,5 +1,6 @@
 package com.exams;
 
+import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -159,14 +160,17 @@ public class NormalTest {
     }
 
     public static void main(String[] args) throws Exception {
-        Date date = com.fc.common.DateUtils.getFormatDate("2018-08-31 14:09:00", "yyyy-MM-dd HH:mm:ss");
+        String name = "%E4%B8%9C%E9%83%AD";
+        name = URLDecoder.decode(name, "UTF-8");
+        System.out.println(name);
+        /*Date date = com.fc.common.DateUtils.getFormatDate("2018-08-31 14:09:00", "yyyy-MM-dd HH:mm:ss");
         System.out.println(date.getTime() + 3600000);
         Date date1 = new Date();
         Date date2 = new Date(date1.getTime() + 3600000);
         System.out.println(com.fc.common.DateUtils.getFormatDateTime(date1));
         System.out.println(com.fc.common.DateUtils.getFormatDateTime(date2));
 
-        /*long start = System.nanoTime();*/
+        *//*long start = System.nanoTime();*//*
         List<User> list = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
             User user = new User("name" + i, i % 2 == 0 ? 'M' : 'F', 20 + i);
@@ -179,7 +183,7 @@ public class NormalTest {
 
         Map<String, Object> map = new HashMap<>();
         map.put("key", null);
-        System.out.println("value=" + map.get("key").toString());
+        System.out.println("value=" + map.get("key").toString());*/
         /*List<User> subList = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             subList.add(list.get(i));

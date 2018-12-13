@@ -11,8 +11,27 @@
 <body>
 
 <div class="mybody">
+    选择省份：
+    <select id="province" name="province"></select>
+    性别：
+    <select id="gender" name="gender">
+        <option value="M">男</option>
+        <option value="F">女</option>
+    </select>
+    年龄:
+    <select id="age" name="age">
+        <option value="80">80</option>
+        <option value="90">90</option>
+    </select>
+    <div id="interestDiv">
+        请选择至多三个不同的兴趣：
+    </div>
+    <a href="javascript:lottey()">生成视频</a><br>
+    <textarea id="result" name="result" title="返回结果" rows="20" cols="100">
+
+    </textarea>
+    <br>
     <a href="javascript:testList()">展示点赞</a>
-    <a href="javascript:lottey()">提交请求</a>
     <a href="javascript:addUser()">添加用户</a>
     <a href="javascript:test()">测试接口</a>
     <a href="javascript:getBase64Str()">图片转化</a>
@@ -56,15 +75,13 @@
     /*jQuery.support.cors = true;*/
 
     function test() {
-        var url = "//showcase.simba.taobao.com/common/picForBase64All.shtml";
+        var url = "//my.daily.taobao.net/cny/uploadIcon.json";
         $.ajax({
             url : url,
             type : "POST",
-            dataType : "html",
-            contentType: "application/x-www-form-urlencoded",
+            dataType : "json",
             crossDomain: true,
             data : {
-                app : "fxImage",
                 base64Str : $("#base64Str").val()
             },
             success : function(data){
@@ -124,36 +141,34 @@
     }
 
     function lottey(){
-        var url="http://showcase.simba.taobao.com/guagua/addStrategy.json";
+        var province = $('#province option:selected').val();
+        var gender = $('#gender option:selected').val();
+        var age = $('#age option:selected').val();
+        var interest = "-";
+
+        $.each($('input:checkbox:checked'),function(){
+            var value = $(this).val().replace("/", "");
+            interest = interest + value + "-";
+        });
+        interest = interest.substring(0, interest.length - 1);
+        if (interest.length > 6) {
+            alert("最多选择3个兴趣！");
+            return ;
+        }
+
+        var url="http://my.daily.taobao.net/cny/testTrack.json";
         $.ajax({
             url:url,
             type:"get",
             dataType:"jsonp",
             data:{
-                whiteApp:"guagua",
-                app:"guaguaVote",
-                target:"家居,6,新品",
-                ztcPlan:"爆款计划,测试计划,大促计划,老客计划,新品计划",
-                ztcKeyType:"热搜词,新品",
-                ztcKeyIndex:"无线,成本,转化",
-                ztcPeople:"优质人群,活动人群,天气人群",
-                ztcStrategy:"点击率,展现量,成本,新老用户占比",
-                zuanPlan:"测试计划,拉新计划,成本计划,全店计划,单品计划",
-                zzDirectCPC:"访客定向,相似宝贝定向",
-                zzDirectCPM:"营销场景定向-核心客户,行业内客户定向",
-                zzSourceIndexIn:"展现,平均引流成本",
-                zzSourceIndexOut:"行业点击率,资源环境位",
-                zzSourceIn:"无线、网上购物_手淘app流量包_手淘焦点图",
-                zzSourceOut:"PC_智能优化流量包,资源位环境",
-                zzIdeaWord:"促销,情感,网红型",
-                zzIdeaStyle:"科技感,时尚,功能",
-                zzIdeaColor:"黑,白,灰,红",
-                zuanStrategy:"宝贝收藏,展现量,成本,新老用户占比"
+                province : province,
+                gender : gender,
+                interest : interest,
+                age : age
             },
             success:function(data){
-
-                if(data.info.code=="S001"){
-                }
+                $('#result').val(JSON.stringify(data));
             },
             error:function(data){
                 alert("失败");
@@ -197,5 +212,29 @@
                 }
             }
         })
+    }
+
+    var dataList = ['江苏省','澳门特别行政区','福建省','贵州省','四川省','重庆市',
+        '山东省','江西省','香港特别行政区','河南省','陕西省','吉林省','甘肃省',
+        '辽宁省','新疆省','湖南省','广西省','广东省','山西省','内蒙古自治区',
+        '北京市','天津市','海南省','宁夏回族自治区','青海省','上海市','西藏自治区',
+        '湖北省','安徽省','河北省','云南省','浙江省','台湾省','黑龙江省'
+    ];
+
+    var interests = ["A", "D", "E", "F", "L", "M", "N", "R", "S"];
+
+    for (var i = 0; i < dataList.length; i++) {
+        //先创建好select里面的option元素
+        var option = document.createElement("option");
+        //转换DOM对象为JQ对象,好用JQ里面提供的方法 给option的value赋值
+        $(option).val(dataList[i]);
+        //给option的text赋值,这就是你点开下拉框能够看到的东西
+        $(option).text(dataList[i]);
+        //获取select 下拉框对象,并将option添加进select
+        $('#province').append(option);
+    }
+
+    for(var k = 0;k < interests.length; k++){
+        $('#interestDiv').append("<input type='checkbox' name='interest' id='interest' value=" + interests[k] + "/>" + interests[k]);
     }
 </script>

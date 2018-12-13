@@ -48,31 +48,34 @@ public class PalyVideo {
 
     static {
         VOS_1_IDS = new HashMap<>();
-        VOS_1_IDS.put("DONGYU", "");
-        VOS_1_IDS.put("YISHAN", "");
-        VOS_1_IDS.put("YANG", "");
-        VOS_1_IDS.put("HAORAN", "");
+        VOS_1_IDS.put("DONGYU", "e10c372feab842ccbbb35fa0b6bcdba1");
+        VOS_1_IDS.put("YISHAN", "12522a20b7034ae7a0f0f134321eedad");
+        VOS_1_IDS.put("YANG", "a0641cab7ca44c439a21cbc01f19402b");
+        VOS_1_IDS.put("HAORAN", "f68af8c3da014666a54dcf82ce680a81");
 
         VOS_2_IDS = new HashMap<>();
-        VOS_2_IDS.put("YISHAN", "");
-        VOS_2_IDS.put("YANG", "");
-        VOS_2_IDS.put("HAORAN", "");
+        VOS_2_IDS.put("YISHAN", "5c0a7edae92d4f9488a0e5260d82f4bd");
+        VOS_2_IDS.put("YANG", "75c11e02d93448fb944865fe3612d5bc");
+        VOS_2_IDS.put("HAORAN", "c0728ee9dd7242bb964f57e455d9f1de");
 
         VOS_3_IDS = new HashMap<>();
-        VOS_3_IDS.put("DONGYU", "");
-        VOS_3_IDS.put("YISHAN", "");
-        VOS_3_IDS.put("YANG", "");
-        VOS_3_IDS.put("HAORAN", "");
+        VOS_3_IDS.put("DONGYU", "7f270036f8004db4bd7c02d336039a43");
+        VOS_3_IDS.put("YISHAN", "3d98f3a7723e4d5bbf4934213431befe");
+        VOS_3_IDS.put("YANG", "1b40977f05a04567ad26ef45878c7522");
+        VOS_3_IDS.put("HAORAN", "bd9ecc825bd746ffa0681bc8a549c83e");
 
         VOS_7_IDS = new HashMap<>();
-        VOS_7_IDS.put("DONGYU", "");
-        VOS_7_IDS.put("YISHAN", "");
-        VOS_7_IDS.put("YANG", "");
-        VOS_7_IDS.put("HAORAN", "");
+        VOS_7_IDS.put("DONGYU", "8ba3cd29860249ea896bb68a812a8649");
+        VOS_7_IDS.put("HAORAN", "02bd7d10126a4e589a113a243db7dbdb");
+        VOS_7_IDS.put("YANG", "c9e1a76b04b1430ab420b50207c3f5c5");
+        VOS_7_IDS.put("YISHAN", "c81edab27101487fb358b82ebc3c8b0d");
     }
 
     public static void main(String[] args) throws Exception {
-        batchTrackVideo(0);
+        for (int i = 0; i <= 7; i++) {
+            batchTrackVideo(i);
+            Thread.sleep(5000);
+        }
         // 1.上传音频和视频
         //testUploadVideo("audio_10", "F:/test/vedio/audio_10.mp4");
         // 2.合成视频或者合成音频
@@ -84,8 +87,8 @@ public class PalyVideo {
                 "b62193ad410a4afe90fb616020481369");*/
         //getPalyAuth("dbfa4a1e30644ff1b6e44f9767e4f4e1");
         // 3.音视频混合合成
-        //videoAudioTracks("428c35c13c534a1b81457b7ed1b62f97", "443687a4e3e3462e82cb0cc951aaeded", "b8f6b0ad8ac849849a5c79d4192a17fd", VodUtils.YK_CLIENT);
-        //getPlayInfo("366e0483703749f692025f00cec8c8e8", "", VodUtils.YK_CLIENT);
+        //videoAudioTracks("VIDEO_2_F_90DONGYU","e1e697f55f124dc3b43d7cedf3452908", "2741f769af2346bcad5e8700fd803a6f", "36fd4335d03e42a488dccbd9f85d4d1b");
+        //getPlayInfo("020ac9ef056e41988e7cd22d8a85d455", "", VodUtils.YK_CLIENT);
     }
 
     /**
@@ -95,7 +98,7 @@ public class PalyVideo {
      * @throws Exception
      */
     public static void batchTrackVideo(int index) {
-        // 34 x 4 = 132
+        // 34 x 4 = 136
         if (index == 1) {
             Stream.of(PROVINCES).forEach(province -> {
                 String videoTitle = "VIDEO_1_" + province;
@@ -109,10 +112,10 @@ public class PalyVideo {
                     try {
                         if ("DONGYU".equals(entry.getKey())) {
                             title = title + "F" + entry.getKey();
-                            videoAudioTracks(title, mediaId, audioId1, entry.getValue());
+                            videoAudioTracks("4.2", title, mediaId, audioId1, entry.getValue());
                         } else {
                             title = title + "M" + entry.getKey();
-                            videoAudioTracks(title, mediaId, audioId1, entry.getValue());
+                            videoAudioTracks("4.2", title, mediaId, audioId1, entry.getValue());
                         }
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -129,16 +132,16 @@ public class PalyVideo {
                         String audioId1 = getMediaIdByTitle("SFX_2_" + str);
                         if ("F_80".equals(str) || "F_90".equals(str)) {
                             try {
-                                videoAudioTracks("VIDEO_2_" + str + "DONGYU", mediaId, audioId1, "");
+                                videoAudioTracks("37.845", "VIDEO_2_" + str + "DONGYU", mediaId, audioId1, "36fd4335d03e42a488dccbd9f85d4d1b");
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
                         } else {
-                            // 4段明星音频
+                            // 3段男明星音频
                             VOS_2_IDS.entrySet().stream().forEach(entry -> {
                                 String title = "VIDEO_2_" + str + entry.getKey();
                                 try {
-                                    videoAudioTracks(title, mediaId, audioId1, entry.getValue());
+                                    videoAudioTracks("37.845", title, mediaId, audioId1, entry.getValue());
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
@@ -162,7 +165,7 @@ public class PalyVideo {
                             String audioId1 = getMediaIdByTitle(audio1Title);
 
                             String title = "VIDEO_3" + province + "F" + entry.getKey();
-                            videoAudioTracks(title, mediaId, audioId1, entry.getValue());
+                            videoAudioTracks("5.397",title, mediaId, audioId1, entry.getValue());
                         } else {
                             String videoTitle = "VIDEO_3_" + "M_" + province;
                             String mediaId = getMediaIdByTitle(videoTitle);
@@ -171,7 +174,7 @@ public class PalyVideo {
                             String audioId1 = getMediaIdByTitle(audio1Title);
 
                             String title = "VIDEO_3" + province + "M" + entry.getKey();
-                            videoAudioTracks(title, mediaId, audioId1, entry.getValue());
+                            videoAudioTracks("6.397",title, mediaId, audioId1, entry.getValue());
                         }
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -199,8 +202,8 @@ public class PalyVideo {
                                 String audio1Title = "SFX_7_F_" + province;
                                 String audioId1 = getMediaIdByTitle(audio1Title);
 
-                                String title = "VIDEO_3" + province + "F" + age + entry.getKey();
-                                videoAudioTracks(title, mediaId, audioId1, entry.getValue());
+                                String title = "VIDEO_7" + province + "F" + age + entry.getKey();
+                                videoAudioTracks("29.68",title, mediaId, audioId1, entry.getValue());
                             }
                         } else {
                             for (int i = 0; i < 2; i++) {
@@ -216,8 +219,8 @@ public class PalyVideo {
                                 String audio1Title = "SFX_7_M_" + province;
                                 String audioId1 = getMediaIdByTitle(audio1Title);
 
-                                String title = "VIDEO_3" + province + "M" + age + entry.getKey();
-                                videoAudioTracks(title, mediaId, audioId1, entry.getValue());
+                                String title = "VIDEO_7" + province + "M" + age + entry.getKey();
+                                videoAudioTracks("29.68",title, mediaId, audioId1, entry.getValue());
                             }
                         }
                     } catch (Exception e) {
@@ -232,7 +235,9 @@ public class PalyVideo {
         }
 
         if (index == 0) {
-            trackG1ToG3();
+            trackG1ToG3(4, "15");
+            trackG1ToG3(5, "10");
+            trackG1ToG3(6, "5");
         }
     }
 
@@ -250,14 +255,14 @@ public class PalyVideo {
                         String voTitle = "VO_" + index + "_" + "DONGYU";
                         String audio2 = getMediaIdByTitle(voTitle);
                         String title = "VIDEO_" + index + "_F" + interest + "DONGYU";
-                        videoAudioTracks(title, mediaId, audio1, audio2);
+                        videoAudioTracks("5",title, mediaId, audio1, audio2);
                     } else {
                         Stream.of("YISHAN", "HAORAN", "YANG").forEach(vo -> {
                             String voTitle = "VO_" + index + "_" + vo;
                             String audio2 = getMediaIdByTitle(voTitle);
                             String title = "VIDEO_" + index + "_M" + interest + vo;
                             try {
-                                videoAudioTracks(title, mediaId, audio1, audio2);
+                                videoAudioTracks("5",title, mediaId, audio1, audio2);
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -270,40 +275,36 @@ public class PalyVideo {
         });
     }
 
-    private static void trackG1ToG3() {
+    private static void trackG1ToG3(int i, String time) {
         Stream.of("DONGYU", "YISHAN", "HAORAN", "YANG").forEach(vo -> {
             if ("DONGYU".equals(vo)) {
-                Stream.of(4, 5, 6).forEach(i -> {
                     String g = DEFULT_GS[6 - i];
                     String mediaTitle = "VIDEO_" + i + "_F_" + g;
                     String mediaId = getMediaIdByTitle(mediaTitle);
 
                     String audioId1 = getMediaIdByTitle("SFX_" + i + "_F_" + g);
-                    String audioId2 = getTitleByMediaId("VO_" + i + "_" + g + "_DONGYU");
+                    String audioId2 = getMediaIdByTitle("VO_" + i + "_DONGYU_" + g);
 
                     String title = "VIDEO_" + i + "F" + g + vo;
                     try {
-                        videoAudioTracks(title, mediaId, audioId1, audioId2);
+                        videoAudioTracks(time, title, mediaId, audioId1, audioId2);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                });
             } else {
-                Stream.of(4, 5, 6).forEach(i -> {
                     String g = DEFULT_GS[6 - i];
                     String mediaTitle = "VIDEO_" + i + "_M_" + g;
                     String mediaId = getMediaIdByTitle(mediaTitle);
 
                     String audioId1 = getMediaIdByTitle("SFX_" + i + "_M_" + g);
-                    String audioId2 = getTitleByMediaId("VO_" + i + "_" + g + "_DONGYU");
+                    String audioId2 = getMediaIdByTitle("VO_" + i + "_" + vo + "_" + g);
 
                     String title = "VIDEO_" + i + "M" + g + vo;
                     try {
-                        videoAudioTracks(title, mediaId, audioId1, audioId2);
+                        videoAudioTracks(time, title, mediaId, audioId1, audioId2);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                });
             }
         });
     }
@@ -386,23 +387,21 @@ public class PalyVideo {
     /**
      * 音频和视频合并剪切
      */
-    public static void videoAudioTracks(String title, String videoId, String audio1, String audio2) throws Exception {
+    public static void videoAudioTracks(String time, String title, String videoId, String audio1, String audio2) throws Exception {
         // Timeline
         System.out.println("{title:" + title);
-        /**StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
          // 要拼接的视频
          sb.append("{\"VideoTracks\":[{\"VideoTrackClips\": [");
-         sb.append("{\"MediaId\":\"").append(videoId).append("\",\"Out\":5");
-         //sb.append(",\"Effects\": [{\"Color\": \"#000000\", \"Duration\": 0.2, \"SubType\": \"In\", \"Type\": \"Fade\"}]");
-         //sb.append(",\"Effects\": [{\"Color\": \"#000000\", \"Duration\": 0.2, \"SubType\": \"Out\", \"Type\": \"Fade\"}]");
+         sb.append("{\"MediaId\":\"").append(videoId).append("\"").append(",\"Out\":").append(time);
          sb.append("}]}]");
          // 加上两段音频
          sb.append(",\"AudioTracks\":[{\"AudioTrackClips\":[")
-         .append("{\"MediaId\":\"").append(audio1).append("\", \"Out\":5")
+         .append("{\"MediaId\":\"").append(audio1).append("\"").append(", \"Out\":").append(time)
          //.append(",\"Effects\":[{\"Type\":\"Volume\",\"Gain\":\"1\"}]")
          .append("}]}")
          .append(",{\"AudioTrackClips\":[")
-         .append("{\"MediaId\":\"").append(audio2).append("\", \"Out\":5")
+         .append("{\"MediaId\":\"").append(audio2).append("\"").append(", \"Out\":").append(time)
          //.append(",\"Effects\":[{\"Type\":\"Volume\",\"Gain\":\"1\"}]")
          .append("}]}]}");
          String track = sb.toString();
@@ -412,9 +411,8 @@ public class PalyVideo {
          request.setTitle(title);
          request.setProduceConfig("{\"ContainerFormat\":\"M3U8\"}");
          ProduceEditingProjectVideoResponse response = VodUtils.YK_CLIENT.getAcsResponse(request);
-         System.out.println(response.getMediaId());
 
-         insert(new VideoInfoDO(response.getMediaId(), request.getTitle()));*/
+         insert(new VideoInfoDO(response.getMediaId(), request.getTitle()));
     }
 
     public static String getTitle(String... mediaIds) throws Exception {
