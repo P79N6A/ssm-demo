@@ -12,6 +12,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.atomic.LongAdder;
+import java.util.stream.Stream;
 
 import com.fc.bean.User;
 import org.apache.commons.lang.time.DateUtils;
@@ -160,9 +161,6 @@ public class NormalTest {
     }
 
     public static void main(String[] args) throws Exception {
-        String name = "%E4%B8%9C%E9%83%AD";
-        name = URLDecoder.decode(name, "UTF-8");
-        System.out.println(name);
         /*Date date = com.fc.common.DateUtils.getFormatDate("2018-08-31 14:09:00", "yyyy-MM-dd HH:mm:ss");
         System.out.println(date.getTime() + 3600000);
         Date date1 = new Date();
@@ -202,16 +200,6 @@ public class NormalTest {
         /*int a = 132547698;
         char[] c = String.valueOf(a).toCharArray();
         System.out.println(niXuStr(c));*/
-
-        int i = (int)(129600 - DateUtils.getFragmentInSeconds(Calendar.getInstance(), Calendar.DATE));
-        System.out.println(i);
-
-        //List<Double> nums = Arrays.asList(12d, 14d, 17d, 22d);
-        //nums.stream().map((d) -> d.toString()).forEach(System.out::print);
-
-        Class c1 = new ArrayList<String>().getClass();
-        Class c2 = new ArrayList<Integer>().getClass();
-        System.out.println(c1 == c2);
 
         //1、根据所在城市查店铺列表，无店铺直接返回
         /*List<ShopLocation> list = new ArrayList<>();

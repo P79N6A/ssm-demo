@@ -50,32 +50,33 @@ public class PalyVideo {
         VOS_1_IDS = new HashMap<>();
         VOS_1_IDS.put("DONGYU", "e10c372feab842ccbbb35fa0b6bcdba1");
         VOS_1_IDS.put("YISHAN", "12522a20b7034ae7a0f0f134321eedad");
-        VOS_1_IDS.put("YANG", "a0641cab7ca44c439a21cbc01f19402b");
+        VOS_1_IDS.put("YANG", "0a30e41c6c95480d98eddf576787a6f6");
         VOS_1_IDS.put("HAORAN", "f68af8c3da014666a54dcf82ce680a81");
 
         VOS_2_IDS = new HashMap<>();
         VOS_2_IDS.put("YISHAN", "5c0a7edae92d4f9488a0e5260d82f4bd");
-        VOS_2_IDS.put("YANG", "75c11e02d93448fb944865fe3612d5bc");
+        VOS_2_IDS.put("YANG", "6860cf1b5b5545659050f9d3fb23b060");
         VOS_2_IDS.put("HAORAN", "c0728ee9dd7242bb964f57e455d9f1de");
 
         VOS_3_IDS = new HashMap<>();
         VOS_3_IDS.put("DONGYU", "7f270036f8004db4bd7c02d336039a43");
         VOS_3_IDS.put("YISHAN", "3d98f3a7723e4d5bbf4934213431befe");
-        VOS_3_IDS.put("YANG", "1b40977f05a04567ad26ef45878c7522");
+        VOS_3_IDS.put("YANG", "0ef225deea6a46e18617da0821598d02");
         VOS_3_IDS.put("HAORAN", "bd9ecc825bd746ffa0681bc8a549c83e");
 
         VOS_7_IDS = new HashMap<>();
-        VOS_7_IDS.put("DONGYU", "8ba3cd29860249ea896bb68a812a8649");
+        //VOS_7_IDS.put("DONGYU", "8ba3cd29860249ea896bb68a812a8649");
         VOS_7_IDS.put("HAORAN", "02bd7d10126a4e589a113a243db7dbdb");
-        VOS_7_IDS.put("YANG", "c9e1a76b04b1430ab420b50207c3f5c5");
+        //VOS_7_IDS.put("YANG", "9d3cb573b83949d1a98538b862f3073d");
         VOS_7_IDS.put("YISHAN", "c81edab27101487fb358b82ebc3c8b0d");
     }
 
     public static void main(String[] args) throws Exception {
-        for (int i = 0; i <= 7; i++) {
+        /*for (int i = 0; i <= 7; i++) {
             batchTrackVideo(i);
             Thread.sleep(5000);
-        }
+        }*/
+        //batchTrackVideo(7);
         // 1.上传音频和视频
         //testUploadVideo("audio_10", "F:/test/vedio/audio_10.mp4");
         // 2.合成视频或者合成音频
@@ -87,8 +88,8 @@ public class PalyVideo {
                 "b62193ad410a4afe90fb616020481369");*/
         //getPalyAuth("dbfa4a1e30644ff1b6e44f9767e4f4e1");
         // 3.音视频混合合成
-        //videoAudioTracks("VIDEO_2_F_90DONGYU","e1e697f55f124dc3b43d7cedf3452908", "2741f769af2346bcad5e8700fd803a6f", "36fd4335d03e42a488dccbd9f85d4d1b");
-        //getPlayInfo("020ac9ef056e41988e7cd22d8a85d455", "", VodUtils.YK_CLIENT);
+        videoAudioTracks("4.2","VIDEO_1_HIDONGYU", "2026091889864db78e6a245960b63cfc", "37123f2998924cd3b76ea8ea27d51567", "81dfdaccc63841d0ac8c1f8829bd3b60");
+        //getPlayInfo("d6a9ef4dba5143e9b5bbcbbc9ba0f624", "", VodUtils.YK_CLIENT);
     }
 
     /**
@@ -132,7 +133,7 @@ public class PalyVideo {
                         String audioId1 = getMediaIdByTitle("SFX_2_" + str);
                         if ("F_80".equals(str) || "F_90".equals(str)) {
                             try {
-                                videoAudioTracks("37.845", "VIDEO_2_" + str + "DONGYU", mediaId, audioId1, "36fd4335d03e42a488dccbd9f85d4d1b");
+                                videoAudioTracks("37.8", "VIDEO_2_" + str + "DONGYU", mediaId, audioId1, "36fd4335d03e42a488dccbd9f85d4d1b");
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -141,7 +142,7 @@ public class PalyVideo {
                             VOS_2_IDS.entrySet().stream().forEach(entry -> {
                                 String title = "VIDEO_2_" + str + entry.getKey();
                                 try {
-                                    videoAudioTracks("37.845", title, mediaId, audioId1, entry.getValue());
+                                    videoAudioTracks("37.8", title, mediaId, audioId1, entry.getValue());
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
@@ -174,7 +175,7 @@ public class PalyVideo {
                             String audioId1 = getMediaIdByTitle(audio1Title);
 
                             String title = "VIDEO_3" + province + "M" + entry.getKey();
-                            videoAudioTracks("6.397",title, mediaId, audioId1, entry.getValue());
+                            videoAudioTracks("5.397",title, mediaId, audioId1, entry.getValue());
                         }
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -235,8 +236,8 @@ public class PalyVideo {
         }
 
         if (index == 0) {
-            trackG1ToG3(4, "15");
-            trackG1ToG3(5, "10");
+            //trackG1ToG3(4, "15");
+            //trackG1ToG3(5, "10");
             trackG1ToG3(6, "5");
         }
     }
@@ -409,7 +410,7 @@ public class PalyVideo {
          ProduceEditingProjectVideoRequest request = new ProduceEditingProjectVideoRequest();
          request.setTimeline(track);
          request.setTitle(title);
-         request.setProduceConfig("{\"ContainerFormat\":\"M3U8\"}");
+         request.setProduceConfig("{\"ContainerFormat\":\"M3U8\",\"Width\":\"540\",\"Width\":\"960\",\"Bitrate\":\"1000\"}");
          ProduceEditingProjectVideoResponse response = VodUtils.YK_CLIENT.getAcsResponse(request);
 
          insert(new VideoInfoDO(response.getMediaId(), request.getTitle()));

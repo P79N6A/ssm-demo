@@ -79,9 +79,16 @@ public class UploadVedioToOss {
     }
 
     public static void main(String[] args) throws Exception {
-        String key = "绘画家.png";
+        /*String key = "绘画家.png";
         uploadImg(key, "C:/Users/fangcong/Desktop/Icon元素/Icon/兴趣/" + key);
-        picTrack();
+        picTrack();*/
+        String referer = "http://my.daily.taobao.net/apple";
+        URL referUrl = new URL(referer);
+        String commonReferCheckServerName = referUrl.getHost();
+        System.out.println(commonReferCheckServerName);
+
+        System.out.println(referer.indexOf("simba.taobao.com"));
+
         //一、视频文件上传
         //batchUpload("E:/BaiduNetdiskDownload/pepsi all 1130/BGM");
         //本地文件上传

@@ -7,6 +7,7 @@
     <title>无标题文档</title>
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/self/jsonFormat.js"></script>
 </head>
 <body>
 
@@ -26,10 +27,12 @@
     <div id="interestDiv">
         请选择至多三个不同的兴趣：
     </div>
-    <a href="javascript:lottey()">生成视频</a><br>
-    <textarea id="result" name="result" title="返回结果" rows="20" cols="100">
+    <input type="button" value="生成视频" onclick="lottey();"/>
+    <!--<input type="button" value="json格式化" onclick="showJson();">--><br>
+    <textarea id="result" name="result" rows="30" cols="100">
 
     </textarea>
+
     <br>
     <a href="javascript:testList()">展示点赞</a>
     <a href="javascript:addUser()">添加用户</a>
@@ -80,11 +83,13 @@
             url : url,
             type : "POST",
             dataType : "json",
-            crossDomain: true,
+            // crossDomain: true,
             data : {
+                encryStr : 'CD0762D2FBCE4DBE3BB06AEDFE0F953B',
                 base64Str : $("#base64Str").val()
             },
             success : function(data){
+                alert("成功");
                 if (data.success){
                     alert(data.info.data);
                 }
@@ -156,7 +161,7 @@
             return ;
         }
 
-        var url="http://my.daily.taobao.net/cny/testTrack.json";
+        var url="http://showcase.simba.taobao.com/cny/testTrack.json";
         $.ajax({
             url:url,
             type:"get",
@@ -169,6 +174,7 @@
             },
             success:function(data){
                 $('#result').val(JSON.stringify(data));
+                showJson();
             },
             error:function(data){
                 alert("失败");
@@ -236,5 +242,14 @@
 
     for(var k = 0;k < interests.length; k++){
         $('#interestDiv').append("<input type='checkbox' name='interest' id='interest' value=" + interests[k] + "/>" + interests[k]);
+    }
+
+    //引用示例部分
+    //var originalJson = {'name':'ccy','age':18,'info':[{'address':'wuhan'},{'interest':'playCards'}]};
+    var showJson = function () {
+        var originalJson = $('#result').val();
+
+        //(2)调用formatJson函数,将json格式进行格式化
+        $('#result').val(formatJson(originalJson));
     }
 </script>

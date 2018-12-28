@@ -59,7 +59,7 @@ public class FileController {
     @RequestMapping(value = "/file/getBase64Str.json", method = RequestMethod.GET)
     @ResponseBody
     public AjaxResult getBase64Str(String app) {
-        String path = "E:/project/maven_demo/test/target/classes/test.png";
+        String path = "E:/project/maven_demo/test/target/classes/test.jpg";
         String base64Str = ImageAndBase64Transfer.imageToBase64(path);
         return AjaxResult.getSuccessResult(base64Str);
     }

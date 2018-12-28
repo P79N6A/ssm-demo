@@ -20,7 +20,7 @@ public class TaskJob2 {
      *     2、fixedDelay:当前任务完成之后间隔多少毫秒执行下一个任务<br>
      *     3、fixedRate:当前任务开始之后间隔多少毫秒执行下一个任务<br>
      */
-    @Scheduled(fixedDelay = 15000)
+    @Scheduled(fixedDelay = 150000)
     public void run() {
         int c = sum.incrementAndGet();
         if (c > 10) {
@@ -34,7 +34,7 @@ public class TaskJob2 {
         }
     }
 
-    @Scheduled(cron = "0 1 * * * ?")
+    @Scheduled(cron = "0 0 1 * * ?")
     public void run2() {
         System.out.println("schedule task job3 run at " + DateUtils.getCurrDateTimeStr());
     }
